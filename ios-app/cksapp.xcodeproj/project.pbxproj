@@ -51,7 +51,6 @@
 		245D8AE21D2772190067C04A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE11D2772190067C04A /* DateHelper.swift */; };
 		245D8AE41D2784950067C04A /* GameSelectSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */; };
 		245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */; };
-		245D8AE91D27952E0067C04A /* GameSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE81D27952E0067C04A /* GameSelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,7 +121,6 @@
 		245D8AE11D2772190067C04A /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectSectionManager.swift; sourceTree = "<group>"; };
 		245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewControllerHelper.swift; sourceTree = "<group>"; };
-		245D8AE81D27952E0067C04A /* GameSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,7 +288,6 @@
 				245D8ABF1D2764460067C04A /* BaseCollectionViewController.swift */,
 				245D8AC11D2764610067C04A /* MainCollectionViewController.swift */,
 				245D8AC31D2764730067C04A /* MyScheduleViewController.swift */,
-				245D8AE81D27952E0067C04A /* GameSelectViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -504,7 +501,6 @@
 				245D8AAE1D2763980067C04A /* LocalEventSectionManager.swift in Sources */,
 				245D8AB01D2763AD0067C04A /* ShoppingPlaceSectionManager.swift in Sources */,
 				245D8AD21D2765020067C04A /* Player.swift in Sources */,
-				245D8AE91D27952E0067C04A /* GameSelectViewController.swift in Sources */,
 				245D8ABC1D2764260067C04A /* BaseCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
