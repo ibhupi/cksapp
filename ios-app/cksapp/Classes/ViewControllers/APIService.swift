@@ -76,11 +76,6 @@ class APIService: NSObject {
                     events.append(event)
                 }
             })
-            items?.forEach({ (item) in
-                if let event = Event.initWithDictionary(item) {
-                    events.append(event)
-                }
-            })
             allGames = events
             completionBlock(items: events)
         }
