@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Main-->
         <scene sceneID="81i-HQ-N45">
             <objects>
                 <collectionViewController id="7sU-Il-qfc" customClass="MainCollectionViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,17 +34,17 @@
                             <outlet property="delegate" destination="7sU-Il-qfc" id="JvE-58-AKR"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="luW-hE-iCP"/>
+                    <tabBarItem key="tabBarItem" title="Main" id="luW-hE-iCP"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZF-NM-f09" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1517" y="-1370"/>
         </scene>
-        <!--Item-->
+        <!--My Schedule-->
         <scene sceneID="KDW-e3-89A">
             <objects>
-                <collectionViewController id="01K-PV-rB2" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wjc-XC-UPO">
+                <collectionViewController id="01K-PV-rB2" customClass="MyScheduleViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wjc-XC-UPO" customClass="BaseCollectionView" customModule="cksapp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zac-R1-1Nh">
@@ -69,13 +69,13 @@
                             <outlet property="delegate" destination="01K-PV-rB2" id="LYL-01-REN"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="hjs-2h-jKp"/>
+                    <tabBarItem key="tabBarItem" title="My Schedule" id="hjs-2h-jKp"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHv-Km-Y1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1517" y="-466"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="fvg-JR-JIM">
             <objects>
                 <viewController id="oc6-Sl-lpk" sceneMemberID="viewController">
@@ -88,13 +88,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="voX-4V-02T"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="voX-4V-02T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LM5-QZ-PYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1493" y="414"/>
         </scene>
-        <!--Item-->
+        <!--Services-->
         <scene sceneID="Rti-tK-s2L">
             <objects>
                 <viewController id="Nwj-2E-XbK" sceneMemberID="viewController">
@@ -107,13 +107,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="niD-Ul-hUt"/>
+                    <tabBarItem key="tabBarItem" title="Services" id="niD-Ul-hUt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCl-N1-iRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1469" y="1374"/>
         </scene>
-        <!--Item-->
+        <!--Tips-->
         <scene sceneID="jhe-fW-9wf">
             <objects>
                 <viewController id="0hs-4F-8LV" sceneMemberID="viewController">
@@ -126,7 +126,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="M8g-1Z-zeO"/>
+                    <tabBarItem key="tabBarItem" title="Tips" id="M8g-1Z-zeO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usS-Vv-w4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,8 +143,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="7sU-Il-qfc" kind="relationship" relationship="viewControllers" id="rBy-In-bJd"/>
                         <segue destination="01K-PV-rB2" kind="relationship" relationship="viewControllers" id="H3U-tc-orN"/>
+                        <segue destination="7sU-Il-qfc" kind="relationship" relationship="viewControllers" id="rBy-In-bJd"/>
                         <segue destination="oc6-Sl-lpk" kind="relationship" relationship="viewControllers" id="GMb-dT-JbI"/>
                         <segue destination="Nwj-2E-XbK" kind="relationship" relationship="viewControllers" id="fHQ-1m-zd3"/>
                         <segue destination="0hs-4F-8LV" kind="relationship" relationship="viewControllers" id="LU0-gn-0Jt"/>

@@ -22,6 +22,11 @@ enum ConstantCornerRadius : CGFloat {
     case Big = 8.0, Mid = 4.0, Small = 2.0
 }
 
+let DateFormatter : NSDateFormatter = {
+    let dateFormatter = NSDateFormatter()
+    
+    return dateFormatter
+}()
 
 typealias CompletionBlockItemsCount = (count: Int) -> Void
 typealias CompletionBlockItems = (items: [AnyObject]?) -> Void

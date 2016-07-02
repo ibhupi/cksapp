@@ -46,6 +46,9 @@
 		245D8AD81D2765320067C04A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD71D2765320067C04A /* Photo.swift */; };
 		245D8ADA1D27655B0067C04A /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD91D27655B0067C04A /* BaseService.swift */; };
 		245D8ADC1D2765730067C04A /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADB1D2765730067C04A /* GameService.swift */; };
+		245D8ADE1D276AE00067C04A /* MyScheduleSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */; };
+		245D8AE01D276BB30067C04A /* DaySchdeduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */; };
+		245D8AE21D2772190067C04A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE11D2772190067C04A /* DateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		245D8AD71D2765320067C04A /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		245D8AD91D27655B0067C04A /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		245D8ADB1D2765730067C04A /* GameService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleSectionManager.swift; sourceTree = "<group>"; };
+		245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySchdeduleManager.swift; sourceTree = "<group>"; };
+		245D8AE11D2772190067C04A /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +238,7 @@
 			children = (
 				245D8AC51D27648A0067C04A /* ColorConstants.swift */,
 				245D8AC71D27649C0067C04A /* Constants.swift */,
+				245D8AE11D2772190067C04A /* DateHelper.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -274,8 +281,8 @@
 				245D8A721D2762490067C04A /* SectionsManagers */,
 				245D8A7B1D2762490067C04A /* Views */,
 				245D8ABF1D2764460067C04A /* BaseCollectionViewController.swift */,
-				245D8AC31D2764730067C04A /* MyScheduleViewController.swift */,
 				245D8AC11D2764610067C04A /* MainCollectionViewController.swift */,
+				245D8AC31D2764730067C04A /* MyScheduleViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -291,6 +298,8 @@
 				245D8AAB1D2763870067C04A /* PlaceSectionManager.swift */,
 				245D8AAD1D2763980067C04A /* LocalEventSectionManager.swift */,
 				245D8AAF1D2763AD0067C04A /* ShoppingPlaceSectionManager.swift */,
+				245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */,
+				245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */,
 			);
 			path = SectionsManagers;
 			sourceTree = "<group>";
@@ -447,11 +456,14 @@
 				245D8A2D1D2758CE0067C04A /* SecondViewController.swift in Sources */,
 				245D8AB21D2763CA0067C04A /* ImageTitleCollectionViewCell.swift in Sources */,
 				245D8AD01D2764F70067C04A /* Country.swift in Sources */,
+				245D8AE21D2772190067C04A /* DateHelper.swift in Sources */,
 				245D8ABA1D2764140067C04A /* ContainerCollectionViewCell.swift in Sources */,
 				245D8AA41D2763330067C04A /* MainViewSectionManager.swift in Sources */,
 				245D8AB41D2763DD0067C04A /* ImageTitleViewModel.swift in Sources */,
 				245D8ACE1D2764E10067C04A /* Location.swift in Sources */,
 				245D8AA21D2763150067C04A /* BaseSectionManager.swift in Sources */,
+				245D8AE01D276BB30067C04A /* DaySchdeduleManager.swift in Sources */,
+				245D8ADE1D276AE00067C04A /* MyScheduleSectionManager.swift in Sources */,
 				245D8AB81D2764040067C04A /* BaseCollectionViewCell.swift in Sources */,
 				245D8AAA1D2763750067C04A /* RestaurantSectionManager.swift in Sources */,
 				245D8AC61D27648A0067C04A /* ColorConstants.swift in Sources */,

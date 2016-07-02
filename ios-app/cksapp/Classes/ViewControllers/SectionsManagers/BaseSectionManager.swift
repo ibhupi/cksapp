@@ -28,6 +28,8 @@ class BaseSectionManager: NSObject {
     var collectionViewEdgeInset = UIEdgeInsetsZero
     var pagingEnabled = NO
     
+    var baseCollectionContainers = [MainViewSectionManager.self, MyScheduleSectionManager.self]
+    
     init(title : String, collectionView: UICollectionView?) {
         self.collectionView = collectionView
         self.title = title
@@ -113,7 +115,10 @@ class BaseSectionManager: NSObject {
             return CGSizeZero
         }
         
-        if let _ = self as? MainViewSectionManager {
+        if (self.baseCollectionContainers.containsObject(self.dynamicType)) {
+            
+//        }
+//        if let _ = self as? MainViewSectionManager {
             return CGSizeMake(CGRectGetWidth(collectionView.frame), min(CGRectGetHeight(collectionView.frame) - 10, 200))
         }
         return CGSizeMake(CGRectGetWidth(collectionView.frame), CGRectGetHeight(collectionView.frame))
