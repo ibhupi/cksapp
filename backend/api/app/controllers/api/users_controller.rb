@@ -6,9 +6,15 @@ module Api
       render json: @users
     end
 
+
     def show
-      @user = User.find(params[:id])
-      render json: @user
+      @user = User.find_by(id: params[:id])
+      if @user.nil?
+        render json: { result: false, message: "Couldn't find User with 'id'." }
+      else
+        render json: @user
+      end
     end
+
   end
 end

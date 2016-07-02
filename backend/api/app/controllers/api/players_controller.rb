@@ -7,8 +7,12 @@ module Api
     end
 
     def show
-      @player = Player.find(params[:id])
-      render json: @player
+      @player = Player.find_by(id: params[:id])
+      if @player.nil?
+        render json: { result: false, message: "Couldn't find Player with 'id'." }
+      else
+        render json: @player
+      end
     end
   end
 end

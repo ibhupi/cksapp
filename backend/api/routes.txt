@@ -1,19 +1,17 @@
-               Prefix Verb   URI Pattern                       Controller#Action
-        api_countries GET    /api/countries(.:format)          api/countries#index
-          api_country GET    /api/countries/:id(.:format)      api/countries#show
-        api_locations GET    /api/locations(.:format)          api/locations#index
-         api_location GET    /api/locations/:id(.:format)      api/locations#show
-          api_players GET    /api/players(.:format)            api/players#index
-           api_player GET    /api/players/:id(.:format)        api/players#show
-           api_events GET    /api/events(.:format)             api/events#index
-            api_event GET    /api/events/:id(.:format)         api/events#show
-            api_users GET    /api/users(.:format)              api/users#index
-             api_user GET    /api/users/:id(.:format)          api/users#show
-   api_user_schedules GET    /api/user_schedules(.:format)     api/user_schedules#index
-                      POST   /api/user_schedules(.:format)     api/user_schedules#create
-new_api_user_schedule GET    /api/user_schedules/new(.:format) api/user_schedules#new
-    api_user_schedule GET    /api/user_schedules/:id(.:format) api/user_schedules#show
-                      PATCH  /api/user_schedules/:id(.:format) api/user_schedules#update
-                      PUT    /api/user_schedules/:id(.:format) api/user_schedules#update
-                      DELETE /api/user_schedules/:id(.:format) api/user_schedules#destroy
-      api_googleplace GET    /api/googleplace(.:format)        api/googleplaceapi#hello
+            Prefix Verb   URI Pattern                            Controller#Action
+     api_countries GET    /api/countries(.:format)               api/countries#index
+       api_country GET    /api/countries/:id(.:format)           api/countries#show
+     api_locations GET    /api/locations(.:format)               api/locations#index
+      api_location GET    /api/locations/:id(.:format)           api/locations#show
+       api_players GET    /api/players(.:format)                 api/players#index
+        api_player GET    /api/players/:id(.:format)             api/players#show
+        api_events GET    /api/events(.:format)                  api/events#index
+         api_event GET    /api/events/:id(.:format)              api/events#show
+         api_users GET    /api/users(.:format)                   api/users#index
+          api_user GET    /api/users/:id(.:format)               api/users#show
+                   PUT    /api/user_schedules/like/:id(.:format) api/user_schedules#like
+api_user_schedules GET    /api/user_schedules(.:format)          api/user_schedules#index
+                   POST   /api/user_schedules(.:format)          api/user_schedules#create
+ api_user_schedule GET    /api/user_schedules/:id(.:format)      api/user_schedules#show
+                   DELETE /api/user_schedules/:id(.:format)      api/user_schedules#destroy
+   api_googleplace GET    /api/googleplace(.:format)             api/googleplaceapi#hello

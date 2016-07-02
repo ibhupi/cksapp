@@ -7,8 +7,12 @@ module Api
     end
 
     def show
-      @event = Event.find(params[:id])
-      render json: @event
+      @event = Event.find_by(id: params[:id])
+      if @event.nil?
+        render json: { result: false, message: "Couldn't find Event with 'id'." }
+      else
+        render json: @event
+      end
     end
   end
 end

@@ -6,9 +6,15 @@ module Api
       render json: @countries
     end
 
+
     def show
-      @country = Country.find(params[:id])
-      render json: @country
+      @country = Country.find_by(id: params[:id])
+      if @country.nil?
+        render json: { result: false, message: "Couldn't find Country with 'id'." }
+      else
+        render json: @country
+      end
     end
+
   end
 end
