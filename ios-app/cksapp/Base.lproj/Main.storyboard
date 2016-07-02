@@ -8,7 +8,7 @@
         <!--Main-->
         <scene sceneID="81i-HQ-N45">
             <objects>
-                <collectionViewController id="7sU-Il-qfc" customClass="MainCollectionViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="7sU-Il-qfc" customClass="BaseCollectionViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="oYt-xy-MQO" customClass="BaseCollectionView" customModule="cksapp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,6 +173,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucj-lH-KfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1517" y="-466"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="sxa-1B-QHQ">
+            <objects>
+                <collectionViewController storyboardIdentifier="BaseCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kTS-B9-Jk4" customClass="BaseCollectionViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NQe-rM-jJi" customClass="BaseCollectionView" customModule="cksapp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Y8q-ya-bZF">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GhU-sA-Law">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="kTS-B9-Jk4" id="E96-19-gbw"/>
+                            <outlet property="delegate" destination="kTS-B9-Jk4" id="fFo-to-TpT"/>
+                        </connections>
+                    </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Main" id="rHe-Hk-y8H"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6m0-Io-Ek1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="-1370"/>
         </scene>
     </scenes>
 </document>

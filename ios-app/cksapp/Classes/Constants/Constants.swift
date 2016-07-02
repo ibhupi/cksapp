@@ -28,6 +28,9 @@ let DateFormatter : NSDateFormatter = {
     return dateFormatter
 }()
 
+
+let SecondsInADay : Double = 86400
+
 typealias CompletionBlockItemsCount = (count: Int) -> Void
 typealias CompletionBlockItems = (items: [AnyObject]?) -> Void
 

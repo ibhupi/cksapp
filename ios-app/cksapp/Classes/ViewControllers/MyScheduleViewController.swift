@@ -24,7 +24,7 @@ class MyScheduleViewController: BaseCollectionViewController {
     }
     
     func addNewEvent() {
-        let selectEventViewController = BaseCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        let selectEventViewController = GameSelectViewController(collectionViewLayout: UICollectionViewFlowLayout())
         selectEventViewController.model = YES
         let navigationController = UINavigationController.init(rootViewController: selectEventViewController)
         self.presentViewController(navigationController, animated: YES, completion: nil)

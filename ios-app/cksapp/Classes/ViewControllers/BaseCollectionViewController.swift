@@ -14,6 +14,10 @@ class BaseCollectionViewController: UICollectionViewController {
     
     internal var model = NO
     
+//    public class func ViewContorller() -> BaseCollectionViewController {
+//        if let storyBoard =
+//    }
+    
     func setSectionManager(sectionManager: BaseSectionManager) -> Void {
         if let collectionView = self.collectionView as? BaseCollectionView {
             collectionView.delegate = collectionView

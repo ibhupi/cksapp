@@ -19,7 +19,7 @@ class MyScheduleSectionManager: BaseSectionManager {
         
         let today = NSDate()
         for i in 1..<10 {
-            datesSelected.append(today.dateByAddingTimeInterval(86400 * Double(i)))
+            datesSelected.append(today.dateByAddingTimeInterval(SecondsInADay * Double(i)))
         }
     }
     
