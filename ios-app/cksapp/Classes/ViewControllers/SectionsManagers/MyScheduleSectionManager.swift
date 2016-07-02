@@ -14,15 +14,20 @@ class MyScheduleSectionManager: BaseSectionManager {
 
     override init(title: String , collectionView: UICollectionView?) {
         super.init(title:title, collectionView : collectionView)
-        self.collectionViewEdgeInset = UIEdgeInsetsMake(20, 0, 0, 0)
+//        self.collectionViewEdgeInset = UIEdgeInsetsMake(0, 0, 0, 0)
         datesSelected.append(NSDate())
+        
+        let today = NSDate()
+        for i in 1..<10 {
+            datesSelected.append(today.dateByAddingTimeInterval(86400 * Double(i)))
+        }
     }
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {
         var items = [AnyObject]()
         
         self.datesSelected.forEach { (date) in
-            items.append(DaySchdeduleManager(title: date.localizedStringMid(), collectionView:collectionView))
+            items.append(DaySchdeduleManager(date:date, title: date.localizedStringMid(), collectionView:collectionView))
         }
         completionBlock(items: items)
     }

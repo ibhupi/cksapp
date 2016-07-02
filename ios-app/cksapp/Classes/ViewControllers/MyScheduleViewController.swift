@@ -15,6 +15,7 @@ class MyScheduleViewController: BaseCollectionViewController {
         
         // Do any additional setup after loading the view.
         if let collectionView = self.collectionView {
+            collectionView.contentInset = UIEdgeInsetsMake(20, 0, 60, 0)
             self.setSectionManager(MyScheduleSectionManager(title: LS("My Schedule"), collectionView: collectionView))
         }
     }

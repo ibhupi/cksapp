@@ -13,7 +13,7 @@ class MainViewSectionManager: BaseSectionManager {
     
     override init(title: String , collectionView: UICollectionView?) {
         super.init(title:title, collectionView : collectionView)
-        self.collectionViewEdgeInset = UIEdgeInsetsMake(20, 0, 0, 0)
+//        self.collectionViewEdgeInset = UIEdgeInsetsMake(0, 0, 0, 0)
     }
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {

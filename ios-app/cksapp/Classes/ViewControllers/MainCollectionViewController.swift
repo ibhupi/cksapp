@@ -14,6 +14,7 @@ class MainCollectionViewController: BaseCollectionViewController {
         super.viewDidLoad()
         
         if let collectionView = self.collectionView {
+            collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
             self.setSectionManager(MainViewSectionManager(title: LS("MainSectionManager"), collectionView: collectionView))
         }
         
