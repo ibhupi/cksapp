@@ -16,6 +16,42 @@
 		245D8A401D2758CE0067C04A /* cksappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A3F1D2758CE0067C04A /* cksappTests.swift */; };
 		245D8A4B1D2758CE0067C04A /* cksappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A4A1D2758CE0067C04A /* cksappUITests.swift */; };
 		245D8A5C1D275AAB0067C04A /* UIImageViewNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A5B1D275AAB0067C04A /* UIImageViewNetwork.swift */; };
+		245D8AA21D2763150067C04A /* BaseSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AA11D2763150067C04A /* BaseSectionManager.swift */; };
+		245D8AA41D2763330067C04A /* MainViewSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AA31D2763330067C04A /* MainViewSectionManager.swift */; };
+		245D8AA61D27634B0067C04A /* FeaturedGameSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AA51D27634B0067C04A /* FeaturedGameSectionManager.swift */; };
+		245D8AA81D27635E0067C04A /* AddNewGameSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AA71D27635E0067C04A /* AddNewGameSectionManager.swift */; };
+		245D8AAA1D2763750067C04A /* RestaurantSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AA91D2763750067C04A /* RestaurantSectionManager.swift */; };
+		245D8AAC1D2763870067C04A /* PlaceSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AAB1D2763870067C04A /* PlaceSectionManager.swift */; };
+		245D8AAE1D2763980067C04A /* LocalEventSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AAD1D2763980067C04A /* LocalEventSectionManager.swift */; };
+		245D8AB01D2763AD0067C04A /* ShoppingPlaceSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AAF1D2763AD0067C04A /* ShoppingPlaceSectionManager.swift */; };
+		245D8AB21D2763CA0067C04A /* ImageTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AB11D2763CA0067C04A /* ImageTitleCollectionViewCell.swift */; };
+		245D8AB41D2763DD0067C04A /* ImageTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AB31D2763DD0067C04A /* ImageTitleViewModel.swift */; };
+		245D8AB61D2763F80067C04A /* ImageTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245D8AB51D2763F80067C04A /* ImageTitleCollectionViewCell.xib */; };
+		245D8AB81D2764040067C04A /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AB71D2764040067C04A /* BaseCollectionViewCell.swift */; };
+		245D8ABA1D2764140067C04A /* ContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AB91D2764130067C04A /* ContainerCollectionViewCell.swift */; };
+		245D8ABC1D2764260067C04A /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ABB1D2764260067C04A /* BaseCollectionView.swift */; };
+		245D8ABE1D2764350067C04A /* ContainerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245D8ABD1D2764350067C04A /* ContainerCollectionViewCell.xib */; };
+		245D8AC01D2764460067C04A /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ABF1D2764460067C04A /* BaseCollectionViewController.swift */; };
+		245D8AC21D2764610067C04A /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC11D2764610067C04A /* MainCollectionViewController.swift */; };
+		245D8AC41D2764730067C04A /* MyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC31D2764730067C04A /* MyScheduleViewController.swift */; };
+		245D8AC61D27648A0067C04A /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC51D27648A0067C04A /* ColorConstants.swift */; };
+		245D8AC81D27649C0067C04A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC71D27649C0067C04A /* Constants.swift */; };
+		245D8ACA1D2764C40067C04A /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC91D2764C40067C04A /* BaseObject.swift */; };
+		245D8ACC1D2764D20067C04A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ACB1D2764D20067C04A /* Event.swift */; };
+		245D8ACE1D2764E10067C04A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ACD1D2764E10067C04A /* Location.swift */; };
+		245D8AD01D2764F70067C04A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ACF1D2764F70067C04A /* Country.swift */; };
+		245D8AD21D2765020067C04A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD11D2765020067C04A /* Player.swift */; };
+		245D8AD41D27650A0067C04A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD31D27650A0067C04A /* User.swift */; };
+		245D8AD61D2765250067C04A /* UserSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD51D2765250067C04A /* UserSchedule.swift */; };
+		245D8AD81D2765320067C04A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD71D2765320067C04A /* Photo.swift */; };
+		245D8ADA1D27655B0067C04A /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD91D27655B0067C04A /* BaseService.swift */; };
+		245D8ADC1D2765730067C04A /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADB1D2765730067C04A /* GameService.swift */; };
+		245D8ADE1D276AE00067C04A /* MyScheduleSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */; };
+		245D8AE01D276BB30067C04A /* DaySchdeduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */; };
+		245D8AE21D2772190067C04A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE11D2772190067C04A /* DateHelper.swift */; };
+		245D8AE41D2784950067C04A /* GameSelectSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */; };
+		245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */; };
+		245D8AE91D27952E0067C04A /* GameSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE81D27952E0067C04A /* GameSelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +87,42 @@
 		245D8A4A1D2758CE0067C04A /* cksappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cksappUITests.swift; sourceTree = "<group>"; };
 		245D8A4C1D2758CE0067C04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		245D8A5B1D275AAB0067C04A /* UIImageViewNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewNetwork.swift; sourceTree = "<group>"; };
+		245D8AA11D2763150067C04A /* BaseSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSectionManager.swift; sourceTree = "<group>"; };
+		245D8AA31D2763330067C04A /* MainViewSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewSectionManager.swift; sourceTree = "<group>"; };
+		245D8AA51D27634B0067C04A /* FeaturedGameSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedGameSectionManager.swift; sourceTree = "<group>"; };
+		245D8AA71D27635E0067C04A /* AddNewGameSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewGameSectionManager.swift; sourceTree = "<group>"; };
+		245D8AA91D2763750067C04A /* RestaurantSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantSectionManager.swift; sourceTree = "<group>"; };
+		245D8AAB1D2763870067C04A /* PlaceSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceSectionManager.swift; sourceTree = "<group>"; };
+		245D8AAD1D2763980067C04A /* LocalEventSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalEventSectionManager.swift; sourceTree = "<group>"; };
+		245D8AAF1D2763AD0067C04A /* ShoppingPlaceSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingPlaceSectionManager.swift; sourceTree = "<group>"; };
+		245D8AB11D2763CA0067C04A /* ImageTitleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		245D8AB31D2763DD0067C04A /* ImageTitleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleViewModel.swift; sourceTree = "<group>"; };
+		245D8AB51D2763F80067C04A /* ImageTitleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		245D8AB71D2764040067C04A /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		245D8AB91D2764130067C04A /* ContainerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerCollectionViewCell.swift; sourceTree = "<group>"; };
+		245D8ABB1D2764260067C04A /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		245D8ABD1D2764350067C04A /* ContainerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerCollectionViewCell.xib; sourceTree = "<group>"; };
+		245D8ABF1D2764460067C04A /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		245D8AC11D2764610067C04A /* MainCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		245D8AC31D2764730067C04A /* MyScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleViewController.swift; sourceTree = "<group>"; };
+		245D8AC51D27648A0067C04A /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		245D8AC71D27649C0067C04A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		245D8AC91D2764C40067C04A /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
+		245D8ACB1D2764D20067C04A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		245D8ACD1D2764E10067C04A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		245D8ACF1D2764F70067C04A /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		245D8AD11D2765020067C04A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		245D8AD31D27650A0067C04A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		245D8AD51D2765250067C04A /* UserSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSchedule.swift; sourceTree = "<group>"; };
+		245D8AD71D2765320067C04A /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		245D8AD91D27655B0067C04A /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		245D8ADB1D2765730067C04A /* GameService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleSectionManager.swift; sourceTree = "<group>"; };
+		245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySchdeduleManager.swift; sourceTree = "<group>"; };
+		245D8AE11D2772190067C04A /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectSectionManager.swift; sourceTree = "<group>"; };
+		245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewControllerHelper.swift; sourceTree = "<group>"; };
+		245D8AE81D27952E0067C04A /* GameSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +206,11 @@
 		245D8A581D275AAB0067C04A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				245D8A6E1D2762490067C04A /* ViewControllers */,
+				245D8A5D1D2762490067C04A /* API */,
+				245D8A5E1D2762490067C04A /* Constants */,
+				245D8A611D2762490067C04A /* Datamodel */,
+				245D8A6B1D2762490067C04A /* Service */,
 				245D8A591D275AAB0067C04A /* Libraries */,
 			);
 			path = Classes;
@@ -153,6 +230,109 @@
 				245D8A5B1D275AAB0067C04A /* UIImageViewNetwork.swift */,
 			);
 			path = UIImageViewNetwork;
+			sourceTree = "<group>";
+		};
+		245D8A5D1D2762490067C04A /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		245D8A5E1D2762490067C04A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AC51D27648A0067C04A /* ColorConstants.swift */,
+				245D8AC71D27649C0067C04A /* Constants.swift */,
+				245D8AE11D2772190067C04A /* DateHelper.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		245D8A611D2762490067C04A /* Datamodel */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A681D2762490067C04A /* Scrubber */,
+			);
+			path = Datamodel;
+			sourceTree = "<group>";
+		};
+		245D8A681D2762490067C04A /* Scrubber */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AC91D2764C40067C04A /* BaseObject.swift */,
+				245D8ACB1D2764D20067C04A /* Event.swift */,
+				245D8ACD1D2764E10067C04A /* Location.swift */,
+				245D8ACF1D2764F70067C04A /* Country.swift */,
+				245D8AD11D2765020067C04A /* Player.swift */,
+				245D8AD31D27650A0067C04A /* User.swift */,
+				245D8AD51D2765250067C04A /* UserSchedule.swift */,
+				245D8AD71D2765320067C04A /* Photo.swift */,
+			);
+			path = Scrubber;
+			sourceTree = "<group>";
+		};
+		245D8A6B1D2762490067C04A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AD91D27655B0067C04A /* BaseService.swift */,
+				245D8ADB1D2765730067C04A /* GameService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		245D8A6E1D2762490067C04A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A721D2762490067C04A /* SectionsManagers */,
+				245D8A7B1D2762490067C04A /* Views */,
+				245D8AE51D2785BD0067C04A /* Helpers */,
+				245D8ABF1D2764460067C04A /* BaseCollectionViewController.swift */,
+				245D8AC11D2764610067C04A /* MainCollectionViewController.swift */,
+				245D8AC31D2764730067C04A /* MyScheduleViewController.swift */,
+				245D8AE81D27952E0067C04A /* GameSelectViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		245D8A721D2762490067C04A /* SectionsManagers */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AA11D2763150067C04A /* BaseSectionManager.swift */,
+				245D8AA31D2763330067C04A /* MainViewSectionManager.swift */,
+				245D8AA51D27634B0067C04A /* FeaturedGameSectionManager.swift */,
+				245D8AA71D27635E0067C04A /* AddNewGameSectionManager.swift */,
+				245D8AA91D2763750067C04A /* RestaurantSectionManager.swift */,
+				245D8AAB1D2763870067C04A /* PlaceSectionManager.swift */,
+				245D8AAD1D2763980067C04A /* LocalEventSectionManager.swift */,
+				245D8AAF1D2763AD0067C04A /* ShoppingPlaceSectionManager.swift */,
+				245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */,
+				245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */,
+				245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */,
+			);
+			path = SectionsManagers;
+			sourceTree = "<group>";
+		};
+		245D8A7B1D2762490067C04A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AB11D2763CA0067C04A /* ImageTitleCollectionViewCell.swift */,
+				245D8AB31D2763DD0067C04A /* ImageTitleViewModel.swift */,
+				245D8AB51D2763F80067C04A /* ImageTitleCollectionViewCell.xib */,
+				245D8AB71D2764040067C04A /* BaseCollectionViewCell.swift */,
+				245D8AB91D2764130067C04A /* ContainerCollectionViewCell.swift */,
+				245D8ABD1D2764350067C04A /* ContainerCollectionViewCell.xib */,
+				245D8ABB1D2764260067C04A /* BaseCollectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		245D8AE51D2785BD0067C04A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +439,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245D8ABE1D2764350067C04A /* ContainerCollectionViewCell.xib in Resources */,
 				245D8A351D2758CE0067C04A /* LaunchScreen.storyboard in Resources */,
 				245D8A321D2758CE0067C04A /* Assets.xcassets in Resources */,
+				245D8AB61D2763F80067C04A /* ImageTitleCollectionViewCell.xib in Resources */,
 				245D8A301D2758CE0067C04A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,10 +468,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245D8AC21D2764610067C04A /* MainCollectionViewController.swift in Sources */,
+				245D8AC81D27649C0067C04A /* Constants.swift in Sources */,
 				245D8A2D1D2758CE0067C04A /* SecondViewController.swift in Sources */,
+				245D8AB21D2763CA0067C04A /* ImageTitleCollectionViewCell.swift in Sources */,
+				245D8AD01D2764F70067C04A /* Country.swift in Sources */,
+				245D8AE21D2772190067C04A /* DateHelper.swift in Sources */,
+				245D8ABA1D2764140067C04A /* ContainerCollectionViewCell.swift in Sources */,
+				245D8AA41D2763330067C04A /* MainViewSectionManager.swift in Sources */,
+				245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */,
+				245D8AB41D2763DD0067C04A /* ImageTitleViewModel.swift in Sources */,
+				245D8ACE1D2764E10067C04A /* Location.swift in Sources */,
+				245D8AA21D2763150067C04A /* BaseSectionManager.swift in Sources */,
+				245D8AE01D276BB30067C04A /* DaySchdeduleManager.swift in Sources */,
+				245D8ADE1D276AE00067C04A /* MyScheduleSectionManager.swift in Sources */,
+				245D8AB81D2764040067C04A /* BaseCollectionViewCell.swift in Sources */,
+				245D8AAA1D2763750067C04A /* RestaurantSectionManager.swift in Sources */,
+				245D8AC61D27648A0067C04A /* ColorConstants.swift in Sources */,
 				245D8A5C1D275AAB0067C04A /* UIImageViewNetwork.swift in Sources */,
+				245D8AC01D2764460067C04A /* BaseCollectionViewController.swift in Sources */,
+				245D8AC41D2764730067C04A /* MyScheduleViewController.swift in Sources */,
 				245D8A291D2758CE0067C04A /* AppDelegate.swift in Sources */,
 				245D8A2B1D2758CE0067C04A /* FirstViewController.swift in Sources */,
+				245D8ACC1D2764D20067C04A /* Event.swift in Sources */,
+				245D8AA81D27635E0067C04A /* AddNewGameSectionManager.swift in Sources */,
+				245D8AD41D27650A0067C04A /* User.swift in Sources */,
+				245D8AA61D27634B0067C04A /* FeaturedGameSectionManager.swift in Sources */,
+				245D8AD61D2765250067C04A /* UserSchedule.swift in Sources */,
+				245D8ADC1D2765730067C04A /* GameService.swift in Sources */,
+				245D8AE41D2784950067C04A /* GameSelectSectionManager.swift in Sources */,
+				245D8ACA1D2764C40067C04A /* BaseObject.swift in Sources */,
+				245D8AD81D2765320067C04A /* Photo.swift in Sources */,
+				245D8AAC1D2763870067C04A /* PlaceSectionManager.swift in Sources */,
+				245D8ADA1D27655B0067C04A /* BaseService.swift in Sources */,
+				245D8AAE1D2763980067C04A /* LocalEventSectionManager.swift in Sources */,
+				245D8AB01D2763AD0067C04A /* ShoppingPlaceSectionManager.swift in Sources */,
+				245D8AD21D2765020067C04A /* Player.swift in Sources */,
+				245D8AE91D27952E0067C04A /* GameSelectViewController.swift in Sources */,
+				245D8ABC1D2764260067C04A /* BaseCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
