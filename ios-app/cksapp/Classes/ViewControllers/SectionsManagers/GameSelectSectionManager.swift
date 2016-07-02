@@ -26,5 +26,14 @@ class GameSelectSectionManager: BaseSectionManager {
         
         return CGSizeMake(width, width)
     }
+    
+    override func collectionViewDidSelectItem(indexPath: NSIndexPath) -> Void {
+        let item = self.sections[indexPath.section][indexPath.row]
+        if let event = item as? Event {
+            event.userHasSelected = event.userHasSelected == NO
+            collectionView?.reloadItemsAtIndexPaths([indexPath])
+        }
+    }
+
 
 }

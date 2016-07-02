@@ -91,6 +91,10 @@ class BaseCollectionView: UICollectionView, UICollectionViewDataSource, UICollec
      }
      */
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.sectionManager.collectionViewDidSelectItem(indexPath)
+    }
+    
     // MARK: UICollectionViewDelegateFlowLayout
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return self.sectionManager.collectionView(sizeForItemAtIndexPath: indexPath)

@@ -13,7 +13,18 @@ class Event: BaseObject {
     var title = ""
     var photos = [Photo]()
     var detailDescription = ""
+    var date = NSDate()
     
+    
+    var userHasSelected : Bool = NO {
+        didSet {
+            if (userHasSelected == NO) {
+                GameService.sharedInstance.removeFromMySchedule(self)
+            } else {
+                GameService.sharedInstance.addToMySchedule(self)
+            }
+        }
+    }
     
     convenience init(id : String, title: String, detailDescription : String) {
         self.init()

@@ -137,5 +137,8 @@ class BaseSectionManager: NSObject {
     }
     
     
+    func collectionViewDidSelectItem(indexPath: NSIndexPath) -> Void {
+        
+    }
     
 }

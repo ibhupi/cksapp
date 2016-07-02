@@ -22,9 +22,17 @@ class DaySchdeduleManager: BaseSectionManager {
     }
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {
-        GameService.sharedInstance.featuredGames { (items) in
-            completionBlock(items: [items ?? [AnyObject]()])
+        
+        if let events = GameService.sharedInstance.userScheduleDaily[self.date.startOfDay()] {
+            completionBlock(items: [events])
+        } else {
+            completionBlock(items: nil)
         }
+        
+//        GameService.sharedInstance.userScheduleDaily[self.date.startOfDay()].forEach { (date) in
+//            items.append(DaySchdeduleManager(date:date, title: date.localizedStringMid(), collectionView:collectionView))
+//        }
+
     }
     
     override func collectionView(sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {

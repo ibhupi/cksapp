@@ -14,6 +14,8 @@ class BaseCollectionViewController: UICollectionViewController {
     
     internal var model = NO
     
+    var reloadSectionsOnViewWillAppear = YES
+    
     public class func ViewContorller() -> BaseCollectionViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         if let viewController = storyBoard.instantiateViewControllerWithIdentifier("BaseCollectionViewController") as? BaseCollectionViewController {
@@ -22,6 +24,8 @@ class BaseCollectionViewController: UICollectionViewController {
         return BaseCollectionViewController(nibName: nil, bundle: nil)
     }
     
+    var sectionManagerCurrent = BaseSectionManager(title: "", collectionView: nil)
+    
     func setSectionManager(sectionManager: BaseSectionManager) -> Void {
         if let collectionView = self.collectionView as? BaseCollectionView {
             collectionView.delegate = collectionView
@@ -29,6 +33,7 @@ class BaseCollectionViewController: UICollectionViewController {
             collectionView.sectionManager = sectionManager
         }
         self.title = sectionManager.title
+        self.sectionManagerCurrent = sectionManager
     }
     
     override func viewDidLoad() {
@@ -43,9 +48,12 @@ class BaseCollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if (reloadSectionsOnViewWillAppear) {
+            self.sectionManagerCurrent.sections.removeAll()
+            self.collectionView?.reloadData()
+        }
     }
     
     /*

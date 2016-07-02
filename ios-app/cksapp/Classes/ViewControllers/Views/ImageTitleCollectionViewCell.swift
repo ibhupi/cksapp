@@ -15,6 +15,7 @@ class ImageTitleCollectionViewCell: BaseCollectionViewCell {
     
     @IBOutlet weak var topRightLabel: UILabel!
     
+    @IBOutlet weak var selectUnselectImageView: SelectUnselectImageView!
     @IBOutlet weak var bottomLabel: UILabel!
     
     internal override class func cellID() -> String {
@@ -45,9 +46,10 @@ class ImageTitleCollectionViewCell: BaseCollectionViewCell {
         self.topLeftLabel.text = event.title
         self.bottomLabel.text = event.detailDescription
         self.backgroundColor = ColorConstants.White.color()
-        if let url = event.photos.first?.urlString {
+        if let url = event.photos.last?.urlString {
             self.imageView.setImageFromUrl(url)
         }
+        self.selectUnselectImageView.selected = event.userHasSelected
     }
     
 }

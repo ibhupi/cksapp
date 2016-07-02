@@ -14,6 +14,7 @@ class MyScheduleViewController: BaseCollectionViewController {
         super.viewDidLoad()
         let title = LS("MySchedule")
         self.title = title
+        self.reloadSectionsOnViewWillAppear = YES
         // Do any additional setup after loading the view.
         if let collectionView = self.collectionView {
             self.setSectionManager(MyScheduleSectionManager(title: title, collectionView: collectionView))
