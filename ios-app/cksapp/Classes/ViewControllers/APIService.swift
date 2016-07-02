@@ -10,11 +10,12 @@
 import UIKit
 
 private let EventListURLString = "http://114.55.119.118/api/events"
+private let LocationsListURLString = "http://114.55.119.118/api/locations"
 
 class APIService: NSObject {
     
     private class func dataFromURL(urlString: String, completionBlock: CompletionBlockData) {
-        guard let url = NSURL(string: EventListURLString) else {
+        guard let url = NSURL(string: urlString) else {
             completionBlock(data: nil)
             return
         }
@@ -80,5 +81,25 @@ class APIService: NSObject {
             completionBlock(items: events)
         }
     }
+    
+    private static var allLocations = [Location]()
+    class func LocationsAll(completionBlock: CompletionBlockDataModel) {
+        if (allLocations.count > 0) {
+            completionBlock(items: allLocations);
+            return
+        }
+        self.jsonArrayFromURL(LocationsListURLString) { (items) in
+            var locations = [Location]()
+            items?.forEach({ (item) in
+                if let location = Location.initWithDictionary(item) {
+                    locations.append(location)
+                }
+            })
+            allLocations = locations
+            completionBlock(items: locations)
+        }
+    }
+    
+    
     
 }

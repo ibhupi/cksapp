@@ -1,5 +1,5 @@
 //
-//  BaseObject.h
+//  BaseObjectObjC.h
 //  cksapp
 //
 //  Created by Bhupendra Singh on 7/2/16.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BaseObject : NSObject
+@interface BaseObjectObjC : NSObject
 
 @end

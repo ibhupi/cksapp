@@ -1,14 +1,14 @@
 //
-//  BaseObject.m
+//  BaseObjectObjC.m
 //  cksapp
 //
 //  Created by Bhupendra Singh on 7/2/16.
 //  Copyright © 2016 Bhupendra Singh. All rights reserved.
 //
 
-#import "BaseObject.h"
+#import "BaseObjectObjC.h"
 
-@implementation BaseObject
+@implementation BaseObjectObjC
 
 // IMP: Don't remove this method. This is to protect Base Object extension to prevent crash
 // when someone might remove propery from class but forget to remove from scrubber

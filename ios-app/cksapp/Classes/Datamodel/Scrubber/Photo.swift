@@ -9,7 +9,6 @@
 import UIKit
 
 class Photo: BaseObject {
-    var id = ""
     var urlString = "http://www.babybedding.com/images/fabric/silver-gray-minky-fabric_medium.jpg";
     
     convenience init(id : String, urlString : String) {

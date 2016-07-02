@@ -9,10 +9,7 @@
 import UIKit
 
 class Event: BaseObject {
-    var id = ""
-    var title = ""
     var photos = [Photo]()
-    var detailDescription = ""
     var date = NSDate()
     
     
