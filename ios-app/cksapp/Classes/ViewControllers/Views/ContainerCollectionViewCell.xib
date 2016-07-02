@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hZ0-ni-pQd" customClass="ContainerCollectionViewCell" customModule="Atithi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="198"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="j9c-Oy-iCF" customClass="BaseCollectionView" customModule="Atithi" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="35" width="385" height="162.5"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qvl-Ak-PZX">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcl-ce-MWd">
+                        <rect key="frame" x="10" y="10" width="51.5" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="xcl-ce-MWd" firstAttribute="leading" secondItem="hZ0-ni-pQd" secondAttribute="leading" constant="10" id="MGZ-kl-Ixs"/>
+                <constraint firstAttribute="bottom" secondItem="j9c-Oy-iCF" secondAttribute="bottom" id="TXK-px-fpz"/>
+                <constraint firstAttribute="trailing" secondItem="j9c-Oy-iCF" secondAttribute="trailing" id="a1O-zj-UJY"/>
+                <constraint firstItem="j9c-Oy-iCF" firstAttribute="leading" secondItem="hZ0-ni-pQd" secondAttribute="leading" id="cGK-br-mmD"/>
+                <constraint firstItem="j9c-Oy-iCF" firstAttribute="top" secondItem="xcl-ce-MWd" secondAttribute="bottom" id="ibA-KT-DOT"/>
+                <constraint firstItem="xcl-ce-MWd" firstAttribute="top" secondItem="hZ0-ni-pQd" secondAttribute="top" constant="10" id="n2c-q1-d7t"/>
+            </constraints>
+            <size key="customSize" width="385" height="198"/>
+            <connections>
+                <outlet property="collectionView" destination="j9c-Oy-iCF" id="ncL-Fk-t7T"/>
+                <outlet property="titleLabel" destination="xcl-ce-MWd" id="ZdB-IV-pUe"/>
+            </connections>
+            <point key="canvasLocation" x="296.5" y="209"/>
+        </collectionViewCell>
+    </objects>
+</document>

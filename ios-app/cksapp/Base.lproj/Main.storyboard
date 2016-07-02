@@ -8,8 +8,8 @@
         <!--Item-->
         <scene sceneID="81i-HQ-N45">
             <objects>
-                <collectionViewController id="7sU-Il-qfc" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="oYt-xy-MQO">
+                <collectionViewController id="7sU-Il-qfc" customClass="MainCollectionViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="oYt-xy-MQO" customClass="BaseCollectionView" customModule="cksapp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lf2-gp-7DJ">

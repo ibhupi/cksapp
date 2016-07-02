@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pHH-5X-v3e" customClass="ImageTitleCollectionViewCell" customModule="Atithi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="269" height="184"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="269" height="184"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jL6-LO-tVn">
+                        <rect key="frame" x="0.0" y="0.0" width="269" height="184"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHQ-Cx-NwK">
+                        <rect key="frame" x="8" y="8" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmF-u9-PIx">
+                        <rect key="frame" x="219" y="8" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYU-3H-kAy">
+                        <rect key="frame" x="8" y="176" width="253" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YmF-u9-PIx" secondAttribute="trailing" constant="8" id="0G2-9o-Wcg"/>
+                <constraint firstItem="jL6-LO-tVn" firstAttribute="top" secondItem="pHH-5X-v3e" secondAttribute="top" id="Bzn-fN-crH"/>
+                <constraint firstAttribute="trailing" secondItem="NYU-3H-kAy" secondAttribute="trailing" constant="8" id="Dwr-Gp-leq"/>
+                <constraint firstItem="NYU-3H-kAy" firstAttribute="leading" secondItem="pHH-5X-v3e" secondAttribute="leading" constant="8" id="M1e-uL-li5"/>
+                <constraint firstAttribute="bottom" secondItem="jL6-LO-tVn" secondAttribute="bottom" id="M2B-LS-3Qa"/>
+                <constraint firstAttribute="bottom" secondItem="NYU-3H-kAy" secondAttribute="bottom" constant="8" id="Plm-ds-7g9"/>
+                <constraint firstItem="cHQ-Cx-NwK" firstAttribute="top" secondItem="pHH-5X-v3e" secondAttribute="top" constant="8" id="X8C-x2-jpG"/>
+                <constraint firstItem="jL6-LO-tVn" firstAttribute="leading" secondItem="pHH-5X-v3e" secondAttribute="leading" id="l5O-xZ-I1V"/>
+                <constraint firstAttribute="trailing" secondItem="jL6-LO-tVn" secondAttribute="trailing" id="mKS-BM-enN"/>
+                <constraint firstItem="YmF-u9-PIx" firstAttribute="top" secondItem="pHH-5X-v3e" secondAttribute="top" constant="8" id="uSc-ok-7fY"/>
+                <constraint firstItem="cHQ-Cx-NwK" firstAttribute="leading" secondItem="pHH-5X-v3e" secondAttribute="leading" constant="8" id="y3k-5l-S3Q"/>
+            </constraints>
+            <size key="customSize" width="269" height="184"/>
+            <connections>
+                <outlet property="bottomLabel" destination="NYU-3H-kAy" id="Fqk-un-aE0"/>
+                <outlet property="imageView" destination="jL6-LO-tVn" id="7c5-ef-TDn"/>
+                <outlet property="topLeftLabel" destination="cHQ-Cx-NwK" id="b3M-kW-9jW"/>
+                <outlet property="topRightLabel" destination="YmF-u9-PIx" id="uYS-if-Gba"/>
+            </connections>
+            <point key="canvasLocation" x="266.5" y="143"/>
+        </collectionViewCell>
+    </objects>
+</document>
