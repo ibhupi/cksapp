@@ -10,7 +10,7 @@ import UIKit
 
 import GoogleMaps
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, GMSMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,8 +65,21 @@ class MapViewController: UIViewController {
         
         
     }
+    
+    // MARK: - Private Function
+    
+    func reloadRoute() {
+        
+    }
 
     
+    
+    // MARK: - GMSMapViewDelegate
+    
+    func mapViewDidFinishTileRendering(mapView: GMSMapView) {
+        self.reloadRoute()
+        
+    }
 
     /*
     // MARK: - Navigation
