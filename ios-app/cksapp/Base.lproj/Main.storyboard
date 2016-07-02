@@ -99,7 +99,7 @@
         <!--Tips-->
         <scene sceneID="CRK-6p-Hpe">
             <objects>
-                <viewController id="l7Z-4T-PJM" customClass="BaseWebViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="l7Z-4T-PJM" customClass="TipsWebViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QQc-pQ-wKK"/>
                         <viewControllerLayoutGuide type="bottom" id="faL-Jo-l5M"/>
@@ -133,7 +133,7 @@
         <!--Services-->
         <scene sceneID="Rti-tK-s2L">
             <objects>
-                <viewController id="Nwj-2E-XbK" customClass="BaseWebViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nwj-2E-XbK" customClass="TODOWebViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h3U-Ny-OqE"/>
                         <viewControllerLayoutGuide type="bottom" id="4pF-ya-nzT"/>
