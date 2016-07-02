@@ -1,13 +1,13 @@
 //
-//  BaseObject.swift
+//  BaseObject.h
 //  cksapp
 //
 //  Created by Bhupendra Singh on 7/2/16.
 //  Copyright © 2016 Bhupendra Singh. All rights reserved.
 //
 
-import UIKit
+#import <Foundation/Foundation.h>
 
-class BaseObject: NSObject {
+@interface BaseObject : NSObject
 
-}
+@end

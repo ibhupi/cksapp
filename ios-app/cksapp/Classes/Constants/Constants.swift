@@ -34,6 +34,10 @@ let SecondsInADay : Double = 86400
 
 typealias CompletionBlockItemsCount = (count: Int) -> Void
 typealias CompletionBlockItems = (items: [AnyObject]?) -> Void
+typealias CompletionBlockItem = (item: AnyObject?) -> Void
+typealias CompletionBlockItemDictionary = (item: [String: AnyObject]?) -> Void
+typealias CompletionBlockData = (data: NSData?) -> Void
+typealias CompletionBlockDataModel = (items: [BaseObject]?) -> Void
 
 let GoogleMapAPIKEY = "AIzaSyDskmF9XuoEgif4OdVY2pujdxkvogO8HdE"
 
