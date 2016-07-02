@@ -40,6 +40,7 @@ class GameService: BaseService {
         self.userEvents[event.id] = event
         if var events = self.userScheduleDaily[event.date.startOfDay()] {
             events.append(event)
+            self.userScheduleDaily[event.date.startOfDay()] = events
         } else {
             var events = [Event]()
             events.append(event)
@@ -50,7 +51,13 @@ class GameService: BaseService {
     func  removeFromMySchedule(event : Event) {
         self.userEvents.removeValueForKey(event.id)
         let eventDay = event.date.startOfDay()
-        self.userScheduleDaily.removeValueForKey(eventDay)
+        if var events = self.userScheduleDaily[eventDay] {
+            if (events.count == 1) {
+                self.userScheduleDaily[eventDay]?.removeAll()
+            } else if let index = events.indexOf(event) {
+                events.removeAtIndex(index)
+            }
+        }
     }
     
     private func dummyGameEvents() -> [Event] {

@@ -23,45 +23,22 @@ class MyScheduleSectionManager: BaseSectionManager {
 //        }
     }
     
-//    override func numberOfSections() -> Int {
-//        let count = self.sections.count
-//        if (self.sections.count == 0) {
-//            self.loadSections(0, completionBlock: { (items) in
-//                self.sections.removeAll()
-//                if let items = items  {
-//                    for i in 0..<items.count {
-//                        // if itemsArray as not casted as array then array of items is added a single objects of array
-//                        if let itemsArray = items[i] as? [AnyObject] {
-//                            self.sections.append(itemsArray)
-//                        } else {
-//                            self.sections.append([items[i]])
-//                        }
-//                    }
-//                }
-//                if count != self.sections.count {
-//                    self.collectionView?.reloadData()
-//                }
-//            })
-//        }
-//        return self.sections.count
-//    }
-//    
-//    override func numberOfRowsInSection(section: Int) -> Int {
-//        let count = self.sections.count
-//        if self.sections[section].count == 0 {
-//            self.loadDataForSection(section, completionBlock: { (items) in
-//                self.sections[section].removeAll()
-//                items?.forEach({ (item) in
-//                    self.sections[section].append(item)
-//                })
-//                if count != self.sections[section].count {
-//                    self.collectionView?.reloadSections(NSIndexSet(index: section))
-//                }
-//            })
-//        }
-//        
-//        return self.sections[section].count
-//    }
+
+    override func numberOfSections() -> Int {
+        self.sections.removeAll()
+        GameService.sharedInstance.userScheduleDaily.keys.forEach { (date) in
+            
+            if let items = GameService.sharedInstance.userScheduleDaily[date.startOfDay()] where items.count > 0 {
+                self.sections.append([DaySchdeduleManager(date:date, title: date.localizedStringMid(), collectionView:collectionView)])
+            }
+        }
+
+        return self.sections.count
+    }
+    
+    override func numberOfRowsInSection(section: Int) -> Int {
+        return self.sections[section].count
+    }
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {
         var items = [AnyObject]()

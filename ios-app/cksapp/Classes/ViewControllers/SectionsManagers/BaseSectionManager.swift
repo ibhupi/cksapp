@@ -81,11 +81,11 @@ class BaseSectionManager: NSObject {
     }
     
     func loadSections(offset: Int, completionBlock: CompletionBlockItems) -> Void {
-        completionBlock(items: nil)
+//        completionBlock(items: nil)
     }
     
     func loadDataForSection(index: Int, completionBlock: CompletionBlockItems) -> Void {
-        completionBlock(items: nil)
+//        completionBlock(items: nil)
     }
     
     func cellForRowAtIndexPath(indexPath : NSIndexPath) -> UICollectionViewCell {
