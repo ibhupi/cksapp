@@ -51,6 +51,9 @@
 		245D8AE21D2772190067C04A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE11D2772190067C04A /* DateHelper.swift */; };
 		245D8AE41D2784950067C04A /* GameSelectSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */; };
 		245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */; };
+		24C9FF911D27A3A900ED358D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF901D27A3A900ED358D /* MapViewController.swift */; };
+		24C9FF931D27AA4B00ED358D /* MapPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */; };
+		32AAB3C0CCF3201CADD48095 /* Pods_cksapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4E25E2A22521B37E30451E /* Pods_cksapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2035B64DBEBB81AABA65B16B /* Pods-cksapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.release.xcconfig"; sourceTree = "<group>"; };
 		245D8A251D2758CE0067C04A /* cksapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cksapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		245D8A281D2758CE0067C04A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		245D8A2A1D2758CE0067C04A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +125,10 @@
 		245D8AE11D2772190067C04A /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectSectionManager.swift; sourceTree = "<group>"; };
 		245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewControllerHelper.swift; sourceTree = "<group>"; };
+		24C9FF901D27A3A900ED358D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPlacesViewController.swift; sourceTree = "<group>"; };
+		9A4E25E2A22521B37E30451E /* Pods_cksapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8816E5FF60B0A374C3DD619 /* Pods-cksapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32AAB3C0CCF3201CADD48095 /* Pods_cksapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +164,8 @@
 				245D8A3E1D2758CE0067C04A /* cksappTests */,
 				245D8A491D2758CE0067C04A /* cksappUITests */,
 				245D8A261D2758CE0067C04A /* Products */,
+				C819AD5F279716EFD8C34CCA /* Pods */,
+				D24DB7B71D663597EFF100C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,6 +299,8 @@
 				245D8ABF1D2764460067C04A /* BaseCollectionViewController.swift */,
 				245D8AC11D2764610067C04A /* MainCollectionViewController.swift */,
 				245D8AC31D2764730067C04A /* MyScheduleViewController.swift */,
+				24C9FF901D27A3A900ED358D /* MapViewController.swift */,
+				24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -332,6 +345,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		C819AD5F279716EFD8C34CCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8816E5FF60B0A374C3DD619 /* Pods-cksapp.debug.xcconfig */,
+				2035B64DBEBB81AABA65B16B /* Pods-cksapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D24DB7B71D663597EFF100C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A4E25E2A22521B37E30451E /* Pods_cksapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,9 +369,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 245D8A4F1D2758CE0067C04A /* Build configuration list for PBXNativeTarget "cksapp" */;
 			buildPhases = (
+				B5E79ADA448876830EC097E7 /* Check Pods Manifest.lock */,
 				245D8A211D2758CE0067C04A /* Sources */,
 				245D8A221D2758CE0067C04A /* Frameworks */,
 				245D8A231D2758CE0067C04A /* Resources */,
+				B9F13F72425E80584587DE7C /* Embed Pods Frameworks */,
+				B168FA6E929E39A9CF3FA7F9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -460,11 +493,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B168FA6E929E39A9CF3FA7F9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cksapp/Pods-cksapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5E79ADA448876830EC097E7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9F13F72425E80584587DE7C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cksapp/Pods-cksapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		245D8A211D2758CE0067C04A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C9FF931D27AA4B00ED358D /* MapPlacesViewController.swift in Sources */,
 				245D8AC21D2764610067C04A /* MainCollectionViewController.swift in Sources */,
 				245D8AC81D27649C0067C04A /* Constants.swift in Sources */,
 				245D8A2D1D2758CE0067C04A /* SecondViewController.swift in Sources */,
@@ -472,6 +554,7 @@
 				245D8AD01D2764F70067C04A /* Country.swift in Sources */,
 				245D8AE21D2772190067C04A /* DateHelper.swift in Sources */,
 				245D8ABA1D2764140067C04A /* ContainerCollectionViewCell.swift in Sources */,
+				24C9FF911D27A3A900ED358D /* MapViewController.swift in Sources */,
 				245D8AA41D2763330067C04A /* MainViewSectionManager.swift in Sources */,
 				245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */,
 				245D8AB41D2763DD0067C04A /* ImageTitleViewModel.swift in Sources */,
@@ -643,6 +726,7 @@
 		};
 		245D8A501D2758CE0067C04A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8816E5FF60B0A374C3DD619 /* Pods-cksapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cksapp/Info.plist;
@@ -654,6 +738,7 @@
 		};
 		245D8A511D2758CE0067C04A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2035B64DBEBB81AABA65B16B /* Pods-cksapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cksapp/Info.plist;

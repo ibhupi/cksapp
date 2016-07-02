@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 //typealias CompletionBlock = (NSString?) -> Void
 //typealias CompletionBlock = (result: NSData?, error: NSError?) -> Void
@@ -33,6 +34,10 @@ let SecondsInADay : Double = 86400
 
 typealias CompletionBlockItemsCount = (count: Int) -> Void
 typealias CompletionBlockItems = (items: [AnyObject]?) -> Void
+
+let GoogleMapAPIKEY = "AIzaSyDskmF9XuoEgif4OdVY2pujdxkvogO8HdE"
+
+let TokyoTowerCoordinate = CLLocationCoordinate2DMake(35.6585805,139.7454329)
 
 func LS(k : String!) -> String {
     var s:String! = NSBundle.mainBundle().localizedStringForKey(k, value: "", table: nil)

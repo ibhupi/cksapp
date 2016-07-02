@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="2329" y="-466"/>
         </scene>
-        <!--Map-->
+        <!--Map View Controller-->
         <scene sceneID="fvg-JR-JIM">
             <objects>
-                <viewController id="oc6-Sl-lpk" sceneMemberID="viewController">
+                <viewController id="oc6-Sl-lpk" customClass="MapViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fxv-rE-qgr"/>
                         <viewControllerLayoutGuide type="bottom" id="GKt-7d-gbb"/>
@@ -89,11 +89,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="voX-4V-02T"/>
+                    <navigationItem key="navigationItem" id="NX2-zA-TSD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LM5-QZ-PYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1493" y="414"/>
+            <point key="canvasLocation" x="2305" y="414"/>
         </scene>
         <!--Services-->
         <scene sceneID="Rti-tK-s2L">
@@ -146,7 +146,7 @@
                     <connections>
                         <segue destination="SRs-r9-bl5" kind="relationship" relationship="viewControllers" id="H3U-tc-orN"/>
                         <segue destination="7sU-Il-qfc" kind="relationship" relationship="viewControllers" id="rBy-In-bJd"/>
-                        <segue destination="oc6-Sl-lpk" kind="relationship" relationship="viewControllers" id="GMb-dT-JbI"/>
+                        <segue destination="BGX-DI-rGz" kind="relationship" relationship="viewControllers" id="GMb-dT-JbI"/>
                         <segue destination="Nwj-2E-XbK" kind="relationship" relationship="viewControllers" id="fHQ-1m-zd3"/>
                         <segue destination="0hs-4F-8LV" kind="relationship" relationship="viewControllers" id="LU0-gn-0Jt"/>
                     </connections>
@@ -209,6 +209,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6m0-Io-Ek1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1517" y="-1370"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="XK5-e7-KjG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BGX-DI-rGz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" id="voX-4V-02T"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JTV-Hc-Rqf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oc6-Sl-lpk" kind="relationship" relationship="rootViewController" id="V1I-n3-ahk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhw-ND-vd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="414"/>
         </scene>
     </scenes>
 </document>
