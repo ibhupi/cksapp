@@ -8,7 +8,7 @@
         <!--Main-->
         <scene sceneID="81i-HQ-N45">
             <objects>
-                <collectionViewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="7sU-Il-qfc" customClass="BaseCollectionViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="7sU-Il-qfc" customClass="MainCollectionViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="oYt-xy-MQO" customClass="BaseCollectionView" customModule="cksapp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
