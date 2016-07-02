@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "events", force: :cascade do |t|
     t.string   "title",           limit: 225
-    t.string   "description",     limit: 225,   default: ""
+    t.string   "description",     limit: 225
     t.datetime "startTime"
     t.datetime "endTime"
     t.integer  "teamCount",       limit: 4
@@ -52,6 +52,19 @@ ActiveRecord::Schema.define(version: 0) do
     t.string  "gamesList", limit: 255
     t.integer "country",   limit: 4
     t.binary  "photo",     limit: 65535
+  end
+
+  create_table "user_schedules", force: :cascade do |t|
+    t.integer "userID",   limit: 4
+    t.integer "like",     limit: 4
+    t.boolean "canShare"
+    t.string  "detail",   limit: 255
+    t.date    "date"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name",  limit: 255
+    t.binary "photo", limit: 65535
   end
 
 end
