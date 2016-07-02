@@ -25,7 +25,7 @@ enum ConstantCornerRadius : CGFloat {
 
 let DateFormatter : NSDateFormatter = {
     let dateFormatter = NSDateFormatter()
-    
+    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     return dateFormatter
 }()
 

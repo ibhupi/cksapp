@@ -63,9 +63,13 @@ class Event: BaseObject {
                 return items
             }
             return nil
-        }
-        if (key == "id") {
+        } else if (key == "id") {
             return super.scrubForKey(key, value: value)
+        } else if (key == "startTime") {
+            if let dateString = value as? String, let date = DateFormatter.dateFromString(dateString) {
+                self.date = date
+            }
+            return nil
         }
         return value
     }
