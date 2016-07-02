@@ -7,7 +7,7 @@ module Api
     end
 
     def show
-      @location = location.find(params[:id])
+      @location = Location.find(params[:id])
       render json: @location
     end
   end
