@@ -12,8 +12,12 @@ class GameService: BaseService {
     
     static let sharedInstance = GameService()
     
-    func featuredGames(completionBlock:CompletionBlockItems) -> Void {
+    func featuredGames(completionBlock:CompletionBlockDataModel) -> Void {
         completionBlock(items: dummyGameEvents())
+    }
+    
+    func AllGames(completionBlock:CompletionBlockDataModel) -> Void {
+        APIService.GamesAll(completionBlock)
     }
     
     private func dummyGameEvents() -> [Event] {

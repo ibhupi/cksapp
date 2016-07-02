@@ -9,7 +9,7 @@
 import UIKit
 
 enum ColorConstants {
-    case Base, Black, Background, Green, Clear
+    case Base, Black, White, Background, Green, Clear
     
     func color() -> UIColor {
         switch self {
@@ -17,6 +17,8 @@ enum ColorConstants {
             return UIColor.redColor()
         case .Black:
             return UIColor.blackColor()
+        case .White:
+            return UIColor.whiteColor()
         case .Background:
             return UIColor.whiteColor()
         case .Green:

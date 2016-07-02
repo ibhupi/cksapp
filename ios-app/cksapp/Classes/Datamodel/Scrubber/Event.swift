@@ -31,4 +31,32 @@ class Event: BaseObject {
         
         return event
     }
+    
+    override func scrubbedObject(object: AnyObject?) -> AnyObject? {
+        if let data = object as? [String: AnyObject] {
+            return EventScrubber.scrubObjectFromData(data)
+        }
+        return super.scrubbedObject(object)
+    }
+    
+    override func scrubForKey(key: String, value: AnyObject) -> AnyObject? {
+        if key == "photos" {
+            if let rawPhotosString = value as? String {
+                let rawItems = rawPhotosString.componentsSeparatedByString(",")
+                var items = [Photo]()
+                for item in rawItems {
+                    if let photo = Photo.initPhoto(item) {
+                        items.append(photo)
+                    }
+                }
+                return items
+            }
+            return nil
+        }
+        if (key == "id") {
+            return super.scrubForKey(key, value: value)
+        }
+        return value
+    }
+
 }

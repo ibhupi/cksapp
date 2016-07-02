@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241449B51D27D99C002974F8 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 241449B41D27D99C002974F8 /* BaseObject.m */; };
+		241449B71D27DA06002974F8 /* BaseObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241449B61D27DA06002974F8 /* BaseObjectHelper.swift */; };
+		241449BA1D27DB35002974F8 /* BaseScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241449B91D27DB35002974F8 /* BaseScrubber.swift */; };
+		241449BC1D27DB87002974F8 /* EventScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241449BB1D27DB87002974F8 /* EventScrubber.swift */; };
 		245D8A291D2758CE0067C04A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A281D2758CE0067C04A /* AppDelegate.swift */; };
 		245D8A2B1D2758CE0067C04A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A2A1D2758CE0067C04A /* FirstViewController.swift */; };
 		245D8A2D1D2758CE0067C04A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A2C1D2758CE0067C04A /* SecondViewController.swift */; };
@@ -36,7 +40,6 @@
 		245D8AC41D2764730067C04A /* MyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC31D2764730067C04A /* MyScheduleViewController.swift */; };
 		245D8AC61D27648A0067C04A /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC51D27648A0067C04A /* ColorConstants.swift */; };
 		245D8AC81D27649C0067C04A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC71D27649C0067C04A /* Constants.swift */; };
-		245D8ACA1D2764C40067C04A /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC91D2764C40067C04A /* BaseObject.swift */; };
 		245D8ACC1D2764D20067C04A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ACB1D2764D20067C04A /* Event.swift */; };
 		245D8ACE1D2764E10067C04A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ACD1D2764E10067C04A /* Location.swift */; };
 		245D8AD01D2764F70067C04A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ACF1D2764F70067C04A /* Country.swift */; };
@@ -53,6 +56,9 @@
 		245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */; };
 		24C9FF911D27A3A900ED358D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF901D27A3A900ED358D /* MapViewController.swift */; };
 		24C9FF931D27AA4B00ED358D /* MapPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */; };
+		24C9FF951D27C41800ED358D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF941D27C41800ED358D /* APIService.swift */; };
+		24C9FF971D27C5D000ED358D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9FF961D27C5D000ED358D /* Foundation.framework */; };
+		24C9FF991D27C62800ED358D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9FF981D27C62800ED358D /* CoreFoundation.framework */; };
 		32AAB3C0CCF3201CADD48095 /* Pods_cksapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4E25E2A22521B37E30451E /* Pods_cksapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +81,12 @@
 
 /* Begin PBXFileReference section */
 		2035B64DBEBB81AABA65B16B /* Pods-cksapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.release.xcconfig"; sourceTree = "<group>"; };
+		241449B21D27D99C002974F8 /* cksapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cksapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		241449B31D27D99C002974F8 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
+		241449B41D27D99C002974F8 /* BaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
+		241449B61D27DA06002974F8 /* BaseObjectHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObjectHelper.swift; sourceTree = "<group>"; };
+		241449B91D27DB35002974F8 /* BaseScrubber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScrubber.swift; sourceTree = "<group>"; };
+		241449BB1D27DB87002974F8 /* EventScrubber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScrubber.swift; sourceTree = "<group>"; };
 		245D8A251D2758CE0067C04A /* cksapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cksapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		245D8A281D2758CE0067C04A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		245D8A2A1D2758CE0067C04A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +122,6 @@
 		245D8AC31D2764730067C04A /* MyScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleViewController.swift; sourceTree = "<group>"; };
 		245D8AC51D27648A0067C04A /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		245D8AC71D27649C0067C04A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		245D8AC91D2764C40067C04A /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
 		245D8ACB1D2764D20067C04A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		245D8ACD1D2764E10067C04A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		245D8ACF1D2764F70067C04A /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -127,6 +138,9 @@
 		245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewControllerHelper.swift; sourceTree = "<group>"; };
 		24C9FF901D27A3A900ED358D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPlacesViewController.swift; sourceTree = "<group>"; };
+		24C9FF941D27C41800ED358D /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = cksapp/Classes/ViewControllers/APIService.swift; sourceTree = SOURCE_ROOT; };
+		24C9FF961D27C5D000ED358D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24C9FF981D27C62800ED358D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9A4E25E2A22521B37E30451E /* Pods_cksapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8816E5FF60B0A374C3DD619 /* Pods-cksapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +150,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C9FF991D27C62800ED358D /* CoreFoundation.framework in Frameworks */,
+				24C9FF971D27C5D000ED358D /* Foundation.framework in Frameworks */,
 				32AAB3C0CCF3201CADD48095 /* Pods_cksapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +173,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		241449B81D27DAC1002974F8 /* ObjectScrubber */ = {
+			isa = PBXGroup;
+			children = (
+				241449B91D27DB35002974F8 /* BaseScrubber.swift */,
+				241449BB1D27DB87002974F8 /* EventScrubber.swift */,
+			);
+			path = ObjectScrubber;
+			sourceTree = "<group>";
+		};
 		245D8A1C1D2758CE0067C04A = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +269,7 @@
 		245D8A5D1D2762490067C04A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				24C9FF941D27C41800ED358D /* APIService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -269,7 +295,10 @@
 		245D8A681D2762490067C04A /* Scrubber */ = {
 			isa = PBXGroup;
 			children = (
-				245D8AC91D2764C40067C04A /* BaseObject.swift */,
+				241449B81D27DAC1002974F8 /* ObjectScrubber */,
+				241449B31D27D99C002974F8 /* BaseObject.h */,
+				241449B41D27D99C002974F8 /* BaseObject.m */,
+				241449B61D27DA06002974F8 /* BaseObjectHelper.swift */,
 				245D8ACB1D2764D20067C04A /* Event.swift */,
 				245D8ACD1D2764E10067C04A /* Location.swift */,
 				245D8ACF1D2764F70067C04A /* Country.swift */,
@@ -277,6 +306,7 @@
 				245D8AD31D27650A0067C04A /* User.swift */,
 				245D8AD51D2765250067C04A /* UserSchedule.swift */,
 				245D8AD71D2765320067C04A /* Photo.swift */,
+				241449B21D27D99C002974F8 /* cksapp-Bridging-Header.h */,
 			);
 			path = Scrubber;
 			sourceTree = "<group>";
@@ -357,6 +387,8 @@
 		D24DB7B71D663597EFF100C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24C9FF981D27C62800ED358D /* CoreFoundation.framework */,
+				24C9FF961D27C5D000ED358D /* Foundation.framework */,
 				9A4E25E2A22521B37E30451E /* Pods_cksapp.framework */,
 			);
 			name = Frameworks;
@@ -552,6 +584,7 @@
 				245D8A2D1D2758CE0067C04A /* SecondViewController.swift in Sources */,
 				245D8AB21D2763CA0067C04A /* ImageTitleCollectionViewCell.swift in Sources */,
 				245D8AD01D2764F70067C04A /* Country.swift in Sources */,
+				241449BA1D27DB35002974F8 /* BaseScrubber.swift in Sources */,
 				245D8AE21D2772190067C04A /* DateHelper.swift in Sources */,
 				245D8ABA1D2764140067C04A /* ContainerCollectionViewCell.swift in Sources */,
 				24C9FF911D27A3A900ED358D /* MapViewController.swift in Sources */,
@@ -563,8 +596,10 @@
 				245D8AE01D276BB30067C04A /* DaySchdeduleManager.swift in Sources */,
 				245D8ADE1D276AE00067C04A /* MyScheduleSectionManager.swift in Sources */,
 				245D8AB81D2764040067C04A /* BaseCollectionViewCell.swift in Sources */,
+				241449B71D27DA06002974F8 /* BaseObjectHelper.swift in Sources */,
 				245D8AAA1D2763750067C04A /* RestaurantSectionManager.swift in Sources */,
 				245D8AC61D27648A0067C04A /* ColorConstants.swift in Sources */,
+				241449B51D27D99C002974F8 /* BaseObject.m in Sources */,
 				245D8A5C1D275AAB0067C04A /* UIImageViewNetwork.swift in Sources */,
 				245D8AC01D2764460067C04A /* BaseCollectionViewController.swift in Sources */,
 				245D8AC41D2764730067C04A /* MyScheduleViewController.swift in Sources */,
@@ -575,11 +610,12 @@
 				245D8AD41D27650A0067C04A /* User.swift in Sources */,
 				245D8AA61D27634B0067C04A /* FeaturedGameSectionManager.swift in Sources */,
 				245D8AD61D2765250067C04A /* UserSchedule.swift in Sources */,
+				24C9FF951D27C41800ED358D /* APIService.swift in Sources */,
 				245D8ADC1D2765730067C04A /* GameService.swift in Sources */,
 				245D8AE41D2784950067C04A /* GameSelectSectionManager.swift in Sources */,
-				245D8ACA1D2764C40067C04A /* BaseObject.swift in Sources */,
 				245D8AD81D2765320067C04A /* Photo.swift in Sources */,
 				245D8AAC1D2763870067C04A /* PlaceSectionManager.swift in Sources */,
+				241449BC1D27DB87002974F8 /* EventScrubber.swift in Sources */,
 				245D8ADA1D27655B0067C04A /* BaseService.swift in Sources */,
 				245D8AAE1D2763980067C04A /* LocalEventSectionManager.swift in Sources */,
 				245D8AB01D2763AD0067C04A /* ShoppingPlaceSectionManager.swift in Sources */,
@@ -729,10 +765,13 @@
 			baseConfigurationReference = B8816E5FF60B0A374C3DD619 /* Pods-cksapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = cksapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bhupi.cksapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cksapp/Classes/Datamodel/Scrubber/cksapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -741,10 +780,12 @@
 			baseConfigurationReference = 2035B64DBEBB81AABA65B16B /* Pods-cksapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = cksapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bhupi.cksapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cksapp/Classes/Datamodel/Scrubber/cksapp-Bridging-Header.h";
 			};
 			name = Release;
 		};

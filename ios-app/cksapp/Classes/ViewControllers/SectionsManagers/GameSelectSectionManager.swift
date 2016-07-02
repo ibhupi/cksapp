@@ -12,21 +12,8 @@ class GameSelectSectionManager: BaseSectionManager {
     var sectionsTitle = [String]()
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {
-        var gamesInMonths = [[Event]]()
-        
-        GameService.sharedInstance.featuredGames { (items) in
-            for i in 0..<100  {
-                let date = NSDate().dateByAddingTimeInterval(SecondsInADay * Double(i))
-                var events = [Event]()
-                items?.forEach({ (item) in
-                    if let item = item as? Event {
-                        events.append(item)
-                    }
-                })
-                gamesInMonths.append(events)
-                self.sectionsTitle.append(date.localizedStringMid())
-            }
-            completionBlock(items: gamesInMonths)
+        GameService.sharedInstance.AllGames { (items) in
+            completionBlock(items: [items ?? [Event]()])
         }
     }
     

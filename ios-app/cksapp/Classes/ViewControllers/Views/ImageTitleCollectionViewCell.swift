@@ -42,8 +42,8 @@ class ImageTitleCollectionViewCell: BaseCollectionViewCell {
         self.topRightLabel.text = nil
         self.topLeftLabel.text = event.title
         self.bottomLabel.text = event.detailDescription
-        self.backgroundColor = ColorConstants.Green.color()
-        if let url = event.photos.first?.largeURL {
+        self.backgroundColor = ColorConstants.White.color()
+        if let url = event.photos.first?.urlString {
             self.imageView.setImageFromUrl(url)
         }
     }

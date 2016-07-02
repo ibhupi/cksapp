@@ -10,20 +10,20 @@ import UIKit
 
 class Photo: BaseObject {
     var id = ""
-    var smallURL  = ""
-    var mediumURL = ""
-    var largeURL = ""
+    var urlString = "http://www.babybedding.com/images/fabric/silver-gray-minky-fabric_medium.jpg";
     
-    convenience init(id : String, smallURL : String, mediumURL : String, largeURL : String) {
+    convenience init(id : String, urlString : String) {
         self.init()
         self.id = id
-        self.smallURL = smallURL
-        self.mediumURL = mediumURL
-        self.largeURL = largeURL
+        self.urlString = urlString
     }
     
     class func dummyEventPhoto() -> Photo {
-        return Photo(id: "1232132", smallURL: "http://www.kato-inuneko.com/images/slider/cat02.jpg", mediumURL: "http://www.kato-inuneko.com/images/slider/cat02.jpg", largeURL: "http://www.kato-inuneko.com/images/slider/cat02.jpg")
+        return Photo(id: "1232132", urlString: "http://www.kato-inuneko.com/images/slider/cat02.jpg")
+    }
+    
+    class func initPhoto(string: String) -> Photo? {
+        return Photo(id: string, urlString: string)
     }
     
 }
