@@ -5,7 +5,11 @@ Rails.application.routes.draw do
     resources :players, only:[:index, :show]
     resources :events, only:[:index, :show]
     resources :users, only:[:index, :show]
-    resources :user_schedules, only:[:index, :show, :create, :destroy]
+    resources :user_schedules, only:[:index, :show, :create, :destroy] do
+      collection do
+        put 'like/:id' => 'user_schedules#like'
+      end
+    end
 
     get 'googleplace' => 'googleplaceapi#hello'
   end
