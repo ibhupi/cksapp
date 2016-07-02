@@ -4,12 +4,12 @@ module Api
     def like
       @user_schedule = UserSchedule.find_by(id: like_params[:id])
       if @user_schedule.nil?
-        render json: "Couldn't find UserSchedule with 'id'"
+        render json: { result: false, message: "Couldn't find UserSchedule with 'id'." }
       else
         if @user_schedule.increment!(:like)
-          render json: "like is success!"
+          render json: { result: true, message: "Like increment is success!" }
         else
-          render json: "like failed"
+          render json: { result: false, message: "Like increment is failed." }
         end
       end
     end
@@ -24,37 +24,41 @@ module Api
         # new
         @user_schedule = UserSchedule.new(user_schedule_params)
         if @user_schedule.save
-          render json: @user_schedule
+          render json: { result: true, message: "Create UserSchedule is success!" }
         else
-          render json: "create failed"
+          render json: { result: false, message: "Create UserSchedule is failed." }
         end
       else
         # update
         @user_schedule = UserSchedule.find_by(id: params[:id])
         if @user_schedule.nil?
-          render json: "Couldn't find UserSchedule with 'id'"
+          render json: { result: false, message: "Couldn't find UserSchedule with 'id'." }
         else
           if @user_schedule.update(user_schedule_params)
-            render json: @user_schedule
+            render json: { result: true, message: "Update UserSchedule is success!" }
           else
-            render json: "update failed"
+            render json: { result: false, message: "Update UserSchedule is failed." }
           end
         end
       end
     end
 
     def show
-      @user_schedule = UserSchedule.find(params[:id])
-      render json: @user_schedule
+      @user_schedule = UserSchedule.find_by(id: params[:id])
+      if @user_schedule.nil?
+        render json: { result: false, message: "Couldn't find UserSchedule with 'id'." }
+      else
+        render json: @user_schedule
+      end
     end
 
     def destroy
       @user_schedule = UserSchedule.find_by(id: params[:id])
       if @user_schedule.nil?
-        render json: "Couldn't find UserSchedule with 'id'"
+        render json: { result: false, message: "Couldn't find UserSchedule with 'id'." }
       else
         @user_schedule.destroy
-        render json: "destroy is success!"
+        render json: { result: true, message: "Destroy UserSchedule is success!" }
       end
     end
 
