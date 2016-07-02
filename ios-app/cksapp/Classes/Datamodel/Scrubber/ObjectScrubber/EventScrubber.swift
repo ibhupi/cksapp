@@ -10,6 +10,10 @@
 import UIKit
 
 class EventScrubber: BaseScrubber {
+    
+    class override internal func minimusKeys() -> [String]? {
+        return ["id", "title", "description", "photo"]
+    }
 
     class override func mappedKeys() -> [String : String]? {
         return

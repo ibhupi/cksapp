@@ -27,6 +27,8 @@ class ImageTitleCollectionViewCell: BaseCollectionViewCell {
         self.layer.backgroundColor = ColorConstants.Black.color().colorWithAlphaComponent(0.9).CGColor
         self.imageView.contentMode = .ScaleAspectFill
         self.backgroundColor = ColorConstants.Clear.color()
+        self.layer.shouldRasterize = YES
+        self.layer.rasterizationScale = UIScreen.mainScreen().scale
     }
     
     override func prepareForReuse() {

@@ -63,8 +63,12 @@ class APIService: NSObject {
     }
     
     
-
+    private static var allGames = [Event]()
     class func GamesAll(completionBlock: CompletionBlockDataModel) {
+        if (allGames.count > 0) {
+            completionBlock(items: allGames);
+            return
+        }
         self.jsonArrayFromURL(EventListURLString) { (items) in
             var events = [Event]()
             items?.forEach({ (item) in
@@ -72,6 +76,12 @@ class APIService: NSObject {
                     events.append(event)
                 }
             })
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    events.append(event)
+                }
+            })
+            allGames = events
             completionBlock(items: events)
         }
     }
