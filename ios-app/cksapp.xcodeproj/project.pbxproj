@@ -15,6 +15,7 @@
 		245D8A351D2758CE0067C04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245D8A331D2758CE0067C04A /* LaunchScreen.storyboard */; };
 		245D8A401D2758CE0067C04A /* cksappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A3F1D2758CE0067C04A /* cksappTests.swift */; };
 		245D8A4B1D2758CE0067C04A /* cksappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A4A1D2758CE0067C04A /* cksappUITests.swift */; };
+		245D8A5C1D275AAB0067C04A /* UIImageViewNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A5B1D275AAB0067C04A /* UIImageViewNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		245D8A461D2758CE0067C04A /* cksappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cksappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		245D8A4A1D2758CE0067C04A /* cksappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cksappUITests.swift; sourceTree = "<group>"; };
 		245D8A4C1D2758CE0067C04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		245D8A5B1D275AAB0067C04A /* UIImageViewNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		245D8A271D2758CE0067C04A /* cksapp */ = {
 			isa = PBXGroup;
 			children = (
+				245D8A581D275AAB0067C04A /* Classes */,
 				245D8A281D2758CE0067C04A /* AppDelegate.swift */,
 				245D8A2A1D2758CE0067C04A /* FirstViewController.swift */,
 				245D8A2C1D2758CE0067C04A /* SecondViewController.swift */,
@@ -126,6 +129,30 @@
 				245D8A4C1D2758CE0067C04A /* Info.plist */,
 			);
 			path = cksappUITests;
+			sourceTree = "<group>";
+		};
+		245D8A581D275AAB0067C04A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A591D275AAB0067C04A /* Libraries */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		245D8A591D275AAB0067C04A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A5A1D275AAB0067C04A /* UIImageViewNetwork */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		245D8A5A1D275AAB0067C04A /* UIImageViewNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A5B1D275AAB0067C04A /* UIImageViewNetwork.swift */,
+			);
+			path = UIImageViewNetwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				245D8A2D1D2758CE0067C04A /* SecondViewController.swift in Sources */,
+				245D8A5C1D275AAB0067C04A /* UIImageViewNetwork.swift in Sources */,
 				245D8A291D2758CE0067C04A /* AppDelegate.swift in Sources */,
 				245D8A2B1D2758CE0067C04A /* FirstViewController.swift in Sources */,
 			);
@@ -488,6 +516,7 @@
 				245D8A511D2758CE0067C04A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		245D8A521D2758CE0067C04A /* Build configuration list for PBXNativeTarget "cksappTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +525,7 @@
 				245D8A541D2758CE0067C04A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		245D8A551D2758CE0067C04A /* Build configuration list for PBXNativeTarget "cksappUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +534,7 @@
 				245D8A571D2758CE0067C04A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
