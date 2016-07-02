@@ -12,17 +12,22 @@ class MyScheduleViewController: BaseCollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let title = LS("MySchedule")
+        self.title = title
         // Do any additional setup after loading the view.
         if let collectionView = self.collectionView {
-            collectionView.contentInset = UIEdgeInsetsMake(20, 0, 60, 0)
-            self.setSectionManager(MyScheduleSectionManager(title: LS("My Schedule"), collectionView: collectionView))
+            self.setSectionManager(MyScheduleSectionManager(title: title, collectionView: collectionView))
         }
+        
+        let barButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(MyScheduleViewController.addNewEvent))
+        self.navigationItem.rightBarButtonItem = barButtonItem
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func addNewEvent() {
+        let selectEventViewController = BaseCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        selectEventViewController.model = YES
+        let navigationController = UINavigationController.init(rootViewController: selectEventViewController)
+        self.presentViewController(navigationController, animated: YES, completion: nil)
     }
     
     

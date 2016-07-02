@@ -12,12 +12,15 @@ private let reuseIdentifier = "Cell"
 
 class BaseCollectionViewController: UICollectionViewController {
     
+    internal var model = NO
+    
     func setSectionManager(sectionManager: BaseSectionManager) -> Void {
         if let collectionView = self.collectionView as? BaseCollectionView {
             collectionView.delegate = collectionView
             collectionView.dataSource = collectionView
             collectionView.sectionManager = sectionManager
         }
+        self.title = sectionManager.title
     }
     
     override func viewDidLoad() {
@@ -26,6 +29,9 @@ class BaseCollectionViewController: UICollectionViewController {
         // Uncomment the following line to preserve selection between presentations
         self.collectionView?.backgroundColor = ColorConstants.Background.color()
         
+        if (self.model) {
+            self.applyCloseButtonLeft()
+        }
         // Do any additional setup after loading the view.
     }
     

@@ -49,6 +49,8 @@
 		245D8ADE1D276AE00067C04A /* MyScheduleSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */; };
 		245D8AE01D276BB30067C04A /* DaySchdeduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */; };
 		245D8AE21D2772190067C04A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE11D2772190067C04A /* DateHelper.swift */; };
+		245D8AE41D2784950067C04A /* GameSelectSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */; };
+		245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleSectionManager.swift; sourceTree = "<group>"; };
 		245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySchdeduleManager.swift; sourceTree = "<group>"; };
 		245D8AE11D2772190067C04A /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectSectionManager.swift; sourceTree = "<group>"; };
+		245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewControllerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +284,7 @@
 			children = (
 				245D8A721D2762490067C04A /* SectionsManagers */,
 				245D8A7B1D2762490067C04A /* Views */,
+				245D8AE51D2785BD0067C04A /* Helpers */,
 				245D8ABF1D2764460067C04A /* BaseCollectionViewController.swift */,
 				245D8AC11D2764610067C04A /* MainCollectionViewController.swift */,
 				245D8AC31D2764730067C04A /* MyScheduleViewController.swift */,
@@ -300,6 +305,7 @@
 				245D8AAF1D2763AD0067C04A /* ShoppingPlaceSectionManager.swift */,
 				245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */,
 				245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */,
+				245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */,
 			);
 			path = SectionsManagers;
 			sourceTree = "<group>";
@@ -316,6 +322,14 @@
 				245D8ABB1D2764260067C04A /* BaseCollectionView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		245D8AE51D2785BD0067C04A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,6 +473,7 @@
 				245D8AE21D2772190067C04A /* DateHelper.swift in Sources */,
 				245D8ABA1D2764140067C04A /* ContainerCollectionViewCell.swift in Sources */,
 				245D8AA41D2763330067C04A /* MainViewSectionManager.swift in Sources */,
+				245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */,
 				245D8AB41D2763DD0067C04A /* ImageTitleViewModel.swift in Sources */,
 				245D8ACE1D2764E10067C04A /* Location.swift in Sources */,
 				245D8AA21D2763150067C04A /* BaseSectionManager.swift in Sources */,
@@ -478,6 +493,7 @@
 				245D8AA61D27634B0067C04A /* FeaturedGameSectionManager.swift in Sources */,
 				245D8AD61D2765250067C04A /* UserSchedule.swift in Sources */,
 				245D8ADC1D2765730067C04A /* GameService.swift in Sources */,
+				245D8AE41D2784950067C04A /* GameSelectSectionManager.swift in Sources */,
 				245D8ACA1D2764C40067C04A /* BaseObject.swift in Sources */,
 				245D8AD81D2765320067C04A /* Photo.swift in Sources */,
 				245D8AAC1D2763870067C04A /* PlaceSectionManager.swift in Sources */,

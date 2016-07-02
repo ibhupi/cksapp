@@ -41,12 +41,12 @@
             </objects>
             <point key="canvasLocation" x="1517" y="-1370"/>
         </scene>
-        <!--My Schedule-->
+        <!--My Schedule View Controller-->
         <scene sceneID="KDW-e3-89A">
             <objects>
                 <collectionViewController id="01K-PV-rB2" customClass="MyScheduleViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wjc-XC-UPO" customClass="BaseCollectionView" customModule="cksapp" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zac-R1-1Nh">
                             <size key="itemSize" width="50" height="50"/>
@@ -56,7 +56,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MJ8-Ug-Kob">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -70,12 +70,11 @@
                             <outlet property="delegate" destination="01K-PV-rB2" id="LYL-01-REN"/>
                         </connections>
                     </collectionView>
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <tabBarItem key="tabBarItem" title="My Schedule" id="hjs-2h-jKp"/>
+                    <navigationItem key="navigationItem" id="bsx-gO-UAt"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHv-Km-Y1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1517" y="-466"/>
+            <point key="canvasLocation" x="2329" y="-466"/>
         </scene>
         <!--Map-->
         <scene sceneID="fvg-JR-JIM">
@@ -145,7 +144,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="01K-PV-rB2" kind="relationship" relationship="viewControllers" id="H3U-tc-orN"/>
+                        <segue destination="SRs-r9-bl5" kind="relationship" relationship="viewControllers" id="H3U-tc-orN"/>
                         <segue destination="7sU-Il-qfc" kind="relationship" relationship="viewControllers" id="rBy-In-bJd"/>
                         <segue destination="oc6-Sl-lpk" kind="relationship" relationship="viewControllers" id="GMb-dT-JbI"/>
                         <segue destination="Nwj-2E-XbK" kind="relationship" relationship="viewControllers" id="fHQ-1m-zd3"/>
@@ -155,6 +154,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--My Schedule-->
+        <scene sceneID="Fkc-oB-iQ8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SRs-r9-bl5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Schedule" id="hjs-2h-jKp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c5n-j5-cTb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="01K-PV-rB2" kind="relationship" relationship="rootViewController" id="u0x-i1-Kfm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucj-lH-KfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="-466"/>
         </scene>
     </scenes>
 </document>
