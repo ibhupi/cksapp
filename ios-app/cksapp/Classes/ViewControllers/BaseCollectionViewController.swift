@@ -14,9 +14,13 @@ class BaseCollectionViewController: UICollectionViewController {
     
     internal var model = NO
     
-//    public class func ViewContorller() -> BaseCollectionViewController {
-//        if let storyBoard =
-//    }
+    public class func ViewContorller() -> BaseCollectionViewController {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        if let viewController = storyBoard.instantiateViewControllerWithIdentifier("BaseCollectionViewController") as? BaseCollectionViewController {
+            return viewController
+        }
+        return BaseCollectionViewController(nibName: nil, bundle: nil)
+    }
     
     func setSectionManager(sectionManager: BaseSectionManager) -> Void {
         if let collectionView = self.collectionView as? BaseCollectionView {
