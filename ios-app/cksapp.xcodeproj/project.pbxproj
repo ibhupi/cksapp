@@ -61,6 +61,9 @@
 		24C9FF991D27C62800ED358D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9FF981D27C62800ED358D /* CoreFoundation.framework */; };
 		24DF6F8F1D27F66100661B71 /* ArrayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F8E1D27F66100661B71 /* ArrayHelper.swift */; };
 		24DF6F911D27FAF000661B71 /* SelectUnselectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F901D27FAF000661B71 /* SelectUnselectImageView.swift */; };
+		24DF6F931D2878F700661B71 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F921D2878F700661B71 /* BaseWebViewController.swift */; };
+		24DF6F951D28791400661B71 /* TODOWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F941D28791400661B71 /* TODOWebViewController.swift */; };
+		24DF6F971D28792100661B71 /* TipsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F961D28792100661B71 /* TipsWebViewController.swift */; };
 		32AAB3C0CCF3201CADD48095 /* Pods_cksapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4E25E2A22521B37E30451E /* Pods_cksapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +148,9 @@
 		24C9FF981D27C62800ED358D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		24DF6F8E1D27F66100661B71 /* ArrayHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayHelper.swift; sourceTree = "<group>"; };
 		24DF6F901D27FAF000661B71 /* SelectUnselectImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUnselectImageView.swift; sourceTree = "<group>"; };
+		24DF6F921D2878F700661B71 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
+		24DF6F941D28791400661B71 /* TODOWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TODOWebViewController.swift; sourceTree = "<group>"; };
+		24DF6F961D28792100661B71 /* TipsWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsWebViewController.swift; sourceTree = "<group>"; };
 		9A4E25E2A22521B37E30451E /* Pods_cksapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8816E5FF60B0A374C3DD619 /* Pods-cksapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -336,6 +342,9 @@
 				245D8AC31D2764730067C04A /* MyScheduleViewController.swift */,
 				24C9FF901D27A3A900ED358D /* MapViewController.swift */,
 				24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */,
+				24DF6F921D2878F700661B71 /* BaseWebViewController.swift */,
+				24DF6F941D28791400661B71 /* TODOWebViewController.swift */,
+				24DF6F961D28792100661B71 /* TipsWebViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -589,6 +598,7 @@
 				245D8AC81D27649C0067C04A /* Constants.swift in Sources */,
 				245D8A2D1D2758CE0067C04A /* SecondViewController.swift in Sources */,
 				245D8AB21D2763CA0067C04A /* ImageTitleCollectionViewCell.swift in Sources */,
+				24DF6F951D28791400661B71 /* TODOWebViewController.swift in Sources */,
 				245D8AD01D2764F70067C04A /* Country.swift in Sources */,
 				241449BA1D27DB35002974F8 /* BaseScrubber.swift in Sources */,
 				245D8AE21D2772190067C04A /* DateHelper.swift in Sources */,
@@ -598,9 +608,11 @@
 				245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */,
 				245D8AB41D2763DD0067C04A /* ImageTitleViewModel.swift in Sources */,
 				245D8ACE1D2764E10067C04A /* Location.swift in Sources */,
+				24DF6F931D2878F700661B71 /* BaseWebViewController.swift in Sources */,
 				245D8AA21D2763150067C04A /* BaseSectionManager.swift in Sources */,
 				24DF6F911D27FAF000661B71 /* SelectUnselectImageView.swift in Sources */,
 				24DF6F8F1D27F66100661B71 /* ArrayHelper.swift in Sources */,
+				24DF6F971D28792100661B71 /* TipsWebViewController.swift in Sources */,
 				245D8AE01D276BB30067C04A /* DaySchdeduleManager.swift in Sources */,
 				245D8ADE1D276AE00067C04A /* MyScheduleSectionManager.swift in Sources */,
 				245D8AB81D2764040067C04A /* BaseCollectionViewCell.swift in Sources */,

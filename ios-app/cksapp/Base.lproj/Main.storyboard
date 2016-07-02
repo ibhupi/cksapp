@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main-->
@@ -95,10 +96,44 @@
             </objects>
             <point key="canvasLocation" x="2305" y="414"/>
         </scene>
+        <!--Tips-->
+        <scene sceneID="CRK-6p-Hpe">
+            <objects>
+                <viewController id="l7Z-4T-PJM" customClass="BaseWebViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QQc-pQ-wKK"/>
+                        <viewControllerLayoutGuide type="bottom" id="faL-Jo-l5M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fbn-O4-MAd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxp-DN-yZq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kxp-DN-yZq" firstAttribute="leading" secondItem="Fbn-O4-MAd" secondAttribute="leadingMargin" constant="-20" id="10h-TG-g1y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kxp-DN-yZq" secondAttribute="trailing" constant="-20" id="Z3b-Um-WZV"/>
+                            <constraint firstItem="Kxp-DN-yZq" firstAttribute="top" secondItem="Fbn-O4-MAd" secondAttribute="topMargin" id="ZXK-4U-HYA"/>
+                            <constraint firstItem="faL-Jo-l5M" firstAttribute="top" secondItem="Kxp-DN-yZq" secondAttribute="bottom" id="g47-wl-1VS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tips" id="eOF-cy-LdR"/>
+                    <connections>
+                        <outlet property="webView" destination="Kxp-DN-yZq" id="JaI-wA-lxW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MoR-a1-a7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="1706"/>
+        </scene>
         <!--Services-->
         <scene sceneID="Rti-tK-s2L">
             <objects>
-                <viewController id="Nwj-2E-XbK" sceneMemberID="viewController">
+                <viewController id="Nwj-2E-XbK" customClass="BaseWebViewController" customModule="cksapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h3U-Ny-OqE"/>
                         <viewControllerLayoutGuide type="bottom" id="4pF-ya-nzT"/>
@@ -106,32 +141,28 @@
                     <view key="view" contentMode="scaleToFill" id="j0D-TR-461">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2a-Sb-ven">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u2a-Sb-ven" firstAttribute="leading" secondItem="j0D-TR-461" secondAttribute="leadingMargin" constant="-20" id="UyB-rq-H4E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u2a-Sb-ven" secondAttribute="trailing" constant="-20" id="djc-lw-OS9"/>
+                            <constraint firstItem="u2a-Sb-ven" firstAttribute="top" secondItem="j0D-TR-461" secondAttribute="topMargin" id="ezg-0V-fmj"/>
+                            <constraint firstItem="u2a-Sb-ven" firstAttribute="bottom" secondItem="j0D-TR-461" secondAttribute="bottomMargin" id="wNq-0x-zLj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Services" id="niD-Ul-hUt"/>
+                    <connections>
+                        <outlet property="webView" destination="u2a-Sb-ven" id="N2b-f2-VGv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCl-N1-iRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1469" y="1374"/>
-        </scene>
-        <!--Tips-->
-        <scene sceneID="jhe-fW-9wf">
-            <objects>
-                <viewController id="0hs-4F-8LV" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Am7-Ab-H8d"/>
-                        <viewControllerLayoutGuide type="bottom" id="hTs-3X-l6B"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="l6T-vf-9Qf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Tips" id="M8g-1Z-zeO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="usS-Vv-w4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1437" y="2318"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -148,7 +179,7 @@
                         <segue destination="7sU-Il-qfc" kind="relationship" relationship="viewControllers" id="rBy-In-bJd"/>
                         <segue destination="BGX-DI-rGz" kind="relationship" relationship="viewControllers" id="GMb-dT-JbI"/>
                         <segue destination="Nwj-2E-XbK" kind="relationship" relationship="viewControllers" id="fHQ-1m-zd3"/>
-                        <segue destination="0hs-4F-8LV" kind="relationship" relationship="viewControllers" id="LU0-gn-0Jt"/>
+                        <segue destination="l7Z-4T-PJM" kind="relationship" relationship="viewControllers" id="Z9J-45-ZQI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
