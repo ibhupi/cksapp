@@ -11,34 +11,47 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160701045249) do
+ActiveRecord::Schema.define(version: 0) do
 
   create_table "countries", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.integer  "photo",      limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string "name",  limit: 255
+    t.binary "photo", limit: 65535
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string   "title",           limit: 225
+    t.string   "description",     limit: 225,   default: ""
+    t.datetime "startTime"
+    t.datetime "endTime"
+    t.integer  "teamCount",       limit: 4
+    t.string   "playerCount",     limit: 225
+    t.string   "countryList",     limit: 225
+    t.string   "gender",          limit: 225
+    t.string   "eventTypeDetail", limit: 225
+    t.string   "eventType",       limit: 225
+    t.integer  "location",        limit: 4
+    t.integer  "ranking",         limit: 4
+    t.string   "temperature",     limit: 225
+    t.string   "condition",       limit: 225
+    t.string   "hashtag",         limit: 225
+    t.binary   "photo",           limit: 65535
   end
 
   create_table "locations", force: :cascade do |t|
-    t.string   "title",       limit: 255
-    t.string   "lattitude",   limit: 255
-    t.string   "longitude",   limit: 255
-    t.string   "description", limit: 255
-    t.integer  "ranking",     limit: 4
-    t.integer  "photo",       limit: 4
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.string  "title",       limit: 255
+    t.string  "lattitude",   limit: 255
+    t.string  "longitude",   limit: 255
+    t.string  "description", limit: 255
+    t.integer "ranking",     limit: 4
+    t.binary  "photo",       limit: 65535
   end
 
   create_table "players", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "gender",     limit: 255
-    t.string   "gamesList",  limit: 255
-    t.integer  "country",    limit: 4
-    t.integer  "photo",      limit: 4
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string  "name",      limit: 255
+    t.string  "gender",    limit: 255
+    t.string  "gamesList", limit: 255
+    t.integer "country",   limit: 4
+    t.binary  "photo",     limit: 65535
   end
 
 end
