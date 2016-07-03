@@ -9,6 +9,7 @@
 
 import UIKit
 
+private let UserURLString = "http://114.55.119.118/api/users/new"
 private let EventListURLString = "http://114.55.119.118/api/events"
 private let LocationsListURLString = "http://114.55.119.118/api/locations"
 
@@ -64,7 +65,15 @@ class APIService: NSObject {
     }
     
     class func UserFromAPI(completionBlock: CompletionBlockDataModel) {
-        
+        self.jsonFromURL(UserURLString) { (item) in
+            let user = User()
+            if let dict = item as? [String : AnyObject] {
+                if let userID = dict["id"] as? Int {
+                    user.id = "\(userID)"
+                }
+            }
+            completionBlock(items: [user])
+        }
     }
     
     
