@@ -9,7 +9,7 @@
 import UIKit
 
 enum ColorConstants {
-    case Base, Black, White, Background, Green, Clear
+    case Base, Black, LightGrayApha, White, Background, Green, Clear
     
     func color() -> UIColor {
         switch self {
@@ -25,6 +25,8 @@ enum ColorConstants {
             return UIColor.greenColor()
         case .Clear:
             return UIColor.clearColor()
+        case .LightGrayApha:
+            return UIColor.lightGrayColor().colorWithAlphaComponent(0.8)
         }
     }
 }

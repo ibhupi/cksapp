@@ -68,6 +68,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     // MARK: - Private Function
     
+    var markers = [GMSMarker]()
     var mapPath = GMSMutablePath()
     func reloadRoute() {
         let events = GameService.sharedInstance.userEventsSortedDate()
@@ -79,18 +80,36 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
             return
         }
         
+        
 //        mapView?.animateToLocation(firstLocation.coordinate)
+        markers.forEach { (marker) in
+            marker.map = nil
+        }
+        markers.removeAll()
         
         var bounds = GMSCoordinateBounds()
-        events.forEach { (event) in
-            let marker = GMSMarker()
-            marker.position = event.location().coordinate
-            marker.title = event.location().title
-            marker.snippet = event.location().detailDescription
-            marker.map = mapView
-            bounds = bounds.includingCoordinate(marker.position)
-            
-            mapPath.addCoordinate(event.location().coordinate)
+        
+        GameService.sharedInstance.AllGames { (items) in
+            guard let items = items as? [Event] else {
+                return
+            }
+            items.forEach { (event) in
+                let marker = GMSMarker()
+                marker.position = event.location().coordinate
+                marker.title = event.location().title
+                marker.snippet = event.location().detailDescription
+                marker.map = self.mapView
+                
+                if (events.containsObject(event) == NO) {
+                    marker.icon = GMSMarker.markerImageWithColor(ColorConstants.LightGrayApha.color())
+                } else {
+                    bounds = bounds.includingCoordinate(marker.position)
+                }
+                
+                self.markers.append(marker)
+                
+                self.mapPath.addCoordinate(event.location().coordinate)
+            }
         }
         self.mapView?.animateWithCameraUpdate(GMSCameraUpdate.fitBounds(bounds, withPadding: 30))
         
