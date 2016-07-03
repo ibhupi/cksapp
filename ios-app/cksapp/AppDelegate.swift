@@ -17,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        if let userID = NSUserDefaults.standardUserDefaults().stringForKey("currentUserID") {
+            CurrentUser.id = userID
+        } else {
+            APIService.UserFromAPI({ (items) in
+                if let item = items?.first {
+                    CurrentUser.id = item.id
+                    NSUserDefaults.standardUserDefaults().setObject(CurrentUser.id, forKey: "currentUserID")
+                    NSUserDefaults.standardUserDefaults().synchronize()
+                }
+            })
+        }
+        
         let _ = LocationServices.sharedInstance
         return true
     }

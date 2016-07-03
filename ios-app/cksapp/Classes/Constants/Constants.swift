@@ -50,6 +50,11 @@ let GoogleMapAPIKEY = "AIzaSyDskmF9XuoEgif4OdVY2pujdxkvogO8HdE"
 
 let TokyoTowerCoordinate = CLLocationCoordinate2DMake(35.6585805,139.7454329)
 
+let CurrentUser : User = {
+    let user = User();
+    return user;
+}()
+
 func LS(k : String!) -> String {
     var s:String! = NSBundle.mainBundle().localizedStringForKey(k, value: "", table: nil)
     if nil == s {

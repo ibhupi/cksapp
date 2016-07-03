@@ -63,6 +63,10 @@ class APIService: NSObject {
         }
     }
     
+    class func UserFromAPI(completionBlock: CompletionBlockDataModel) {
+        
+    }
+    
     
     private static var allGames = [Event]()
     class func GamesAll(completionBlock: CompletionBlockDataModel) {
