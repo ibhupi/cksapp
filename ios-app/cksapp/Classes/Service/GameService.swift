@@ -29,7 +29,8 @@ class GameService: BaseService {
     }
     
     func featuredGames(completionBlock:CompletionBlockDataModel) -> Void {
-        completionBlock(items: dummyGameEvents())
+        APIService.FeaturedGames(completionBlock)
+
     }
     
     func AllGames(completionBlock:CompletionBlockDataModel) -> Void {

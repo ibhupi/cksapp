@@ -82,6 +82,27 @@ class APIService: NSObject {
         }
     }
     
+    private static var featuredGames = [Event]()
+    class func FeaturedGames(completionBlock: CompletionBlockDataModel) {
+        if (featuredGames.count > 0) {
+            completionBlock(items: featuredGames);
+            return
+        }
+        self.jsonArrayFromURL(EventListURLString) { (items) in
+            var events = [Event]()
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    if event.ranking <= 10 {
+                        events.append(event)
+                    }
+                }
+            })
+            featuredGames = events
+            completionBlock(items: events)
+        }
+    }
+
+    
     private static var allLocations = [Location]()
     class func LocationsAll(completionBlock: CompletionBlockDataModel) {
         if (allLocations.count > 0) {

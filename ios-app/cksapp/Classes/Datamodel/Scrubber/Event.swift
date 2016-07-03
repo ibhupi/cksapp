@@ -18,6 +18,7 @@ class Event: BaseObject {
     var locationID : Int = 0
     var eventType = ""
     var eventTypeDetail = ""
+    var ranking : Int = 0
     
     var userHasSelected : Bool = NO {
         didSet {
