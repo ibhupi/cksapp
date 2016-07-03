@@ -2,6 +2,7 @@
 - Ruby 2.3.1
 - Rails 4.2.6
 - MySQL 5.6
+gem rails-api, mysql2
 
 # Steps to build app
 ## Clone app
