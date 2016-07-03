@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05FD69351D28830300157A56 /* component in Resources */ = {isa = PBXBuildFile; fileRef = 05FD69331D28830300157A56 /* component */; };
+		240E860E1D28EBBA00DABA5F /* AddRemoveEventAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240E860D1D28EBBA00DABA5F /* AddRemoveEventAlertController.swift */; };
 		241449B51D27D99C002974F8 /* BaseObjectObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 241449B41D27D99C002974F8 /* BaseObjectObjC.m */; };
 		241449B71D27DA06002974F8 /* BaseObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241449B61D27DA06002974F8 /* BaseObjectHelper.swift */; };
 		241449BA1D27DB35002974F8 /* BaseScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241449B91D27DB35002974F8 /* BaseScrubber.swift */; };
@@ -99,6 +100,7 @@
 		1B59B9A586DD98C62FE24656 /* Pods-cksappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksappUITests/Pods-cksappUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F80B5B86D054D64822B4313 /* Pods-cksapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.release.xcconfig"; sourceTree = "<group>"; };
 		223BDCA503E0F8C73AAB8AB3 /* Pods_cksapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		240E860D1D28EBBA00DABA5F /* AddRemoveEventAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRemoveEventAlertController.swift; sourceTree = "<group>"; };
 		241449B21D27D99C002974F8 /* cksapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cksapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		241449B31D27D99C002974F8 /* BaseObjectObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObjectObjC.h; sourceTree = "<group>"; };
 		241449B41D27D99C002974F8 /* BaseObjectObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObjectObjC.m; sourceTree = "<group>"; };
@@ -399,6 +401,7 @@
 				24DF6F921D2878F700661B71 /* BaseWebViewController.swift */,
 				24DF6F941D28791400661B71 /* TODOWebViewController.swift */,
 				24DF6F961D28792100661B71 /* TipsWebViewController.swift */,
+				240E860D1D28EBBA00DABA5F /* AddRemoveEventAlertController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -760,6 +763,7 @@
 				245D8A2D1D2758CE0067C04A /* SecondViewController.swift in Sources */,
 				245D8AB21D2763CA0067C04A /* ImageTitleCollectionViewCell.swift in Sources */,
 				24DF6F951D28791400661B71 /* TODOWebViewController.swift in Sources */,
+				240E860E1D28EBBA00DABA5F /* AddRemoveEventAlertController.swift in Sources */,
 				245D8AD01D2764F70067C04A /* Country.swift in Sources */,
 				241449BA1D27DB35002974F8 /* BaseScrubber.swift in Sources */,
 				245D8AE21D2772190067C04A /* DateHelper.swift in Sources */,

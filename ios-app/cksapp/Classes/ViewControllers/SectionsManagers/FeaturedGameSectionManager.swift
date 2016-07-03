@@ -17,6 +17,7 @@ class FeaturedGameSectionManager: BaseSectionManager {
         self.minimumSectionItemSpacing = 0
         self.collectionViewEdgeInset = UIEdgeInsetsMake(0, 0, 0, 0)
         self.pagingEnabled = YES
+        self.roundedCornerCell = NO
     }
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {

@@ -28,5 +28,18 @@ class MainViewSectionManager: BaseSectionManager {
         completionBlock(items: items)
     }
     
+    override func collectionView(sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        guard let collectionView = self.collectionView else {
+            return CGSizeZero
+        }
+        
+        if (indexPath.section == 0) {
+            return CGSizeMake(CGRectGetWidth(collectionView.frame), min(CGRectGetHeight(collectionView.frame) - 10, 250))
+        } else {
+            return super.collectionView(sizeForItemAtIndexPath: indexPath)
+        }
+    }
+
+    
     
 }

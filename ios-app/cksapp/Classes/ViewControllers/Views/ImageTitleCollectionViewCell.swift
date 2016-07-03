@@ -24,13 +24,17 @@ class ImageTitleCollectionViewCell: BaseCollectionViewCell {
     
     override func initCommon() {
         super.initCommon()
-        self.layer.cornerRadius = ConstantCornerRadius.Mid.rawValue
         self.layer.backgroundColor = ColorConstants.Black.color().colorWithAlphaComponent(0.9).CGColor
         self.imageView.contentMode = .ScaleAspectFill
         self.backgroundColor = ColorConstants.Clear.color()
         self.layer.shouldRasterize = YES
         self.layer.rasterizationScale = UIScreen.mainScreen().scale
         self.topLeftLabel.numberOfLines = 0
+        self.bottomLabel.numberOfLines = 2
+        self.topLeftLabel.font = UIFont.boldSystemFontOfSize(20)
+        self.topLeftLabel.textColor = ColorConstants.White.color()
+        self.bottomLabel.font = UIFont.systemFontOfSize(16)
+        self.bottomLabel.textColor = ColorConstants.LightGrayApha.color()
     }
     
     override func prepareForReuse() {
@@ -42,7 +46,13 @@ class ImageTitleCollectionViewCell: BaseCollectionViewCell {
         self.bottomLabel.text = nil
     }
     
-    func configureFor(event : Event) -> Void {
+    func configureFor(event : Event, corner : Bool) -> Void {
+        if corner {
+            self.layer.cornerRadius = ConstantCornerRadius.Mid.rawValue
+        } else {
+            self.layer.cornerRadius = 0
+        }
+        
         self.topRightLabel.text = nil
         self.topLeftLabel.text = event.title + "\n" + event.date.localizedStringMid()
         self.bottomLabel.text = event.detailDescription

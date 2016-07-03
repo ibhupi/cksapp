@@ -27,6 +27,7 @@ class BaseSectionManager: NSObject {
     var minimumSectionItemSpacing : CGFloat = 0
     var collectionViewEdgeInset = UIEdgeInsetsZero
     var pagingEnabled = NO
+    var roundedCornerCell = YES
     
     var baseCollectionContainers = [MainViewSectionManager.self, MyScheduleSectionManager.self]
     
@@ -100,7 +101,7 @@ class BaseSectionManager: NSObject {
         
         if let event = rows[indexPath.row] as? Event {
             if let cell =  self.collectionView?.dequeueReusableCellWithReuseIdentifier(ImageTitleCollectionViewCell.cellID(), forIndexPath: indexPath) as? ImageTitleCollectionViewCell {
-                cell.configureFor(event)
+                cell.configureFor(event,corner: self.roundedCornerCell)
                 return cell
             }
         }
@@ -116,9 +117,6 @@ class BaseSectionManager: NSObject {
         }
         
         if (self.baseCollectionContainers.containsObject(self.dynamicType)) {
-            
-//        }
-//        if let _ = self as? MainViewSectionManager {
             return CGSizeMake(CGRectGetWidth(collectionView.frame), min(CGRectGetHeight(collectionView.frame) - 10, 200))
         }
         return CGSizeMake(CGRectGetWidth(collectionView.frame), CGRectGetHeight(collectionView.frame))
@@ -142,11 +140,13 @@ class BaseSectionManager: NSObject {
         let item = self.sections[indexPath.section][indexPath.row]
         if let event = item as? Event {
             if (event.userHasSelected) {
-                GameService.sharedInstance.removeFromMySchedule(event)
+                AddRemoveEventAlertController.confirmRemoveEvent(event, completionBlock: { (success) in
+                    self.collectionView?.reloadItemsAtIndexPaths([indexPath])
+                })
             } else {
                 GameService.sharedInstance.addToMySchedule(event)
+                collectionView?.reloadItemsAtIndexPaths([indexPath])
             }
-            collectionView?.reloadItemsAtIndexPaths([indexPath])
         }
     }
 
