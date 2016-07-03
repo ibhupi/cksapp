@@ -1,2800 +1,1036 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>05FD69331D28830300157A56</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder</string>
-			<key>name</key>
-			<string>component</string>
-			<key>path</key>
-			<string>Classes/ViewControllers/Helpers/component</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>05FD69351D28830300157A56</key>
-		<dict>
-			<key>fileRef</key>
-			<string>05FD69331D28830300157A56</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>10F63B9C6272140698B00105</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>774A0E3A083822346BFF9C21</string>
-				<string>C0A777F71F975C74B72F264C</string>
-				<string>572CDBF953F21E21931081ED</string>
-				<string>6D7726D165222C09721E7F0B</string>
-				<string>B0105A8D14154490B77288EE</string>
-				<string>9C06743D699D757817A26B50</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>223BDCA503E0F8C73AAB8AB3</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_cksapp.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>241449B21D27D99C002974F8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>cksapp-Bridging-Header.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>241449B31D27D99C002974F8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BaseObjectObjC.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>241449B41D27D99C002974F8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BaseObjectObjC.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>241449B51D27D99C002974F8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>241449B41D27D99C002974F8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>241449B61D27DA06002974F8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseObjectHelper.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>241449B71D27DA06002974F8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>241449B61D27DA06002974F8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>241449B81D27DAC1002974F8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>241449B91D27DB35002974F8</string>
-				<string>241449BB1D27DB87002974F8</string>
-				<string>24DF6F9C1D28838300661B71</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ObjectScrubber</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>241449B91D27DB35002974F8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseScrubber.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>241449BA1D27DB35002974F8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>241449B91D27DB35002974F8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>241449BB1D27DB87002974F8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>EventScrubber.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>241449BC1D27DB87002974F8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>241449BB1D27DB87002974F8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8A1C1D2758CE0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A271D2758CE0067C04A</string>
-				<string>245D8A3E1D2758CE0067C04A</string>
-				<string>245D8A491D2758CE0067C04A</string>
-				<string>245D8A261D2758CE0067C04A</string>
-				<string>D24DB7B71D663597EFF100C7</string>
-				<string>10F63B9C6272140698B00105</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A1D1D2758CE0067C04A</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Bhupendra Singh</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>245D8A241D2758CE0067C04A</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-					</dict>
-					<key>245D8A3A1D2758CE0067C04A</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>245D8A241D2758CE0067C04A</string>
-					</dict>
-					<key>245D8A451D2758CE0067C04A</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>245D8A241D2758CE0067C04A</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>245D8A201D2758CE0067C04A</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>245D8A1C1D2758CE0067C04A</string>
-			<key>productRefGroup</key>
-			<string>245D8A261D2758CE0067C04A</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>245D8A241D2758CE0067C04A</string>
-				<string>245D8A3A1D2758CE0067C04A</string>
-				<string>245D8A451D2758CE0067C04A</string>
-			</array>
-		</dict>
-		<key>245D8A201D2758CE0067C04A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>245D8A4D1D2758CE0067C04A</string>
-				<string>245D8A4E1D2758CE0067C04A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>245D8A211D2758CE0067C04A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>24C9FF931D27AA4B00ED358D</string>
-				<string>245D8AC21D2764610067C04A</string>
-				<string>245D8AC81D27649C0067C04A</string>
-				<string>245D8A2D1D2758CE0067C04A</string>
-				<string>245D8AB21D2763CA0067C04A</string>
-				<string>24DF6F951D28791400661B71</string>
-				<string>245D8AD01D2764F70067C04A</string>
-				<string>241449BA1D27DB35002974F8</string>
-				<string>245D8AE21D2772190067C04A</string>
-				<string>24DF6F991D2880B400661B71</string>
-				<string>245D8ABA1D2764140067C04A</string>
-				<string>24C9FF911D27A3A900ED358D</string>
-				<string>245D8AA41D2763330067C04A</string>
-				<string>245D8AE71D2785E20067C04A</string>
-				<string>245D8AB41D2763DD0067C04A</string>
-				<string>245D8ACE1D2764E10067C04A</string>
-				<string>24DF6F931D2878F700661B71</string>
-				<string>245D8AA21D2763150067C04A</string>
-				<string>24DF6F911D27FAF000661B71</string>
-				<string>24DF6F8F1D27F66100661B71</string>
-				<string>24DF6F971D28792100661B71</string>
-				<string>24DF6F9B1D2882F700661B71</string>
-				<string>245D8AE01D276BB30067C04A</string>
-				<string>245D8ADE1D276AE00067C04A</string>
-				<string>245D8AB81D2764040067C04A</string>
-				<string>241449B71D27DA06002974F8</string>
-				<string>245D8AAA1D2763750067C04A</string>
-				<string>245D8AC61D27648A0067C04A</string>
-				<string>241449B51D27D99C002974F8</string>
-				<string>245D8A5C1D275AAB0067C04A</string>
-				<string>245D8AC01D2764460067C04A</string>
-				<string>245D8AC41D2764730067C04A</string>
-				<string>245D8A291D2758CE0067C04A</string>
-				<string>245D8A2B1D2758CE0067C04A</string>
-				<string>245D8ACC1D2764D20067C04A</string>
-				<string>245D8AA81D27635E0067C04A</string>
-				<string>24DF6F9D1D28838300661B71</string>
-				<string>245D8AD41D27650A0067C04A</string>
-				<string>245D8AA61D27634B0067C04A</string>
-				<string>245D8AD61D2765250067C04A</string>
-				<string>24C9FF951D27C41800ED358D</string>
-				<string>245D8ADC1D2765730067C04A</string>
-				<string>245D8AE41D2784950067C04A</string>
-				<string>245D8AD81D2765320067C04A</string>
-				<string>245D8AAC1D2763870067C04A</string>
-				<string>241449BC1D27DB87002974F8</string>
-				<string>245D8ADA1D27655B0067C04A</string>
-				<string>245D8AAE1D2763980067C04A</string>
-				<string>245D8AB01D2763AD0067C04A</string>
-				<string>245D8AD21D2765020067C04A</string>
-				<string>245D8ABC1D2764260067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>245D8A221D2758CE0067C04A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>24C9FF991D27C62800ED358D</string>
-				<string>24C9FF971D27C5D000ED358D</string>
-				<string>9202C71C9DAB5B9BDAA77F10</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>245D8A231D2758CE0067C04A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>05FD69351D28830300157A56</string>
-				<string>245D8ABE1D2764350067C04A</string>
-				<string>245D8A351D2758CE0067C04A</string>
-				<string>245D8A321D2758CE0067C04A</string>
-				<string>245D8AB61D2763F80067C04A</string>
-				<string>245D8A301D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>245D8A241D2758CE0067C04A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>245D8A4F1D2758CE0067C04A</string>
-			<key>buildPhases</key>
-			<array>
-				<string>86B77AE6603AB0C585C952D8</string>
-				<string>245D8A211D2758CE0067C04A</string>
-				<string>245D8A221D2758CE0067C04A</string>
-				<string>245D8A231D2758CE0067C04A</string>
-				<string>F12D77A9FF8BE2C3547C13F7</string>
-				<string>FEF153F86779C9381F9BF21E</string>
-				<string>7DE75130DEE757D6B9650461</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>cksapp</string>
-			<key>productName</key>
-			<string>cksapp</string>
-			<key>productReference</key>
-			<string>245D8A251D2758CE0067C04A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>245D8A251D2758CE0067C04A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>cksapp.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>245D8A261D2758CE0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A251D2758CE0067C04A</string>
-				<string>245D8A3B1D2758CE0067C04A</string>
-				<string>245D8A461D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A271D2758CE0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A581D275AAB0067C04A</string>
-				<string>245D8A281D2758CE0067C04A</string>
-				<string>05FD69331D28830300157A56</string>
-				<string>245D8A2A1D2758CE0067C04A</string>
-				<string>245D8A2C1D2758CE0067C04A</string>
-				<string>245D8A2E1D2758CE0067C04A</string>
-				<string>245D8A311D2758CE0067C04A</string>
-				<string>245D8A331D2758CE0067C04A</string>
-				<string>245D8A361D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>cksapp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A281D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A291D2758CE0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8A281D2758CE0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8A2A1D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>FirstViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A2B1D2758CE0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8A2A1D2758CE0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8A2C1D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SecondViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A2D1D2758CE0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8A2C1D2758CE0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8A2E1D2758CE0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A2F1D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A2F1D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A301D2758CE0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8A2E1D2758CE0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8A311D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A321D2758CE0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8A311D2758CE0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8A331D2758CE0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A341D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A341D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A351D2758CE0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8A331D2758CE0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8A361D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A371D2758CE0067C04A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>245D8A401D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>245D8A381D2758CE0067C04A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79B1C7F25B23BA89BDADBB2D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>245D8A391D2758CE0067C04A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>245D8A3A1D2758CE0067C04A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>245D8A521D2758CE0067C04A</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8D29B5CAC332BF0793CA21DB</string>
-				<string>245D8A371D2758CE0067C04A</string>
-				<string>245D8A381D2758CE0067C04A</string>
-				<string>245D8A391D2758CE0067C04A</string>
-				<string>4E856563478EBDF64651C156</string>
-				<string>8359B2307B319AC4E37BCD6A</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>245D8A3D1D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>cksappTests</string>
-			<key>productName</key>
-			<string>cksappTests</string>
-			<key>productReference</key>
-			<string>245D8A3B1D2758CE0067C04A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>245D8A3B1D2758CE0067C04A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>cksappTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>245D8A3C1D2758CE0067C04A</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>245D8A1D1D2758CE0067C04A</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>245D8A241D2758CE0067C04A</string>
-			<key>remoteInfo</key>
-			<string>cksapp</string>
-		</dict>
-		<key>245D8A3D1D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>245D8A241D2758CE0067C04A</string>
-			<key>targetProxy</key>
-			<string>245D8A3C1D2758CE0067C04A</string>
-		</dict>
-		<key>245D8A3E1D2758CE0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A3F1D2758CE0067C04A</string>
-				<string>245D8A411D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>cksappTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A3F1D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>cksappTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A401D2758CE0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8A3F1D2758CE0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8A411D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A421D2758CE0067C04A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>245D8A4B1D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>245D8A431D2758CE0067C04A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6A372A2F935FCAF0908CED0B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>245D8A441D2758CE0067C04A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>245D8A451D2758CE0067C04A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>245D8A551D2758CE0067C04A</string>
-			<key>buildPhases</key>
-			<array>
-				<string>2A7BC19B1B60053D576500BD</string>
-				<string>245D8A421D2758CE0067C04A</string>
-				<string>245D8A431D2758CE0067C04A</string>
-				<string>245D8A441D2758CE0067C04A</string>
-				<string>D8CE1AC83323C3E0B608B63B</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>245D8A481D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>cksappUITests</string>
-			<key>productName</key>
-			<string>cksappUITests</string>
-			<key>productReference</key>
-			<string>245D8A461D2758CE0067C04A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>245D8A461D2758CE0067C04A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>cksappUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>245D8A471D2758CE0067C04A</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>245D8A1D1D2758CE0067C04A</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>245D8A241D2758CE0067C04A</string>
-			<key>remoteInfo</key>
-			<string>cksapp</string>
-		</dict>
-		<key>245D8A481D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>245D8A241D2758CE0067C04A</string>
-			<key>targetProxy</key>
-			<string>245D8A471D2758CE0067C04A</string>
-		</dict>
-		<key>245D8A491D2758CE0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A4A1D2758CE0067C04A</string>
-				<string>245D8A4C1D2758CE0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>cksappUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A4A1D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>cksappUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A4B1D2758CE0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8A4A1D2758CE0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8A4C1D2758CE0067C04A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A4D1D2758CE0067C04A</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>245D8A4E1D2758CE0067C04A</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>245D8A4F1D2758CE0067C04A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>245D8A501D2758CE0067C04A</string>
-				<string>245D8A511D2758CE0067C04A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>245D8A501D2758CE0067C04A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>774A0E3A083822346BFF9C21</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>cksapp/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bhupi.cksapp</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>cksapp/Classes/Datamodel/Scrubber/cksapp-Bridging-Header.h</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>245D8A511D2758CE0067C04A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C0A777F71F975C74B72F264C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>cksapp/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bhupi.cksapp</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>cksapp/Classes/Datamodel/Scrubber/cksapp-Bridging-Header.h</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>245D8A521D2758CE0067C04A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>245D8A531D2758CE0067C04A</string>
-				<string>245D8A541D2758CE0067C04A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>245D8A531D2758CE0067C04A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>572CDBF953F21E21931081ED</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>cksappTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bhupi.cksappTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/cksapp.app/cksapp</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>245D8A541D2758CE0067C04A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6D7726D165222C09721E7F0B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>cksappTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bhupi.cksappTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/cksapp.app/cksapp</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>245D8A551D2758CE0067C04A</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>245D8A561D2758CE0067C04A</string>
-				<string>245D8A571D2758CE0067C04A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>245D8A561D2758CE0067C04A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B0105A8D14154490B77288EE</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>cksappUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bhupi.cksappUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>cksapp</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>245D8A571D2758CE0067C04A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9C06743D699D757817A26B50</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>cksappUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bhupi.cksappUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>cksapp</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>245D8A581D275AAB0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A6E1D2762490067C04A</string>
-				<string>245D8A5D1D2762490067C04A</string>
-				<string>245D8A5E1D2762490067C04A</string>
-				<string>245D8A611D2762490067C04A</string>
-				<string>245D8A6B1D2762490067C04A</string>
-				<string>245D8A591D275AAB0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A591D275AAB0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A5A1D275AAB0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Libraries</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A5A1D275AAB0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A5B1D275AAB0067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>UIImageViewNetwork</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A5B1D275AAB0067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UIImageViewNetwork.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A5C1D275AAB0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8A5B1D275AAB0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8A5D1D2762490067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>24C9FF941D27C41800ED358D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>API</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A5E1D2762490067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8AC51D27648A0067C04A</string>
-				<string>245D8AC71D27649C0067C04A</string>
-				<string>245D8AE11D2772190067C04A</string>
-				<string>24DF6F8E1D27F66100661B71</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Constants</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A611D2762490067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A681D2762490067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Datamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A681D2762490067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>241449B81D27DAC1002974F8</string>
-				<string>241449B31D27D99C002974F8</string>
-				<string>241449B41D27D99C002974F8</string>
-				<string>241449B61D27DA06002974F8</string>
-				<string>24DF6F9A1D2882F700661B71</string>
-				<string>245D8ACB1D2764D20067C04A</string>
-				<string>245D8ACD1D2764E10067C04A</string>
-				<string>245D8ACF1D2764F70067C04A</string>
-				<string>245D8AD11D2765020067C04A</string>
-				<string>245D8AD31D27650A0067C04A</string>
-				<string>245D8AD51D2765250067C04A</string>
-				<string>245D8AD71D2765320067C04A</string>
-				<string>241449B21D27D99C002974F8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Scrubber</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A6B1D2762490067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8AD91D27655B0067C04A</string>
-				<string>245D8ADB1D2765730067C04A</string>
-				<string>24DF6F981D2880B400661B71</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Service</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A6E1D2762490067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8A721D2762490067C04A</string>
-				<string>245D8A7B1D2762490067C04A</string>
-				<string>245D8AE51D2785BD0067C04A</string>
-				<string>245D8ABF1D2764460067C04A</string>
-				<string>245D8AC11D2764610067C04A</string>
-				<string>245D8AC31D2764730067C04A</string>
-				<string>24C9FF901D27A3A900ED358D</string>
-				<string>24C9FF921D27AA4B00ED358D</string>
-				<string>24DF6F921D2878F700661B71</string>
-				<string>24DF6F941D28791400661B71</string>
-				<string>24DF6F961D28792100661B71</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ViewControllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A721D2762490067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8AA11D2763150067C04A</string>
-				<string>245D8AA31D2763330067C04A</string>
-				<string>245D8AA51D27634B0067C04A</string>
-				<string>245D8AA71D27635E0067C04A</string>
-				<string>245D8AA91D2763750067C04A</string>
-				<string>245D8AAB1D2763870067C04A</string>
-				<string>245D8AAD1D2763980067C04A</string>
-				<string>245D8AAF1D2763AD0067C04A</string>
-				<string>245D8ADD1D276AE00067C04A</string>
-				<string>245D8ADF1D276BB30067C04A</string>
-				<string>245D8AE31D2784950067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>SectionsManagers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8A7B1D2762490067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8AB11D2763CA0067C04A</string>
-				<string>245D8AB31D2763DD0067C04A</string>
-				<string>245D8AB51D2763F80067C04A</string>
-				<string>245D8AB71D2764040067C04A</string>
-				<string>245D8AB91D2764130067C04A</string>
-				<string>245D8ABD1D2764350067C04A</string>
-				<string>245D8ABB1D2764260067C04A</string>
-				<string>24DF6F901D27FAF000661B71</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AA11D2763150067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseSectionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AA21D2763150067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AA11D2763150067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AA31D2763330067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MainViewSectionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AA41D2763330067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AA31D2763330067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AA51D27634B0067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>FeaturedGameSectionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AA61D27634B0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AA51D27634B0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AA71D27635E0067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AddNewGameSectionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AA81D27635E0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AA71D27635E0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AA91D2763750067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>RestaurantSectionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AAA1D2763750067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AA91D2763750067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AAB1D2763870067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>PlaceSectionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AAC1D2763870067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AAB1D2763870067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AAD1D2763980067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>LocalEventSectionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AAE1D2763980067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AAD1D2763980067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AAF1D2763AD0067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ShoppingPlaceSectionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AB01D2763AD0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AAF1D2763AD0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AB11D2763CA0067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ImageTitleCollectionViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AB21D2763CA0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AB11D2763CA0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AB31D2763DD0067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ImageTitleViewModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AB41D2763DD0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AB31D2763DD0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AB51D2763F80067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>ImageTitleCollectionViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AB61D2763F80067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AB51D2763F80067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AB71D2764040067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseCollectionViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AB81D2764040067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AB71D2764040067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AB91D2764130067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ContainerCollectionViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8ABA1D2764140067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AB91D2764130067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8ABB1D2764260067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseCollectionView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8ABC1D2764260067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8ABB1D2764260067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8ABD1D2764350067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>ContainerCollectionViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8ABE1D2764350067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8ABD1D2764350067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8ABF1D2764460067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseCollectionViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AC01D2764460067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8ABF1D2764460067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AC11D2764610067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MainCollectionViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AC21D2764610067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AC11D2764610067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AC31D2764730067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MyScheduleViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AC41D2764730067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AC31D2764730067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AC51D27648A0067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ColorConstants.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AC61D27648A0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AC51D27648A0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AC71D27649C0067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Constants.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AC81D27649C0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AC71D27649C0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8ACB1D2764D20067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Event.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8ACC1D2764D20067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8ACB1D2764D20067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8ACD1D2764E10067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Location.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8ACE1D2764E10067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8ACD1D2764E10067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8ACF1D2764F70067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Country.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AD01D2764F70067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8ACF1D2764F70067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AD11D2765020067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Player.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AD21D2765020067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AD11D2765020067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AD31D27650A0067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>User.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AD41D27650A0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AD31D27650A0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AD51D2765250067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UserSchedule.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AD61D2765250067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AD51D2765250067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AD71D2765320067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Photo.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AD81D2765320067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AD71D2765320067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AD91D27655B0067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseService.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8ADA1D27655B0067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AD91D27655B0067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8ADB1D2765730067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>GameService.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8ADC1D2765730067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8ADB1D2765730067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8ADD1D276AE00067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MyScheduleSectionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8ADE1D276AE00067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8ADD1D276AE00067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8ADF1D276BB30067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DaySchdeduleManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AE01D276BB30067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8ADF1D276BB30067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AE11D2772190067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DateHelper.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AE21D2772190067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AE11D2772190067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AE31D2784950067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>GameSelectSectionManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AE41D2784950067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AE31D2784950067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>245D8AE51D2785BD0067C04A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>245D8AE61D2785E20067C04A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Helpers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AE61D2785E20067C04A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>UIVIewControllerHelper.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>245D8AE71D2785E20067C04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>245D8AE61D2785E20067C04A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24C9FF901D27A3A900ED358D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MapViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24C9FF911D27A3A900ED358D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24C9FF901D27A3A900ED358D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24C9FF921D27AA4B00ED358D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>MapPlacesViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24C9FF931D27AA4B00ED358D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24C9FF921D27AA4B00ED358D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24C9FF941D27C41800ED358D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>APIService.swift</string>
-			<key>path</key>
-			<string>cksapp/Classes/ViewControllers/APIService.swift</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>24C9FF951D27C41800ED358D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24C9FF941D27C41800ED358D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24C9FF961D27C5D000ED358D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>24C9FF971D27C5D000ED358D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24C9FF961D27C5D000ED358D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24C9FF981D27C62800ED358D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreFoundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreFoundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>24C9FF991D27C62800ED358D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24C9FF981D27C62800ED358D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24DF6F8E1D27F66100661B71</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ArrayHelper.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24DF6F8F1D27F66100661B71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24DF6F8E1D27F66100661B71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24DF6F901D27FAF000661B71</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>SelectUnselectImageView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24DF6F911D27FAF000661B71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24DF6F901D27FAF000661B71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24DF6F921D2878F700661B71</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseWebViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24DF6F931D2878F700661B71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24DF6F921D2878F700661B71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24DF6F941D28791400661B71</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TODOWebViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24DF6F951D28791400661B71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24DF6F941D28791400661B71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24DF6F961D28792100661B71</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>TipsWebViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24DF6F971D28792100661B71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24DF6F961D28792100661B71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24DF6F981D2880B400661B71</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>LocationServices.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24DF6F991D2880B400661B71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24DF6F981D2880B400661B71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24DF6F9A1D2882F700661B71</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BaseObject.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24DF6F9B1D2882F700661B71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24DF6F9A1D2882F700661B71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>24DF6F9C1D28838300661B71</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>LocationScrubber.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24DF6F9D1D28838300661B71</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24DF6F9C1D28838300661B71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2A7BC19B1B60053D576500BD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>4E856563478EBDF64651C156</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-cksappTests/Pods-cksappTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>572CDBF953F21E21931081ED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-cksappTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-cksappTests/Pods-cksappTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A372A2F935FCAF0908CED0B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D65D477DC7A041058F7BCAB4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6D7726D165222C09721E7F0B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-cksappTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-cksappTests/Pods-cksappTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>774A0E3A083822346BFF9C21</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-cksapp.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-cksapp/Pods-cksapp.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79B1C7F25B23BA89BDADBB2D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>889FED0AC172304A457CFC3B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7DE75130DEE757D6B9650461</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-cksapp/Pods-cksapp-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8359B2307B319AC4E37BCD6A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-cksappTests/Pods-cksappTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>86B77AE6603AB0C585C952D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>889FED0AC172304A457CFC3B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_cksappTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>8D29B5CAC332BF0793CA21DB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9202C71C9DAB5B9BDAA77F10</key>
-		<dict>
-			<key>fileRef</key>
-			<string>223BDCA503E0F8C73AAB8AB3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9C06743D699D757817A26B50</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-cksappUITests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-cksappUITests/Pods-cksappUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B0105A8D14154490B77288EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-cksappUITests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-cksappUITests/Pods-cksappUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C0A777F71F975C74B72F264C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-cksapp.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-cksapp/Pods-cksapp.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D24DB7B71D663597EFF100C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>24C9FF981D27C62800ED358D</string>
-				<string>24C9FF961D27C5D000ED358D</string>
-				<string>223BDCA503E0F8C73AAB8AB3</string>
-				<string>889FED0AC172304A457CFC3B</string>
-				<string>D65D477DC7A041058F7BCAB4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D65D477DC7A041058F7BCAB4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_cksappUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D8CE1AC83323C3E0B608B63B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-cksappUITests/Pods-cksappUITests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>F12D77A9FF8BE2C3547C13F7</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-cksapp/Pods-cksapp-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>FEF153F86779C9381F9BF21E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-cksapp/Pods-cksapp-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>245D8A1D1D2758CE0067C04A</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05FD69351D28830300157A56 /* component in Resources */ = {isa = PBXBuildFile; fileRef = 05FD69331D28830300157A56 /* component */; };
+		241449B51D27D99C002974F8 /* BaseObjectObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 241449B41D27D99C002974F8 /* BaseObjectObjC.m */; };
+		241449B71D27DA06002974F8 /* BaseObjectHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241449B61D27DA06002974F8 /* BaseObjectHelper.swift */; };
+		241449BA1D27DB35002974F8 /* BaseScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241449B91D27DB35002974F8 /* BaseScrubber.swift */; };
+		241449BC1D27DB87002974F8 /* EventScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241449BB1D27DB87002974F8 /* EventScrubber.swift */; };
+		245A65581D289A3400D3C9BC /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245A65571D289A3400D3C9BC /* MapTasks.swift */; };
+		245D8A291D2758CE0067C04A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A281D2758CE0067C04A /* AppDelegate.swift */; };
+		245D8A2B1D2758CE0067C04A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A2A1D2758CE0067C04A /* FirstViewController.swift */; };
+		245D8A2D1D2758CE0067C04A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A2C1D2758CE0067C04A /* SecondViewController.swift */; };
+		245D8A301D2758CE0067C04A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245D8A2E1D2758CE0067C04A /* Main.storyboard */; };
+		245D8A321D2758CE0067C04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 245D8A311D2758CE0067C04A /* Assets.xcassets */; };
+		245D8A351D2758CE0067C04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245D8A331D2758CE0067C04A /* LaunchScreen.storyboard */; };
+		245D8A401D2758CE0067C04A /* cksappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A3F1D2758CE0067C04A /* cksappTests.swift */; };
+		245D8A4B1D2758CE0067C04A /* cksappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A4A1D2758CE0067C04A /* cksappUITests.swift */; };
+		245D8A5C1D275AAB0067C04A /* UIImageViewNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8A5B1D275AAB0067C04A /* UIImageViewNetwork.swift */; };
+		245D8AA21D2763150067C04A /* BaseSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AA11D2763150067C04A /* BaseSectionManager.swift */; };
+		245D8AA41D2763330067C04A /* MainViewSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AA31D2763330067C04A /* MainViewSectionManager.swift */; };
+		245D8AA61D27634B0067C04A /* FeaturedGameSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AA51D27634B0067C04A /* FeaturedGameSectionManager.swift */; };
+		245D8AA81D27635E0067C04A /* AddNewGameSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AA71D27635E0067C04A /* AddNewGameSectionManager.swift */; };
+		245D8AAA1D2763750067C04A /* RestaurantSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AA91D2763750067C04A /* RestaurantSectionManager.swift */; };
+		245D8AAC1D2763870067C04A /* PlaceSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AAB1D2763870067C04A /* PlaceSectionManager.swift */; };
+		245D8AAE1D2763980067C04A /* LocalEventSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AAD1D2763980067C04A /* LocalEventSectionManager.swift */; };
+		245D8AB01D2763AD0067C04A /* ShoppingPlaceSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AAF1D2763AD0067C04A /* ShoppingPlaceSectionManager.swift */; };
+		245D8AB21D2763CA0067C04A /* ImageTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AB11D2763CA0067C04A /* ImageTitleCollectionViewCell.swift */; };
+		245D8AB41D2763DD0067C04A /* ImageTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AB31D2763DD0067C04A /* ImageTitleViewModel.swift */; };
+		245D8AB61D2763F80067C04A /* ImageTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245D8AB51D2763F80067C04A /* ImageTitleCollectionViewCell.xib */; };
+		245D8AB81D2764040067C04A /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AB71D2764040067C04A /* BaseCollectionViewCell.swift */; };
+		245D8ABA1D2764140067C04A /* ContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AB91D2764130067C04A /* ContainerCollectionViewCell.swift */; };
+		245D8ABC1D2764260067C04A /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ABB1D2764260067C04A /* BaseCollectionView.swift */; };
+		245D8ABE1D2764350067C04A /* ContainerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245D8ABD1D2764350067C04A /* ContainerCollectionViewCell.xib */; };
+		245D8AC01D2764460067C04A /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ABF1D2764460067C04A /* BaseCollectionViewController.swift */; };
+		245D8AC21D2764610067C04A /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC11D2764610067C04A /* MainCollectionViewController.swift */; };
+		245D8AC41D2764730067C04A /* MyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC31D2764730067C04A /* MyScheduleViewController.swift */; };
+		245D8AC61D27648A0067C04A /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC51D27648A0067C04A /* ColorConstants.swift */; };
+		245D8AC81D27649C0067C04A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AC71D27649C0067C04A /* Constants.swift */; };
+		245D8ACC1D2764D20067C04A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ACB1D2764D20067C04A /* Event.swift */; };
+		245D8ACE1D2764E10067C04A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ACD1D2764E10067C04A /* Location.swift */; };
+		245D8AD01D2764F70067C04A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ACF1D2764F70067C04A /* Country.swift */; };
+		245D8AD21D2765020067C04A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD11D2765020067C04A /* Player.swift */; };
+		245D8AD41D27650A0067C04A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD31D27650A0067C04A /* User.swift */; };
+		245D8AD61D2765250067C04A /* UserSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD51D2765250067C04A /* UserSchedule.swift */; };
+		245D8AD81D2765320067C04A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD71D2765320067C04A /* Photo.swift */; };
+		245D8ADA1D27655B0067C04A /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AD91D27655B0067C04A /* BaseService.swift */; };
+		245D8ADC1D2765730067C04A /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADB1D2765730067C04A /* GameService.swift */; };
+		245D8ADE1D276AE00067C04A /* MyScheduleSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */; };
+		245D8AE01D276BB30067C04A /* DaySchdeduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */; };
+		245D8AE21D2772190067C04A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE11D2772190067C04A /* DateHelper.swift */; };
+		245D8AE41D2784950067C04A /* GameSelectSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */; };
+		245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */; };
+		24C9FF911D27A3A900ED358D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF901D27A3A900ED358D /* MapViewController.swift */; };
+		24C9FF931D27AA4B00ED358D /* MapPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */; };
+		24C9FF951D27C41800ED358D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF941D27C41800ED358D /* APIService.swift */; };
+		24C9FF971D27C5D000ED358D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9FF961D27C5D000ED358D /* Foundation.framework */; };
+		24C9FF991D27C62800ED358D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9FF981D27C62800ED358D /* CoreFoundation.framework */; };
+		24DF6F8F1D27F66100661B71 /* ArrayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F8E1D27F66100661B71 /* ArrayHelper.swift */; };
+		24DF6F911D27FAF000661B71 /* SelectUnselectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F901D27FAF000661B71 /* SelectUnselectImageView.swift */; };
+		24DF6F931D2878F700661B71 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F921D2878F700661B71 /* BaseWebViewController.swift */; };
+		24DF6F951D28791400661B71 /* TODOWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F941D28791400661B71 /* TODOWebViewController.swift */; };
+		24DF6F971D28792100661B71 /* TipsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F961D28792100661B71 /* TipsWebViewController.swift */; };
+		24DF6F991D2880B400661B71 /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F981D2880B400661B71 /* LocationServices.swift */; };
+		24DF6F9B1D2882F700661B71 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F9A1D2882F700661B71 /* BaseObject.swift */; };
+		24DF6F9D1D28838300661B71 /* LocationScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF6F9C1D28838300661B71 /* LocationScrubber.swift */; };
+		6A372A2F935FCAF0908CED0B /* Pods_cksappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65D477DC7A041058F7BCAB4 /* Pods_cksappUITests.framework */; };
+		79B1C7F25B23BA89BDADBB2D /* Pods_cksappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889FED0AC172304A457CFC3B /* Pods_cksappTests.framework */; };
+		9202C71C9DAB5B9BDAA77F10 /* Pods_cksapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223BDCA503E0F8C73AAB8AB3 /* Pods_cksapp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		245D8A3C1D2758CE0067C04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 245D8A1D1D2758CE0067C04A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 245D8A241D2758CE0067C04A;
+			remoteInfo = cksapp;
+		};
+		245D8A471D2758CE0067C04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 245D8A1D1D2758CE0067C04A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 245D8A241D2758CE0067C04A;
+			remoteInfo = cksapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05FD69331D28830300157A56 /* component */ = {isa = PBXFileReference; lastKnownFileType = folder; name = component; path = Classes/ViewControllers/Helpers/component; sourceTree = "<group>"; };
+		223BDCA503E0F8C73AAB8AB3 /* Pods_cksapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		241449B21D27D99C002974F8 /* cksapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cksapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		241449B31D27D99C002974F8 /* BaseObjectObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObjectObjC.h; sourceTree = "<group>"; };
+		241449B41D27D99C002974F8 /* BaseObjectObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObjectObjC.m; sourceTree = "<group>"; };
+		241449B61D27DA06002974F8 /* BaseObjectHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObjectHelper.swift; sourceTree = "<group>"; };
+		241449B91D27DB35002974F8 /* BaseScrubber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScrubber.swift; sourceTree = "<group>"; };
+		241449BB1D27DB87002974F8 /* EventScrubber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventScrubber.swift; sourceTree = "<group>"; };
+		245A65571D289A3400D3C9BC /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapTasks.swift; path = cksapp/Classes/Datamodel/Scrubber/ObjectScrubber/MapTasks.swift; sourceTree = SOURCE_ROOT; };
+		245D8A251D2758CE0067C04A /* cksapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cksapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		245D8A281D2758CE0067C04A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		245D8A2A1D2758CE0067C04A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		245D8A2C1D2758CE0067C04A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		245D8A2F1D2758CE0067C04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		245D8A311D2758CE0067C04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		245D8A341D2758CE0067C04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		245D8A361D2758CE0067C04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		245D8A3B1D2758CE0067C04A /* cksappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cksappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		245D8A3F1D2758CE0067C04A /* cksappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cksappTests.swift; sourceTree = "<group>"; };
+		245D8A411D2758CE0067C04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		245D8A461D2758CE0067C04A /* cksappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cksappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		245D8A4A1D2758CE0067C04A /* cksappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cksappUITests.swift; sourceTree = "<group>"; };
+		245D8A4C1D2758CE0067C04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		245D8A5B1D275AAB0067C04A /* UIImageViewNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewNetwork.swift; sourceTree = "<group>"; };
+		245D8AA11D2763150067C04A /* BaseSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSectionManager.swift; sourceTree = "<group>"; };
+		245D8AA31D2763330067C04A /* MainViewSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewSectionManager.swift; sourceTree = "<group>"; };
+		245D8AA51D27634B0067C04A /* FeaturedGameSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedGameSectionManager.swift; sourceTree = "<group>"; };
+		245D8AA71D27635E0067C04A /* AddNewGameSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewGameSectionManager.swift; sourceTree = "<group>"; };
+		245D8AA91D2763750067C04A /* RestaurantSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantSectionManager.swift; sourceTree = "<group>"; };
+		245D8AAB1D2763870067C04A /* PlaceSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceSectionManager.swift; sourceTree = "<group>"; };
+		245D8AAD1D2763980067C04A /* LocalEventSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalEventSectionManager.swift; sourceTree = "<group>"; };
+		245D8AAF1D2763AD0067C04A /* ShoppingPlaceSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingPlaceSectionManager.swift; sourceTree = "<group>"; };
+		245D8AB11D2763CA0067C04A /* ImageTitleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		245D8AB31D2763DD0067C04A /* ImageTitleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleViewModel.swift; sourceTree = "<group>"; };
+		245D8AB51D2763F80067C04A /* ImageTitleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		245D8AB71D2764040067C04A /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		245D8AB91D2764130067C04A /* ContainerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerCollectionViewCell.swift; sourceTree = "<group>"; };
+		245D8ABB1D2764260067C04A /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		245D8ABD1D2764350067C04A /* ContainerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerCollectionViewCell.xib; sourceTree = "<group>"; };
+		245D8ABF1D2764460067C04A /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		245D8AC11D2764610067C04A /* MainCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		245D8AC31D2764730067C04A /* MyScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleViewController.swift; sourceTree = "<group>"; };
+		245D8AC51D27648A0067C04A /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		245D8AC71D27649C0067C04A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		245D8ACB1D2764D20067C04A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		245D8ACD1D2764E10067C04A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		245D8ACF1D2764F70067C04A /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		245D8AD11D2765020067C04A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		245D8AD31D27650A0067C04A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		245D8AD51D2765250067C04A /* UserSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSchedule.swift; sourceTree = "<group>"; };
+		245D8AD71D2765320067C04A /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		245D8AD91D27655B0067C04A /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		245D8ADB1D2765730067C04A /* GameService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScheduleSectionManager.swift; sourceTree = "<group>"; };
+		245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySchdeduleManager.swift; sourceTree = "<group>"; };
+		245D8AE11D2772190067C04A /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectSectionManager.swift; sourceTree = "<group>"; };
+		245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewControllerHelper.swift; sourceTree = "<group>"; };
+		24C9FF901D27A3A900ED358D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPlacesViewController.swift; sourceTree = "<group>"; };
+		24C9FF941D27C41800ED358D /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = cksapp/Classes/ViewControllers/APIService.swift; sourceTree = SOURCE_ROOT; };
+		24C9FF961D27C5D000ED358D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24C9FF981D27C62800ED358D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		24DF6F8E1D27F66100661B71 /* ArrayHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayHelper.swift; sourceTree = "<group>"; };
+		24DF6F901D27FAF000661B71 /* SelectUnselectImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUnselectImageView.swift; sourceTree = "<group>"; };
+		24DF6F921D2878F700661B71 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
+		24DF6F941D28791400661B71 /* TODOWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TODOWebViewController.swift; sourceTree = "<group>"; };
+		24DF6F961D28792100661B71 /* TipsWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsWebViewController.swift; sourceTree = "<group>"; };
+		24DF6F981D2880B400661B71 /* LocationServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
+		24DF6F9A1D2882F700661B71 /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
+		24DF6F9C1D28838300661B71 /* LocationScrubber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationScrubber.swift; sourceTree = "<group>"; };
+		572CDBF953F21E21931081ED /* Pods-cksappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksappTests/Pods-cksappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D7726D165222C09721E7F0B /* Pods-cksappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cksappTests/Pods-cksappTests.release.xcconfig"; sourceTree = "<group>"; };
+		774A0E3A083822346BFF9C21 /* Pods-cksapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.debug.xcconfig"; sourceTree = "<group>"; };
+		889FED0AC172304A457CFC3B /* Pods_cksappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C06743D699D757817A26B50 /* Pods-cksappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksappUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cksappUITests/Pods-cksappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0105A8D14154490B77288EE /* Pods-cksappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksappUITests/Pods-cksappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0A777F71F975C74B72F264C /* Pods-cksapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.release.xcconfig"; sourceTree = "<group>"; };
+		D65D477DC7A041058F7BCAB4 /* Pods_cksappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		245D8A221D2758CE0067C04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C9FF991D27C62800ED358D /* CoreFoundation.framework in Frameworks */,
+				24C9FF971D27C5D000ED358D /* Foundation.framework in Frameworks */,
+				9202C71C9DAB5B9BDAA77F10 /* Pods_cksapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245D8A381D2758CE0067C04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B1C7F25B23BA89BDADBB2D /* Pods_cksappTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245D8A431D2758CE0067C04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A372A2F935FCAF0908CED0B /* Pods_cksappUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10F63B9C6272140698B00105 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				774A0E3A083822346BFF9C21 /* Pods-cksapp.debug.xcconfig */,
+				C0A777F71F975C74B72F264C /* Pods-cksapp.release.xcconfig */,
+				572CDBF953F21E21931081ED /* Pods-cksappTests.debug.xcconfig */,
+				6D7726D165222C09721E7F0B /* Pods-cksappTests.release.xcconfig */,
+				B0105A8D14154490B77288EE /* Pods-cksappUITests.debug.xcconfig */,
+				9C06743D699D757817A26B50 /* Pods-cksappUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		241449B81D27DAC1002974F8 /* ObjectScrubber */ = {
+			isa = PBXGroup;
+			children = (
+				241449B91D27DB35002974F8 /* BaseScrubber.swift */,
+				241449BB1D27DB87002974F8 /* EventScrubber.swift */,
+				24DF6F9C1D28838300661B71 /* LocationScrubber.swift */,
+			);
+			path = ObjectScrubber;
+			sourceTree = "<group>";
+		};
+		245D8A1C1D2758CE0067C04A = {
+			isa = PBXGroup;
+			children = (
+				245D8A271D2758CE0067C04A /* cksapp */,
+				245D8A3E1D2758CE0067C04A /* cksappTests */,
+				245D8A491D2758CE0067C04A /* cksappUITests */,
+				245D8A261D2758CE0067C04A /* Products */,
+				D24DB7B71D663597EFF100C7 /* Frameworks */,
+				10F63B9C6272140698B00105 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		245D8A261D2758CE0067C04A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A251D2758CE0067C04A /* cksapp.app */,
+				245D8A3B1D2758CE0067C04A /* cksappTests.xctest */,
+				245D8A461D2758CE0067C04A /* cksappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		245D8A271D2758CE0067C04A /* cksapp */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A581D275AAB0067C04A /* Classes */,
+				245D8A281D2758CE0067C04A /* AppDelegate.swift */,
+				05FD69331D28830300157A56 /* component */,
+				245D8A2A1D2758CE0067C04A /* FirstViewController.swift */,
+				245D8A2C1D2758CE0067C04A /* SecondViewController.swift */,
+				245D8A2E1D2758CE0067C04A /* Main.storyboard */,
+				245D8A311D2758CE0067C04A /* Assets.xcassets */,
+				245D8A331D2758CE0067C04A /* LaunchScreen.storyboard */,
+				245D8A361D2758CE0067C04A /* Info.plist */,
+			);
+			path = cksapp;
+			sourceTree = "<group>";
+		};
+		245D8A3E1D2758CE0067C04A /* cksappTests */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A3F1D2758CE0067C04A /* cksappTests.swift */,
+				245D8A411D2758CE0067C04A /* Info.plist */,
+			);
+			path = cksappTests;
+			sourceTree = "<group>";
+		};
+		245D8A491D2758CE0067C04A /* cksappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A4A1D2758CE0067C04A /* cksappUITests.swift */,
+				245D8A4C1D2758CE0067C04A /* Info.plist */,
+			);
+			path = cksappUITests;
+			sourceTree = "<group>";
+		};
+		245D8A581D275AAB0067C04A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A6E1D2762490067C04A /* ViewControllers */,
+				245D8A5D1D2762490067C04A /* API */,
+				245D8A5E1D2762490067C04A /* Constants */,
+				245D8A611D2762490067C04A /* Datamodel */,
+				245D8A6B1D2762490067C04A /* Service */,
+				245D8A591D275AAB0067C04A /* Libraries */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		245D8A591D275AAB0067C04A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A5A1D275AAB0067C04A /* UIImageViewNetwork */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		245D8A5A1D275AAB0067C04A /* UIImageViewNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A5B1D275AAB0067C04A /* UIImageViewNetwork.swift */,
+			);
+			path = UIImageViewNetwork;
+			sourceTree = "<group>";
+		};
+		245D8A5D1D2762490067C04A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				24C9FF941D27C41800ED358D /* APIService.swift */,
+				245A65571D289A3400D3C9BC /* MapTasks.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		245D8A5E1D2762490067C04A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AC51D27648A0067C04A /* ColorConstants.swift */,
+				245D8AC71D27649C0067C04A /* Constants.swift */,
+				245D8AE11D2772190067C04A /* DateHelper.swift */,
+				24DF6F8E1D27F66100661B71 /* ArrayHelper.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		245D8A611D2762490067C04A /* Datamodel */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A681D2762490067C04A /* Scrubber */,
+			);
+			path = Datamodel;
+			sourceTree = "<group>";
+		};
+		245D8A681D2762490067C04A /* Scrubber */ = {
+			isa = PBXGroup;
+			children = (
+				241449B81D27DAC1002974F8 /* ObjectScrubber */,
+				241449B31D27D99C002974F8 /* BaseObjectObjC.h */,
+				241449B41D27D99C002974F8 /* BaseObjectObjC.m */,
+				241449B61D27DA06002974F8 /* BaseObjectHelper.swift */,
+				24DF6F9A1D2882F700661B71 /* BaseObject.swift */,
+				245D8ACB1D2764D20067C04A /* Event.swift */,
+				245D8ACD1D2764E10067C04A /* Location.swift */,
+				245D8ACF1D2764F70067C04A /* Country.swift */,
+				245D8AD11D2765020067C04A /* Player.swift */,
+				245D8AD31D27650A0067C04A /* User.swift */,
+				245D8AD51D2765250067C04A /* UserSchedule.swift */,
+				245D8AD71D2765320067C04A /* Photo.swift */,
+				241449B21D27D99C002974F8 /* cksapp-Bridging-Header.h */,
+			);
+			path = Scrubber;
+			sourceTree = "<group>";
+		};
+		245D8A6B1D2762490067C04A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AD91D27655B0067C04A /* BaseService.swift */,
+				245D8ADB1D2765730067C04A /* GameService.swift */,
+				24DF6F981D2880B400661B71 /* LocationServices.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		245D8A6E1D2762490067C04A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				245D8A721D2762490067C04A /* SectionsManagers */,
+				245D8A7B1D2762490067C04A /* Views */,
+				245D8AE51D2785BD0067C04A /* Helpers */,
+				245D8ABF1D2764460067C04A /* BaseCollectionViewController.swift */,
+				245D8AC11D2764610067C04A /* MainCollectionViewController.swift */,
+				245D8AC31D2764730067C04A /* MyScheduleViewController.swift */,
+				24C9FF901D27A3A900ED358D /* MapViewController.swift */,
+				24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */,
+				24DF6F921D2878F700661B71 /* BaseWebViewController.swift */,
+				24DF6F941D28791400661B71 /* TODOWebViewController.swift */,
+				24DF6F961D28792100661B71 /* TipsWebViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		245D8A721D2762490067C04A /* SectionsManagers */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AA11D2763150067C04A /* BaseSectionManager.swift */,
+				245D8AA31D2763330067C04A /* MainViewSectionManager.swift */,
+				245D8AA51D27634B0067C04A /* FeaturedGameSectionManager.swift */,
+				245D8AA71D27635E0067C04A /* AddNewGameSectionManager.swift */,
+				245D8AA91D2763750067C04A /* RestaurantSectionManager.swift */,
+				245D8AAB1D2763870067C04A /* PlaceSectionManager.swift */,
+				245D8AAD1D2763980067C04A /* LocalEventSectionManager.swift */,
+				245D8AAF1D2763AD0067C04A /* ShoppingPlaceSectionManager.swift */,
+				245D8ADD1D276AE00067C04A /* MyScheduleSectionManager.swift */,
+				245D8ADF1D276BB30067C04A /* DaySchdeduleManager.swift */,
+				245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */,
+			);
+			path = SectionsManagers;
+			sourceTree = "<group>";
+		};
+		245D8A7B1D2762490067C04A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AB11D2763CA0067C04A /* ImageTitleCollectionViewCell.swift */,
+				245D8AB31D2763DD0067C04A /* ImageTitleViewModel.swift */,
+				245D8AB51D2763F80067C04A /* ImageTitleCollectionViewCell.xib */,
+				245D8AB71D2764040067C04A /* BaseCollectionViewCell.swift */,
+				245D8AB91D2764130067C04A /* ContainerCollectionViewCell.swift */,
+				245D8ABD1D2764350067C04A /* ContainerCollectionViewCell.xib */,
+				245D8ABB1D2764260067C04A /* BaseCollectionView.swift */,
+				24DF6F901D27FAF000661B71 /* SelectUnselectImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		245D8AE51D2785BD0067C04A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D24DB7B71D663597EFF100C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24C9FF981D27C62800ED358D /* CoreFoundation.framework */,
+				24C9FF961D27C5D000ED358D /* Foundation.framework */,
+				223BDCA503E0F8C73AAB8AB3 /* Pods_cksapp.framework */,
+				889FED0AC172304A457CFC3B /* Pods_cksappTests.framework */,
+				D65D477DC7A041058F7BCAB4 /* Pods_cksappUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		245D8A241D2758CE0067C04A /* cksapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 245D8A4F1D2758CE0067C04A /* Build configuration list for PBXNativeTarget "cksapp" */;
+			buildPhases = (
+				86B77AE6603AB0C585C952D8 /* [CP] Check Pods Manifest.lock */,
+				245D8A211D2758CE0067C04A /* Sources */,
+				245D8A221D2758CE0067C04A /* Frameworks */,
+				245D8A231D2758CE0067C04A /* Resources */,
+				F12D77A9FF8BE2C3547C13F7 /* [CP] Embed Pods Frameworks */,
+				FEF153F86779C9381F9BF21E /* [CP] Copy Pods Resources */,
+				7DE75130DEE757D6B9650461 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cksapp;
+			productName = cksapp;
+			productReference = 245D8A251D2758CE0067C04A /* cksapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		245D8A3A1D2758CE0067C04A /* cksappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 245D8A521D2758CE0067C04A /* Build configuration list for PBXNativeTarget "cksappTests" */;
+			buildPhases = (
+				8D29B5CAC332BF0793CA21DB /* [CP] Check Pods Manifest.lock */,
+				245D8A371D2758CE0067C04A /* Sources */,
+				245D8A381D2758CE0067C04A /* Frameworks */,
+				245D8A391D2758CE0067C04A /* Resources */,
+				4E856563478EBDF64651C156 /* [CP] Embed Pods Frameworks */,
+				8359B2307B319AC4E37BCD6A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				245D8A3D1D2758CE0067C04A /* PBXTargetDependency */,
+			);
+			name = cksappTests;
+			productName = cksappTests;
+			productReference = 245D8A3B1D2758CE0067C04A /* cksappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		245D8A451D2758CE0067C04A /* cksappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 245D8A551D2758CE0067C04A /* Build configuration list for PBXNativeTarget "cksappUITests" */;
+			buildPhases = (
+				2A7BC19B1B60053D576500BD /* [CP] Check Pods Manifest.lock */,
+				245D8A421D2758CE0067C04A /* Sources */,
+				245D8A431D2758CE0067C04A /* Frameworks */,
+				245D8A441D2758CE0067C04A /* Resources */,
+				D8CE1AC83323C3E0B608B63B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				245D8A481D2758CE0067C04A /* PBXTargetDependency */,
+			);
+			name = cksappUITests;
+			productName = cksappUITests;
+			productReference = 245D8A461D2758CE0067C04A /* cksappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		245D8A1D1D2758CE0067C04A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Bhupendra Singh";
+				TargetAttributes = {
+					245D8A241D2758CE0067C04A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					245D8A3A1D2758CE0067C04A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 245D8A241D2758CE0067C04A;
+					};
+					245D8A451D2758CE0067C04A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 245D8A241D2758CE0067C04A;
+					};
+				};
+			};
+			buildConfigurationList = 245D8A201D2758CE0067C04A /* Build configuration list for PBXProject "cksapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 245D8A1C1D2758CE0067C04A;
+			productRefGroup = 245D8A261D2758CE0067C04A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				245D8A241D2758CE0067C04A /* cksapp */,
+				245D8A3A1D2758CE0067C04A /* cksappTests */,
+				245D8A451D2758CE0067C04A /* cksappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		245D8A231D2758CE0067C04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FD69351D28830300157A56 /* component in Resources */,
+				245D8ABE1D2764350067C04A /* ContainerCollectionViewCell.xib in Resources */,
+				245D8A351D2758CE0067C04A /* LaunchScreen.storyboard in Resources */,
+				245D8A321D2758CE0067C04A /* Assets.xcassets in Resources */,
+				245D8AB61D2763F80067C04A /* ImageTitleCollectionViewCell.xib in Resources */,
+				245D8A301D2758CE0067C04A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245D8A391D2758CE0067C04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245D8A441D2758CE0067C04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A7BC19B1B60053D576500BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E856563478EBDF64651C156 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cksappTests/Pods-cksappTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE75130DEE757D6B9650461 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cksapp/Pods-cksapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8359B2307B319AC4E37BCD6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cksappTests/Pods-cksappTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86B77AE6603AB0C585C952D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D29B5CAC332BF0793CA21DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8CE1AC83323C3E0B608B63B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cksappUITests/Pods-cksappUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F12D77A9FF8BE2C3547C13F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cksapp/Pods-cksapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF153F86779C9381F9BF21E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cksapp/Pods-cksapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		245D8A211D2758CE0067C04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C9FF931D27AA4B00ED358D /* MapPlacesViewController.swift in Sources */,
+				245D8AC21D2764610067C04A /* MainCollectionViewController.swift in Sources */,
+				245D8AC81D27649C0067C04A /* Constants.swift in Sources */,
+				245D8A2D1D2758CE0067C04A /* SecondViewController.swift in Sources */,
+				245D8AB21D2763CA0067C04A /* ImageTitleCollectionViewCell.swift in Sources */,
+				24DF6F951D28791400661B71 /* TODOWebViewController.swift in Sources */,
+				245D8AD01D2764F70067C04A /* Country.swift in Sources */,
+				241449BA1D27DB35002974F8 /* BaseScrubber.swift in Sources */,
+				245D8AE21D2772190067C04A /* DateHelper.swift in Sources */,
+				24DF6F991D2880B400661B71 /* LocationServices.swift in Sources */,
+				245D8ABA1D2764140067C04A /* ContainerCollectionViewCell.swift in Sources */,
+				24C9FF911D27A3A900ED358D /* MapViewController.swift in Sources */,
+				245D8AA41D2763330067C04A /* MainViewSectionManager.swift in Sources */,
+				245A65581D289A3400D3C9BC /* MapTasks.swift in Sources */,
+				245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */,
+				245D8AB41D2763DD0067C04A /* ImageTitleViewModel.swift in Sources */,
+				245D8ACE1D2764E10067C04A /* Location.swift in Sources */,
+				24DF6F931D2878F700661B71 /* BaseWebViewController.swift in Sources */,
+				245D8AA21D2763150067C04A /* BaseSectionManager.swift in Sources */,
+				24DF6F911D27FAF000661B71 /* SelectUnselectImageView.swift in Sources */,
+				24DF6F8F1D27F66100661B71 /* ArrayHelper.swift in Sources */,
+				24DF6F971D28792100661B71 /* TipsWebViewController.swift in Sources */,
+				24DF6F9B1D2882F700661B71 /* BaseObject.swift in Sources */,
+				245D8AE01D276BB30067C04A /* DaySchdeduleManager.swift in Sources */,
+				245D8ADE1D276AE00067C04A /* MyScheduleSectionManager.swift in Sources */,
+				245D8AB81D2764040067C04A /* BaseCollectionViewCell.swift in Sources */,
+				241449B71D27DA06002974F8 /* BaseObjectHelper.swift in Sources */,
+				245D8AAA1D2763750067C04A /* RestaurantSectionManager.swift in Sources */,
+				245D8AC61D27648A0067C04A /* ColorConstants.swift in Sources */,
+				241449B51D27D99C002974F8 /* BaseObjectObjC.m in Sources */,
+				245D8A5C1D275AAB0067C04A /* UIImageViewNetwork.swift in Sources */,
+				245D8AC01D2764460067C04A /* BaseCollectionViewController.swift in Sources */,
+				245D8AC41D2764730067C04A /* MyScheduleViewController.swift in Sources */,
+				245D8A291D2758CE0067C04A /* AppDelegate.swift in Sources */,
+				245D8A2B1D2758CE0067C04A /* FirstViewController.swift in Sources */,
+				245D8ACC1D2764D20067C04A /* Event.swift in Sources */,
+				245D8AA81D27635E0067C04A /* AddNewGameSectionManager.swift in Sources */,
+				24DF6F9D1D28838300661B71 /* LocationScrubber.swift in Sources */,
+				245D8AD41D27650A0067C04A /* User.swift in Sources */,
+				245D8AA61D27634B0067C04A /* FeaturedGameSectionManager.swift in Sources */,
+				245D8AD61D2765250067C04A /* UserSchedule.swift in Sources */,
+				24C9FF951D27C41800ED358D /* APIService.swift in Sources */,
+				245D8ADC1D2765730067C04A /* GameService.swift in Sources */,
+				245D8AE41D2784950067C04A /* GameSelectSectionManager.swift in Sources */,
+				245D8AD81D2765320067C04A /* Photo.swift in Sources */,
+				245D8AAC1D2763870067C04A /* PlaceSectionManager.swift in Sources */,
+				241449BC1D27DB87002974F8 /* EventScrubber.swift in Sources */,
+				245D8ADA1D27655B0067C04A /* BaseService.swift in Sources */,
+				245D8AAE1D2763980067C04A /* LocalEventSectionManager.swift in Sources */,
+				245D8AB01D2763AD0067C04A /* ShoppingPlaceSectionManager.swift in Sources */,
+				245D8AD21D2765020067C04A /* Player.swift in Sources */,
+				245D8ABC1D2764260067C04A /* BaseCollectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245D8A371D2758CE0067C04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245D8A401D2758CE0067C04A /* cksappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		245D8A421D2758CE0067C04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				245D8A4B1D2758CE0067C04A /* cksappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		245D8A3D1D2758CE0067C04A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 245D8A241D2758CE0067C04A /* cksapp */;
+			targetProxy = 245D8A3C1D2758CE0067C04A /* PBXContainerItemProxy */;
+		};
+		245D8A481D2758CE0067C04A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 245D8A241D2758CE0067C04A /* cksapp */;
+			targetProxy = 245D8A471D2758CE0067C04A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		245D8A2E1D2758CE0067C04A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				245D8A2F1D2758CE0067C04A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		245D8A331D2758CE0067C04A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				245D8A341D2758CE0067C04A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		245D8A4D1D2758CE0067C04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		245D8A4E1D2758CE0067C04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		245D8A501D2758CE0067C04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774A0E3A083822346BFF9C21 /* Pods-cksapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = cksapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhupi.cksapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cksapp/Classes/Datamodel/Scrubber/cksapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		245D8A511D2758CE0067C04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0A777F71F975C74B72F264C /* Pods-cksapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = cksapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhupi.cksapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "cksapp/Classes/Datamodel/Scrubber/cksapp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		245D8A531D2758CE0067C04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572CDBF953F21E21931081ED /* Pods-cksappTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = cksappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhupi.cksappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cksapp.app/cksapp";
+			};
+			name = Debug;
+		};
+		245D8A541D2758CE0067C04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D7726D165222C09721E7F0B /* Pods-cksappTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = cksappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhupi.cksappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cksapp.app/cksapp";
+			};
+			name = Release;
+		};
+		245D8A561D2758CE0067C04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0105A8D14154490B77288EE /* Pods-cksappUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = cksappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhupi.cksappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = cksapp;
+			};
+			name = Debug;
+		};
+		245D8A571D2758CE0067C04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C06743D699D757817A26B50 /* Pods-cksappUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = cksappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhupi.cksappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = cksapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		245D8A201D2758CE0067C04A /* Build configuration list for PBXProject "cksapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245D8A4D1D2758CE0067C04A /* Debug */,
+				245D8A4E1D2758CE0067C04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		245D8A4F1D2758CE0067C04A /* Build configuration list for PBXNativeTarget "cksapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245D8A501D2758CE0067C04A /* Debug */,
+				245D8A511D2758CE0067C04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		245D8A521D2758CE0067C04A /* Build configuration list for PBXNativeTarget "cksappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245D8A531D2758CE0067C04A /* Debug */,
+				245D8A541D2758CE0067C04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		245D8A551D2758CE0067C04A /* Build configuration list for PBXNativeTarget "cksappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245D8A561D2758CE0067C04A /* Debug */,
+				245D8A571D2758CE0067C04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 245D8A1D1D2758CE0067C04A /* Project object */;
+}

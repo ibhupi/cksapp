@@ -28,12 +28,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         self.view = mapView
         self.mapView = mapView
         
-        let marker = GMSMarker()
-        marker.position = TokyoTowerCoordinate
-        marker.title = "Tokyo Tower"
-        marker.snippet = "東京タワー"
-        marker.map = mapView
-        
         let barButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(MyScheduleViewController.addNewEvent))
         self.navigationItem.rightBarButtonItem = barButtonItem
     }
@@ -77,28 +71,41 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     var mapPath = GMSMutablePath()
     func reloadRoute() {
         let events = GameService.sharedInstance.userEventsSortedDate()
-        guard let firstLocation = events.first else  {
+        guard let firstLocation = events.first?.location() else  {
             return
         }
         
-        guard let lastLocation = events.last else  {
+        guard let lastLocation = events.last?.location() else  {
             return
         }
         
-        mapView?.animateToLocation(firstLocation.location().coordinate)
-        let marker = GMSMarker()
-        marker.position = firstLocation.location().coordinate
-        marker.title = firstLocation.title
-        marker.snippet = firstLocation.detailDescription
-        marker.map = mapView
+//        mapView?.animateToLocation(firstLocation.coordinate)
         
-//        var directionsDisplay = GMSServices().direction
-        
+        var bounds = GMSCoordinateBounds()
         events.forEach { (event) in
+            let marker = GMSMarker()
+            marker.position = event.location().coordinate
+            marker.title = event.location().title
+            marker.snippet = event.location().detailDescription
+            marker.map = mapView
+            bounds = bounds.includingCoordinate(marker.position)
+            
             mapPath.addCoordinate(event.location().coordinate)
         }
-        let polyLine = GMSPolyline(path: mapPath)
-        polyLine.map = self.mapView
+        self.mapView?.animateWithCameraUpdate(GMSCameraUpdate.fitBounds(bounds, withPadding: 30))
+        
+//        let polyLine = GMSPolyline(path: mapPath)
+//        polyLine.map = self.mapView
+        
+//        if (firstLocation != lastLocation) {
+//            let mapTasks = MapTasks()
+//            mapTasks.getDirections(firstLocation.title, destination: lastLocation.title, waypoints: [String](), travelMode: TravelModes.driving, completionHandler: { (status, success) in
+//                
+//                if let polyLine = mapTasks.overviewPolyline {
+//                    
+//                }
+//            })
+//        }
     }
 
     
