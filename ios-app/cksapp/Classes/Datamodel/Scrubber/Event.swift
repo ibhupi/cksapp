@@ -8,10 +8,16 @@
 
 import UIKit
 
+enum EventType : String {
+    case Popular = "popular", Local = "local"
+}
+
 class Event: BaseObject {
     var photos = [Photo]()
     var date = NSDate()
     var locationID : Int = 0
+    var eventType = ""
+    var eventTypeDetail = ""
     
     var userHasSelected : Bool = NO {
         didSet {
@@ -21,6 +27,7 @@ class Event: BaseObject {
                 GameService.sharedInstance.addToMySchedule(self)
             }
         }
+        
     }
     
     convenience init(id : String, title: String, detailDescription : String) {
