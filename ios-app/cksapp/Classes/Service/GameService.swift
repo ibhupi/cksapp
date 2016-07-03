@@ -36,8 +36,20 @@ class GameService: BaseService {
         APIService.GamesAll(completionBlock)
     }
     
-    func AllPopularRestaurant(completionBlock:CompletionBlockDataModel) -> Void {
+    func AllPopularPlaces(completionBlock:CompletionBlockDataModel) -> Void {
+        APIService.PopularPlacesAll(completionBlock)
+    }
+    
+    func AllPopularRestaurants(completionBlock:CompletionBlockDataModel) -> Void {
         APIService.PopularRastaurantsAll(completionBlock)
+    }
+    
+    func AllPopularLocalEvents(completionBlock:CompletionBlockDataModel) -> Void {
+        APIService.PopularLocalEventsAll(completionBlock)
+    }
+    
+    func AllPopularShoppingPlaces(completionBlock:CompletionBlockDataModel) -> Void {
+        APIService.PopularShoppingPlacesAll(completionBlock)
     }
 
     

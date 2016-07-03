@@ -19,7 +19,7 @@ class LocalEventSectionManager: BaseSectionManager {
     }
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {
-        GameService.sharedInstance.featuredGames { (items) in
+        GameService.sharedInstance.AllPopularLocalEvents { (items) in
             completionBlock(items: [items ?? [AnyObject]()])
         }
     }

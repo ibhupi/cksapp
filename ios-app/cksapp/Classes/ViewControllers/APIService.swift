@@ -120,6 +120,66 @@ class APIService: NSObject {
         }
     }
     
+    private static var popularPlacesAll = [Event]()
+    class func PopularPlacesAll(completionBlock: CompletionBlockDataModel) {
+        if (popularPlacesAll.count > 0) {
+            completionBlock(items: popularPlacesAll);
+            return
+        }
+        self.jsonArrayFromURL(EventListURLString) { (items) in
+            var events = [Event]()
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    if event.eventType == EventType.Popular.rawValue {
+                        events.append(event)
+                    }
+                }
+            })
+            popularPlacesAll = events
+            completionBlock(items: events)
+        }
+    }
+    
+    private static var popularLocalEventsAll = [Event]()
+    class func PopularLocalEventsAll(completionBlock: CompletionBlockDataModel) {
+        if (popularLocalEventsAll.count > 0) {
+            completionBlock(items: popularLocalEventsAll);
+            return
+        }
+        self.jsonArrayFromURL(EventListURLString) { (items) in
+            var events = [Event]()
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    if event.eventType == EventType.Local.rawValue {
+                        events.append(event)
+                    }
+                }
+            })
+            popularLocalEventsAll = events
+            completionBlock(items: events)
+        }
+    }
+    
+    private static var popularShoppingPlacesAll = [Event]()
+    class func PopularShoppingPlacesAll(completionBlock: CompletionBlockDataModel) {
+        if (popularShoppingPlacesAll.count > 0) {
+            completionBlock(items: popularShoppingPlacesAll);
+            return
+        }
+        self.jsonArrayFromURL(EventListURLString) { (items) in
+            var events = [Event]()
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    if event.eventType == EventType.Shopping.rawValue {
+                        events.append(event)
+                    }
+                }
+            })
+            popularShoppingPlacesAll = events
+            completionBlock(items: events)
+        }
+    }
+    
     
     
     

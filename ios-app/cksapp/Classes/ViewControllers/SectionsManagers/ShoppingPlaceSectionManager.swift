@@ -19,7 +19,7 @@ class ShoppingPlaceSectionManager: BaseSectionManager {
     }
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {
-        GameService.sharedInstance.featuredGames { (items) in
+        GameService.sharedInstance.AllPopularShoppingPlaces { (items) in
             completionBlock(items: [items ?? [AnyObject]()])
         }
     }

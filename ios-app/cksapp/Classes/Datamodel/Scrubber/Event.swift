@@ -9,7 +9,7 @@
 import UIKit
 
 enum EventType : String {
-    case Olympic = "olympic", Local = "local", Popular = "popular", Restaurant = "restaurant"
+    case Olympic = "olympic", Local = "local", Popular = "popular", Restaurant = "restaurant", Shopping = "shopping"
 }
 
 class Event: BaseObject {
