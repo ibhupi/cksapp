@@ -10,9 +10,9 @@ gem 'rails-api'
 
 gem 'mysql2'
 
-gem 'active_model_serializers'
-
 gem 'config'
+
+gem 'prmd'
 
 
 # To use ActiveModel has_secure_password

@@ -6,6 +6,15 @@ module Api
       render json: @users
     end
 
+    def create
+      # new
+      @user = User.new(user_params)
+      if @user.save
+        render json: @user
+      else
+        render json: { result: false, message: "Create User is failed." }
+      end
+    end
 
     def show
       @user = User.find_by(id: params[:id])
@@ -16,5 +25,9 @@ module Api
       end
     end
 
+    private
+    def user_params
+      params.permit(:name, :photo)
+    end
   end
 end
