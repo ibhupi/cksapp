@@ -122,7 +122,7 @@ class GameService: BaseService {
                                     self.addToMySchedule(event, updateServer: NO)
                                 }
                             })
-                            
+                            NSNotificationCenter.defaultCenter().postNotificationName(kNotificationNameUserScheudle, object: nil)
                         }
                     }
                 }
