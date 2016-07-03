@@ -12,6 +12,8 @@ enum EventType : String {
     case Olympic = "olympic", Local = "local", Popular = "popular", Restaurant = "restaurant", Shopping = "shopping"
 }
 
+var AllEventWithKey =  [String : Event]()
+
 class Event: BaseObject {
     var photos = [Photo]()
     var date = NSDate()
@@ -29,6 +31,22 @@ class Event: BaseObject {
             }
         }
         
+    }
+    
+    override class func initWithDictionary(dictionary: AnyObject?) -> Event? {
+        guard let dictionary = dictionary as? [String: AnyObject] else {
+            return nil
+        }
+        if let idInt = dictionary["id"] as? Int {
+            if let object = AllEventWithKey["\(idInt)"] {
+                return object
+            }
+        }
+        if let event = super.initWithDictionary(dictionary) as? Event {
+            AllEventWithKey[event.id] = event
+            return event
+        }
+        return  nil
     }
     
     convenience init(id : String, title: String, detailDescription : String) {
