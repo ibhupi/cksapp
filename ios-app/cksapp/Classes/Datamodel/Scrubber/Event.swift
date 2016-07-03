@@ -22,16 +22,7 @@ class Event: BaseObject {
     var eventTypeDetail = ""
     var ranking : Int = 0
     
-    var userHasSelected : Bool = NO {
-        didSet {
-            if (userHasSelected == NO) {
-                GameService.sharedInstance.removeFromMySchedule(self)
-            } else {
-                GameService.sharedInstance.addToMySchedule(self)
-            }
-        }
-        
-    }
+    var userHasSelected : Bool = NO
     
     override class func initWithDictionary(dictionary: AnyObject?) -> Event? {
         guard let dictionary = dictionary as? [String: AnyObject] else {

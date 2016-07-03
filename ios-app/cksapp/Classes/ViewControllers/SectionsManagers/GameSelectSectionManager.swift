@@ -30,7 +30,11 @@ class GameSelectSectionManager: BaseSectionManager {
     override func collectionViewDidSelectItem(indexPath: NSIndexPath) -> Void {
         let item = self.sections[indexPath.section][indexPath.row]
         if let event = item as? Event {
-            event.userHasSelected = event.userHasSelected == NO
+            if (event.userHasSelected) {
+                GameService.sharedInstance.removeFromMySchedule(event)
+            } else {
+                GameService.sharedInstance.addToMySchedule(event)
+            }
             collectionView?.reloadItemsAtIndexPaths([indexPath])
         }
     }
