@@ -19,7 +19,7 @@ class PlaceSectionManager: BaseSectionManager {
     }
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {
-        GameService.sharedInstance.featuredGames { (items) in
+        GameService.sharedInstance.AllPopularPlaces { (items) in
             completionBlock(items: [items ?? [AnyObject]()])
         }
     }
@@ -29,7 +29,7 @@ class PlaceSectionManager: BaseSectionManager {
             return CGSizeZero
         }
         
-        let height = CGRectGetHeight(collectionView.frame) / 2
+        let height = CGRectGetHeight(collectionView.frame)
         
         return CGSizeMake(height, height)
     }

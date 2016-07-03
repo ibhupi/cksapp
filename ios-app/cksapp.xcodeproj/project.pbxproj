@@ -72,6 +72,9 @@
 		6A372A2F935FCAF0908CED0B /* Pods_cksappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65D477DC7A041058F7BCAB4 /* Pods_cksappUITests.framework */; };
 		79B1C7F25B23BA89BDADBB2D /* Pods_cksappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889FED0AC172304A457CFC3B /* Pods_cksappTests.framework */; };
 		9202C71C9DAB5B9BDAA77F10 /* Pods_cksapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223BDCA503E0F8C73AAB8AB3 /* Pods_cksapp.framework */; };
+		2EF7FE92E4731C8CA742D148 /* Pods_cksappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5C7874B2E396E50CA806F6 /* Pods_cksappTests.framework */; };
+		571E375907BB2950CAADA90E /* Pods_cksappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD13C35867BD16A672782C2C /* Pods_cksappUITests.framework */; };
+		D5795749617DA6EBA98B0930 /* Pods_cksapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D0A47E0E7CEA7573B9C1D6 /* Pods_cksapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,8 @@
 /* Begin PBXFileReference section */
 		05FD69331D28830300157A56 /* component */ = {isa = PBXFileReference; lastKnownFileType = folder; name = component; path = Classes/ViewControllers/Helpers/component; sourceTree = "<group>"; };
 		223BDCA503E0F8C73AAB8AB3 /* Pods_cksapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B59B9A586DD98C62FE24656 /* Pods-cksappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksappUITests/Pods-cksappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F80B5B86D054D64822B4313 /* Pods-cksapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.release.xcconfig"; sourceTree = "<group>"; };
 		241449B21D27D99C002974F8 /* cksapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cksapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		241449B31D27D99C002974F8 /* BaseObjectObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObjectObjC.h; sourceTree = "<group>"; };
 		241449B41D27D99C002974F8 /* BaseObjectObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObjectObjC.m; sourceTree = "<group>"; };
@@ -171,6 +176,13 @@
 		B0105A8D14154490B77288EE /* Pods-cksappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksappUITests/Pods-cksappUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0A777F71F975C74B72F264C /* Pods-cksapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.release.xcconfig"; sourceTree = "<group>"; };
 		D65D477DC7A041058F7BCAB4 /* Pods_cksappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		509062F577C87BA35A0D56D1 /* Pods-cksappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksappTests/Pods-cksappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A5C7874B2E396E50CA806F6 /* Pods_cksappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D0A47E0E7CEA7573B9C1D6 /* Pods_cksapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900C5722918E14CF6191B781 /* Pods-cksappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cksappTests/Pods-cksappTests.release.xcconfig"; sourceTree = "<group>"; };
+		A726EF59CE835D7122BEA529 /* Pods-cksapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cksapp/Pods-cksapp.debug.xcconfig"; sourceTree = "<group>"; };
+		EF918468E246B5603E4ABE79 /* Pods-cksappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cksappUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cksappUITests/Pods-cksappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD13C35867BD16A672782C2C /* Pods_cksappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cksappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +193,7 @@
 				24C9FF991D27C62800ED358D /* CoreFoundation.framework in Frameworks */,
 				24C9FF971D27C5D000ED358D /* Foundation.framework in Frameworks */,
 				9202C71C9DAB5B9BDAA77F10 /* Pods_cksapp.framework in Frameworks */,
+				D5795749617DA6EBA98B0930 /* Pods_cksapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79B1C7F25B23BA89BDADBB2D /* Pods_cksappTests.framework in Frameworks */,
+				2EF7FE92E4731C8CA742D148 /* Pods_cksappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A372A2F935FCAF0908CED0B /* Pods_cksappUITests.framework in Frameworks */,
+				571E375907BB2950CAADA90E /* Pods_cksappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +250,7 @@
 				245D8A261D2758CE0067C04A /* Products */,
 				D24DB7B71D663597EFF100C7 /* Frameworks */,
 				10F63B9C6272140698B00105 /* Pods */,
+				BFA2B5E0D3C4CF3EBE3FFED6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -428,6 +444,19 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		BFA2B5E0D3C4CF3EBE3FFED6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A726EF59CE835D7122BEA529 /* Pods-cksapp.debug.xcconfig */,
+				1F80B5B86D054D64822B4313 /* Pods-cksapp.release.xcconfig */,
+				509062F577C87BA35A0D56D1 /* Pods-cksappTests.debug.xcconfig */,
+				900C5722918E14CF6191B781 /* Pods-cksappTests.release.xcconfig */,
+				1B59B9A586DD98C62FE24656 /* Pods-cksappUITests.debug.xcconfig */,
+				EF918468E246B5603E4ABE79 /* Pods-cksappUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D24DB7B71D663597EFF100C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +465,9 @@
 				223BDCA503E0F8C73AAB8AB3 /* Pods_cksapp.framework */,
 				889FED0AC172304A457CFC3B /* Pods_cksappTests.framework */,
 				D65D477DC7A041058F7BCAB4 /* Pods_cksappUITests.framework */,
+				83D0A47E0E7CEA7573B9C1D6 /* Pods_cksapp.framework */,
+				6A5C7874B2E396E50CA806F6 /* Pods_cksappTests.framework */,
+				FD13C35867BD16A672782C2C /* Pods_cksappUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -915,6 +947,7 @@
 		245D8A501D2758CE0067C04A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 774A0E3A083822346BFF9C21 /* Pods-cksapp.debug.xcconfig */;
+			baseConfigurationReference = A726EF59CE835D7122BEA529 /* Pods-cksapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -930,6 +963,7 @@
 		245D8A511D2758CE0067C04A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0A777F71F975C74B72F264C /* Pods-cksapp.release.xcconfig */;
+			baseConfigurationReference = 1F80B5B86D054D64822B4313 /* Pods-cksapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -944,6 +978,7 @@
 		245D8A531D2758CE0067C04A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 572CDBF953F21E21931081ED /* Pods-cksappTests.debug.xcconfig */;
+			baseConfigurationReference = 509062F577C87BA35A0D56D1 /* Pods-cksappTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = cksappTests/Info.plist;
@@ -957,6 +992,7 @@
 		245D8A541D2758CE0067C04A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D7726D165222C09721E7F0B /* Pods-cksappTests.release.xcconfig */;
+			baseConfigurationReference = 900C5722918E14CF6191B781 /* Pods-cksappTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = cksappTests/Info.plist;
@@ -970,6 +1006,7 @@
 		245D8A561D2758CE0067C04A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0105A8D14154490B77288EE /* Pods-cksappUITests.debug.xcconfig */;
+			baseConfigurationReference = 1B59B9A586DD98C62FE24656 /* Pods-cksappUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = cksappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -982,6 +1019,7 @@
 		245D8A571D2758CE0067C04A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C06743D699D757817A26B50 /* Pods-cksappUITests.release.xcconfig */;
+			baseConfigurationReference = EF918468E246B5603E4ABE79 /* Pods-cksappUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = cksappUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

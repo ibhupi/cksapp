@@ -9,7 +9,7 @@
 import UIKit
 
 enum EventType : String {
-    case Popular = "popular", Local = "local"
+    case Olympic = "olympic", Local = "local", Popular = "popular", Restaurant = "restaurant", Shopping = "shopping"
 }
 
 class Event: BaseObject {
@@ -18,6 +18,7 @@ class Event: BaseObject {
     var locationID : Int = 0
     var eventType = ""
     var eventTypeDetail = ""
+    var ranking : Int = 0
     
     var userHasSelected : Bool = NO {
         didSet {
