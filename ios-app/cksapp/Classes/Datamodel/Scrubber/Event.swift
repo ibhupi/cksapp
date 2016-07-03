@@ -11,7 +11,7 @@ import UIKit
 class Event: BaseObject {
     var photos = [Photo]()
     var date = NSDate()
-    
+    var locationID : Int = 0
     
     var userHasSelected : Bool = NO {
         didSet {
@@ -40,6 +40,10 @@ class Event: BaseObject {
         return event
     }
     
+    func location() -> Location {
+        return LocationServices.locationForID("\(self.locationID)")
+    }
+    
     override func scrubbedObject(object: AnyObject?) -> AnyObject? {
         if let data = object as? [String: AnyObject] {
             return EventScrubber.scrubObjectFromData(data)
@@ -60,7 +64,7 @@ class Event: BaseObject {
                 return items
             }
             return nil
-        } else if (key == "id") {
+        } else if (key == "id" ) {
             return super.scrubForKey(key, value: value)
         } else if (key == "startTime") {
             if let dateString = value as? String, let date = DateFormatter.dateFromString(dateString) {
@@ -68,6 +72,7 @@ class Event: BaseObject {
             }
             return nil
         }
+
         return value
     }
 

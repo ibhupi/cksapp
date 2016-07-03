@@ -78,4 +78,17 @@ class GameService: BaseService {
         return items
     }
     
+    func userEventsSortedDate() -> [Event] {
+        var eventsSorted = [Event]()
+//        self.userEvents.values.forEach { (event) in
+//            eventsSorted.append(event)
+//        }
+        
+        eventsSorted = self.userEvents.values.sort { (eventOne, eventTwo) -> Bool in
+            return eventOne.date.compare(eventTwo.date) == NSComparisonResult.OrderedAscending
+        }
+        
+        return eventsSorted
+    }
+    
 }

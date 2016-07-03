@@ -12,6 +12,8 @@ import GoogleMaps
 
 class MapViewController: UIViewController, GMSMapViewDelegate {
 
+    private var mapView : GMSMapView? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +26,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         mapView.myLocationEnabled = true
         self.view = mapView
+        self.mapView = mapView
         
         let marker = GMSMarker()
         marker.position = TokyoTowerCoordinate
@@ -33,6 +36,11 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         
         let barButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(MyScheduleViewController.addNewEvent))
         self.navigationItem.rightBarButtonItem = barButtonItem
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.reloadRoute()
     }
 
     func addNewEvent() {
@@ -62,14 +70,35 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
                 print("No place selected")
             }
         })
-        
-        
     }
     
     // MARK: - Private Function
     
+    var mapPath = GMSMutablePath()
     func reloadRoute() {
+        let events = GameService.sharedInstance.userEventsSortedDate()
+        guard let firstLocation = events.first else  {
+            return
+        }
         
+        guard let lastLocation = events.last else  {
+            return
+        }
+        
+        mapView?.animateToLocation(firstLocation.location().coordinate)
+        let marker = GMSMarker()
+        marker.position = firstLocation.location().coordinate
+        marker.title = firstLocation.title
+        marker.snippet = firstLocation.detailDescription
+        marker.map = mapView
+        
+//        var directionsDisplay = GMSServices().direction
+        
+        events.forEach { (event) in
+            mapPath.addCoordinate(event.location().coordinate)
+        }
+        let polyLine = GMSPolyline(path: mapPath)
+        polyLine.map = self.mapView
     }
 
     

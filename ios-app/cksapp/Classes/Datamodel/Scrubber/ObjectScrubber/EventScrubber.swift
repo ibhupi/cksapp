@@ -17,6 +17,6 @@ class EventScrubber: BaseScrubber {
 
     class override func mappedKeys() -> [String : String]? {
         return
-            ["description":"detailDescription", "photo" : "photos", "photos" : "photos"]
+            ["description":"detailDescription", "photo" : "photos", "photos" : "photos", "location" : "locationID"]
     }
 }

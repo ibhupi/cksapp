@@ -29,6 +29,13 @@ let DateFormatter : NSDateFormatter = {
     return dateFormatter
 }()
 
+let TokyoTowerLocation : Location = {
+    let location = Location()
+    location.title = "Tokyo Tower"
+    location.detailDescription = "Build to stand out"
+    return location
+}()
+
 
 let SecondsInADay : Double = 86400
 

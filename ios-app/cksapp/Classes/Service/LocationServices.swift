@@ -11,6 +11,7 @@ import UIKit
 class LocationServices: BaseService {
 
     static let sharedInstance = LocationServices()
+
     
     var locations = [String: Location]()
     
@@ -30,6 +31,10 @@ class LocationServices: BaseService {
                 }
             })
         }
+    }
+    
+    class func locationForID(id : String) -> Location {
+        return LocationServices.sharedInstance.locations[id] ?? TokyoTowerLocation
     }
     
 }
