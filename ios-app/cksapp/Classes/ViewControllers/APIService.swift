@@ -100,6 +100,27 @@ class APIService: NSObject {
         }
     }
     
+    private static var popularRestaurantsAll = [Event]()
+    class func PopularRastaurantsAll(completionBlock: CompletionBlockDataModel) {
+        if (popularRestaurantsAll.count > 0) {
+            completionBlock(items: popularRestaurantsAll);
+            return
+        }
+        self.jsonArrayFromURL(EventListURLString) { (items) in
+            var events = [Event]()
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    if event.eventType == EventType.Restaurant.rawValue {
+                        events.append(event)
+                    }
+                }
+            })
+            popularRestaurantsAll = events
+            completionBlock(items: events)
+        }
+    }
+    
+    
     
     
 }

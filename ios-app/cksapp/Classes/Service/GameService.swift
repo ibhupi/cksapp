@@ -1,6 +1,6 @@
 //
 //  GameService.swift
-//  cksapp
+//  cksapp/Users/Macaria/Ebios/iOS/cksapp/ios-app/cksapp/Classes/Datamodel/Scrubber/Event.swift
 //
 //  Created by Bhupendra Singh on 7/2/16.
 //  Copyright © 2016 Bhupendra Singh. All rights reserved.
@@ -35,6 +35,11 @@ class GameService: BaseService {
     func AllGames(completionBlock:CompletionBlockDataModel) -> Void {
         APIService.GamesAll(completionBlock)
     }
+    
+    func AllPopularRestaurant(completionBlock:CompletionBlockDataModel) -> Void {
+        APIService.PopularRastaurantsAll(completionBlock)
+    }
+
     
     func addToMySchedule(event : Event) {
         self.userEvents[event.id] = event
