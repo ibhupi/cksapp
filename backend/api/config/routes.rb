@@ -4,11 +4,16 @@ Rails.application.routes.draw do
     resources :locations, only:[:index, :show]
     resources :players, only:[:index, :show]
     resources :events, only:[:index, :show]
-    resources :users, only:[:index, :show, :create]
+    resources :users, only:[:index, :show] do
+      collection do
+        get 'new' => 'users#new'
+      end
+    end
     resources :user_schedules, only:[:index, :show, :create, :destroy] do
       collection do
         put 'like/:id' => 'user_schedules#like'
       end
     end
+    get 'googlemap' => 'googlemaps#direction'
   end
 end
