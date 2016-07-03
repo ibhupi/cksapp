@@ -145,7 +145,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     // MARK: - GMSMapViewDelegate
     
     func mapViewDidFinishTileRendering(mapView: GMSMapView) {
-        self.reloadRoute()
         
     }
     
