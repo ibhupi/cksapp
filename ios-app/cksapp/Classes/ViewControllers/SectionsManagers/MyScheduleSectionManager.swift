@@ -11,6 +11,10 @@ import UIKit
 class MyScheduleSectionManager: BaseSectionManager {
     
     var datesSelected = [NSDate]()
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: kNotificationNameUserScheudle, object: nil)
+    }
 
     override init(title: String , collectionView: UICollectionView?) {
         super.init(title:title, collectionView : collectionView)
@@ -21,6 +25,12 @@ class MyScheduleSectionManager: BaseSectionManager {
 //        for i in 1..<10 {
 //            datesSelected.append(today.dateByAddingTimeInterval(SecondsInADay * Double(i)))
 //        }
+//        NSNotificationCenter.defaultCenter().postNotificationName(kNotificationNameUserScheudle, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MyScheduleSectionManager.updateSchduleView), name: kNotificationNameUserScheudle, object: nil)
+    }
+    
+    internal func updateSchduleView() {
+        self.collectionView?.reloadData()
     }
     
 

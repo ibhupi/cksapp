@@ -12,6 +12,7 @@ import UIKit
 private let UserURLString = "http://114.55.119.118/api/users/new"
 private let EventListURLString = "http://114.55.119.118/api/events"
 private let LocationsListURLString = "http://114.55.119.118/api/locations"
+private let UserScheduleURLString = "http://114.55.119.118/api/user_schedules"
 
 class APIService: NSObject {
     
@@ -75,6 +76,19 @@ class APIService: NSObject {
             completionBlock(items: [user])
         }
     }
+    
+    class func UserScheduleFromAPI(completionBlock: CompletionBlockDataModel) {
+        self.jsonArrayFromURL(UserScheduleURLString) { (items) in
+            var schedules = [UserSchedule]()
+            items?.forEach({ (item) in
+                if let schedule = UserSchedule.initWithDictionary(item) {
+                    schedules.append(schedule)
+                }
+            })
+            completionBlock(items: schedules)
+        }
+    }
+
     
     
     private static var allGames = [Event]()
@@ -212,6 +226,43 @@ class APIService: NSObject {
             popularShoppingPlacesAll = events
             completionBlock(items: events)
         }
+    }
+    
+    
+    class func SaveCurrentSchedule(completion:CompletionBlockSuccess) {
+        guard let userID = Int(CurrentUserSchduele.userID) else {
+            return
+        }
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://114.55.119.118/api/user_schedules")!)
+        request.HTTPMethod = "POST"
+        
+        var postString = "userID=\(userID)&detail=\(CurrentUserSchduele.detail)"
+        
+        if let scheduleID = Int(CurrentUserSchduele.id) {
+            postString += "&id=\(scheduleID)"
+        }
+        
+        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+            guard error == nil && data != nil else {                                                          // check for fundamental networking error
+                print("error=\(error)")
+                completion(success: NO)
+                return
+            }
+            
+            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+                completion(success: NO)
+                return
+            }
+            
+//            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+//            print("responseString = \(responseString)")
+            completion(success: YES)
+        }
+        task.resume()
     }
     
     

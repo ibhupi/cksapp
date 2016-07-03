@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class GameService: BaseService {
     
     static let sharedInstance = GameService()
@@ -64,6 +65,7 @@ class GameService: BaseService {
             events.append(event)
             self.userScheduleDaily[event.date.startOfDay()] = events
         }
+        self.updateSchedule()
     }
     
     func  removeFromMySchedule(event : Event) {
@@ -74,9 +76,41 @@ class GameService: BaseService {
                 self.userScheduleDaily[eventDay]?.removeAll()
             } else if let index = events.indexOf(event) {
                 events.removeAtIndex(index)
+                self.userScheduleDaily[event.date.startOfDay()] = events
             }
         }
+        self.updateSchedule()
     }
+    
+    private func updateSchedule() {
+        var detail = [String]()
+        let allEvents = self.userEvents.values
+        allEvents.forEach { (event) in
+            detail.append(event.id)
+        }
+        let detailString = detail.joinWithSeparator(",")
+        CurrentUserSchduele.detail = detailString
+        APIService.SaveCurrentSchedule { (success) in
+            self.fetchCurrentUserSchedule()
+        }
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(kNotificationNameUserScheudle, object: nil)
+    }
+    
+    func fetchCurrentUserSchedule() {
+        APIService.UserScheduleFromAPI { (items) in
+            items?.forEach({ (item) in
+                if let schedule = item as? UserSchedule {
+                    if schedule.userID == CurrentUser.id {
+                        CurrentUserSchduele.id = schedule.id
+                        CurrentUserSchduele.detail = schedule.detail
+                        CurrentUserSchduele.canShare = schedule.canShare
+                    }
+                }
+            })
+        }
+    }
+
     
     private func dummyGameEvents() -> [Event] {
         var items = [Event]()

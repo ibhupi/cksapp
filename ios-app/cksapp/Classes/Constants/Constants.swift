@@ -45,8 +45,12 @@ typealias CompletionBlockItem = (item: AnyObject?) -> Void
 typealias CompletionBlockItemDictionary = (item: [String: AnyObject]?) -> Void
 typealias CompletionBlockData = (data: NSData?) -> Void
 typealias CompletionBlockDataModel = (items: [BaseObject]?) -> Void
+typealias CompletionBlockSuccess = (success: Bool) -> Void
 
 let GoogleMapAPIKEY = "AIzaSyDskmF9XuoEgif4OdVY2pujdxkvogO8HdE"
+
+
+let kNotificationNameUserScheudle = "com.cksapp.notification.update.kNotificationNameUserScheudle"
 
 let TokyoTowerCoordinate = CLLocationCoordinate2DMake(35.6585805,139.7454329)
 
@@ -54,6 +58,12 @@ let CurrentUser : User = {
     let user = User();
     return user;
 }()
+
+let CurrentUserSchduele : UserSchedule = {
+    let item = UserSchedule();
+    return item;
+}()
+
 
 func LS(k : String!) -> String {
     var s:String! = NSBundle.mainBundle().localizedStringForKey(k, value: "", table: nil)
