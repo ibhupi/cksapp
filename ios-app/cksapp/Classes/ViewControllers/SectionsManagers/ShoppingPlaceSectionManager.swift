@@ -29,7 +29,7 @@ class ShoppingPlaceSectionManager: BaseSectionManager {
             return CGSizeZero
         }
         
-        let height = CGRectGetHeight(collectionView.frame) / 2
+        let height = CGRectGetHeight(collectionView.frame)
         
         return CGSizeMake(height, height)
     }
