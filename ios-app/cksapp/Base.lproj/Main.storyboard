@@ -175,8 +175,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="SRs-r9-bl5" kind="relationship" relationship="viewControllers" id="H3U-tc-orN"/>
                         <segue destination="7sU-Il-qfc" kind="relationship" relationship="viewControllers" id="rBy-In-bJd"/>
+                        <segue destination="SRs-r9-bl5" kind="relationship" relationship="viewControllers" id="H3U-tc-orN"/>
                         <segue destination="BGX-DI-rGz" kind="relationship" relationship="viewControllers" id="GMb-dT-JbI"/>
                         <segue destination="Nwj-2E-XbK" kind="relationship" relationship="viewControllers" id="fHQ-1m-zd3"/>
                         <segue destination="l7Z-4T-PJM" kind="relationship" relationship="viewControllers" id="Z9J-45-ZQI"/>
@@ -262,10 +262,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Map" width="40" height="40"/>
+        <image name="Map" width="28" height="28"/>
         <image name="Olympic" width="40" height="40"/>
-        <image name="Schedule" width="40" height="40"/>
-        <image name="Services" width="40" height="40"/>
-        <image name="TODO" width="40" height="40"/>
+        <image name="Schedule" width="28" height="28"/>
+        <image name="Services" width="28" height="28"/>
+        <image name="TODO" width="28" height="28"/>
     </resources>
 </document>
