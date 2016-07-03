@@ -30,6 +30,7 @@ class ImageTitleCollectionViewCell: BaseCollectionViewCell {
         self.backgroundColor = ColorConstants.Clear.color()
         self.layer.shouldRasterize = YES
         self.layer.rasterizationScale = UIScreen.mainScreen().scale
+        self.topLeftLabel.numberOfLines = 0
     }
     
     override func prepareForReuse() {
@@ -43,7 +44,7 @@ class ImageTitleCollectionViewCell: BaseCollectionViewCell {
     
     func configureFor(event : Event) -> Void {
         self.topRightLabel.text = nil
-        self.topLeftLabel.text = event.title
+        self.topLeftLabel.text = event.title + "\n" + event.date.localizedStringMid()
         self.bottomLabel.text = event.detailDescription
         self.backgroundColor = ColorConstants.White.color()
         if let url = event.photos.last?.urlString {
