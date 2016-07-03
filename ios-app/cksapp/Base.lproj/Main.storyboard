@@ -36,7 +36,7 @@
                         </connections>
                     </collectionView>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <tabBarItem key="tabBarItem" title="Main" id="luW-hE-iCP"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="Olympic" id="luW-hE-iCP"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZF-NM-f09" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,7 +121,7 @@
                             <constraint firstItem="faL-Jo-l5M" firstAttribute="top" secondItem="Kxp-DN-yZq" secondAttribute="bottom" id="g47-wl-1VS"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tips" id="eOF-cy-LdR"/>
+                    <tabBarItem key="tabBarItem" title="Tips" image="TODO" id="eOF-cy-LdR"/>
                     <connections>
                         <outlet property="webView" destination="Kxp-DN-yZq" id="JaI-wA-lxW"/>
                     </connections>
@@ -155,7 +155,7 @@
                             <constraint firstItem="u2a-Sb-ven" firstAttribute="bottom" secondItem="j0D-TR-461" secondAttribute="bottomMargin" id="wNq-0x-zLj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Services" id="niD-Ul-hUt"/>
+                    <tabBarItem key="tabBarItem" title="Services" image="Services" id="niD-Ul-hUt"/>
                     <connections>
                         <outlet property="webView" destination="u2a-Sb-ven" id="N2b-f2-VGv"/>
                     </connections>
@@ -190,7 +190,7 @@
         <scene sceneID="Fkc-oB-iQ8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SRs-r9-bl5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Schedule" id="hjs-2h-jKp"/>
+                    <tabBarItem key="tabBarItem" title="My Schedule" image="Schedule" id="hjs-2h-jKp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c5n-j5-cTb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -245,7 +245,7 @@
         <scene sceneID="XK5-e7-KjG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BGX-DI-rGz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="voX-4V-02T"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map" id="voX-4V-02T"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JTV-Hc-Rqf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -261,4 +261,11 @@
             <point key="canvasLocation" x="1493" y="414"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Map" width="40" height="40"/>
+        <image name="Olympic" width="40" height="40"/>
+        <image name="Schedule" width="40" height="40"/>
+        <image name="Services" width="40" height="40"/>
+        <image name="TODO" width="40" height="40"/>
+    </resources>
 </document>
