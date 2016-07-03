@@ -27,6 +27,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         mapView.myLocationEnabled = true
         self.view = mapView
         self.mapView = mapView
+        mapView.delegate = self
         
         let barButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(MyScheduleViewController.addNewEvent))
         self.navigationItem.rightBarButtonItem = barButtonItem
@@ -68,7 +69,11 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     // MARK: - Private Function
     
+    var markers = [GMSMarker]()
+    var markersSelected = [GMSMarker]()
     var mapPath = GMSMutablePath()
+    
+    var markerPlace = [GMSMarker: Event]()
     func reloadRoute() {
         let events = GameService.sharedInstance.userEventsSortedDate()
         guard let firstLocation = events.first?.location() else  {
@@ -79,18 +84,45 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
             return
         }
         
+        
 //        mapView?.animateToLocation(firstLocation.coordinate)
+        markers.forEach { (marker) in
+            marker.map = nil
+        }
+        markers.removeAll()
+
+        markersSelected.forEach { (marker) in
+            marker.map = nil
+        }
+        markersSelected.removeAll()
+        markerPlace.removeAll()
+
         
         var bounds = GMSCoordinateBounds()
-        events.forEach { (event) in
-            let marker = GMSMarker()
-            marker.position = event.location().coordinate
-            marker.title = event.location().title
-            marker.snippet = event.location().detailDescription
-            marker.map = mapView
-            bounds = bounds.includingCoordinate(marker.position)
-            
-            mapPath.addCoordinate(event.location().coordinate)
+        
+        GameService.sharedInstance.AllGames { (items) in
+            guard let items = items as? [Event] else {
+                return
+            }
+            items.forEach { (event) in
+                let marker = GMSMarker()
+                marker.position = event.location().coordinate
+                marker.title = event.location().title
+                marker.snippet = event.location().detailDescription
+                marker.map = self.mapView
+                
+                if (events.containsObject(event) == NO) {
+                    marker.icon = GMSMarker.markerImageWithColor(ColorConstants.LightGrayApha.color())
+                } else {
+                    bounds = bounds.includingCoordinate(marker.position)
+                    self.markersSelected.append(marker)
+                }
+                
+                self.markers.append(marker)
+                self.markerPlace[marker] = event
+                
+                self.mapPath.addCoordinate(event.location().coordinate)
+            }
         }
         self.mapView?.animateWithCameraUpdate(GMSCameraUpdate.fitBounds(bounds, withPadding: 30))
         
@@ -115,6 +147,35 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     func mapViewDidFinishTileRendering(mapView: GMSMapView) {
         self.reloadRoute()
         
+    }
+    
+    func mapView(mapView: GMSMapView, didTapMarker marker: GMSMarker) -> Bool {
+        guard let event = self.markerPlace[marker] else {
+            return NO;
+        }
+        
+        let title = event.userHasSelected ?  "Remove Event" : "Add event"
+        var message = "Add event " + event.title + ", " + event.detailDescription
+        if event.userHasSelected {
+            message = "Remove event " + event.title + ", " + event.detailDescription
+        }
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        alertController.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (action) in
+            if event.userHasSelected {
+                GameService.sharedInstance.removeFromMySchedule(event)
+            } else {
+                GameService.sharedInstance.addToMySchedule(event)
+            }
+            self.reloadRoute()
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) in
+            
+        }))
+        self.presentViewController(alertController, animated: YES, completion: nil)
+        
+        return NO
     }
 
     /*

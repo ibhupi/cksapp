@@ -20,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let userID = NSUserDefaults.standardUserDefaults().stringForKey("currentUserID") {
             CurrentUser.id = userID
             CurrentUserSchduele.userID = CurrentUser.id
-            GameService.sharedInstance.fetchCurrentUserSchedule()
+            GameService.sharedInstance.AllGames({ (items) in
+                GameService.sharedInstance.fetchCurrentUserSchedule()
+            })
         } else {
             APIService.UserFromAPI({ (items) in
                 if let item = items?.first {
@@ -28,7 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     NSUserDefaults.standardUserDefaults().setObject(CurrentUser.id, forKey: "currentUserID")
                     NSUserDefaults.standardUserDefaults().synchronize()
                     CurrentUserSchduele.userID = CurrentUser.id
-                    GameService.sharedInstance.fetchCurrentUserSchedule()
+                    GameService.sharedInstance.AllGames({ (items) in
+                        GameService.sharedInstance.fetchCurrentUserSchedule()
+                    })
                 }
             })
         }

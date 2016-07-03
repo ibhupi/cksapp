@@ -56,6 +56,10 @@ class GameService: BaseService {
 
     
     func addToMySchedule(event : Event) {
+        self.addToMySchedule(event, updateServer: YES)
+    }
+    
+    func addToMySchedule(event : Event, updateServer: Bool) {
         self.userEvents[event.id] = event
         if var events = self.userScheduleDaily[event.date.startOfDay()] {
             events.append(event)
@@ -65,7 +69,10 @@ class GameService: BaseService {
             events.append(event)
             self.userScheduleDaily[event.date.startOfDay()] = events
         }
-        self.updateSchedule()
+        if(updateServer) {
+            self.updateSchedule()
+        }
+        event.userHasSelected = YES
     }
     
     func  removeFromMySchedule(event : Event) {
@@ -79,6 +86,8 @@ class GameService: BaseService {
                 self.userScheduleDaily[event.date.startOfDay()] = events
             }
         }
+        event.userHasSelected = NO
+
         self.updateSchedule()
     }
     
@@ -102,9 +111,19 @@ class GameService: BaseService {
             items?.forEach({ (item) in
                 if let schedule = item as? UserSchedule {
                     if schedule.userID == CurrentUser.id {
+                        let existing = CurrentUserSchduele.detail
                         CurrentUserSchduele.id = schedule.id
                         CurrentUserSchduele.detail = schedule.detail
                         CurrentUserSchduele.canShare = schedule.canShare
+                        if (existing.characters.count != CurrentUserSchduele.detail.characters.count && CurrentUserSchduele.detail.characters.count > 0) {
+                            let eventIds = CurrentUserSchduele.detail.componentsSeparatedByString(",")
+                            eventIds.forEach({ (eventID) in
+                                if let event = AllEventWithKey[eventID] {
+                                    self.addToMySchedule(event, updateServer: NO)
+                                }
+                            })
+                            NSNotificationCenter.defaultCenter().postNotificationName(kNotificationNameUserScheudle, object: nil)
+                        }
                     }
                 }
             })
