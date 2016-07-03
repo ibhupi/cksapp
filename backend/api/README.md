@@ -1,7 +1,6 @@
 # Execution environment
--Server: Alibaba Cloud ECS
--DataBase: Alibaba Cloud ApsaraDB
-
+- Server : Alibaba Cloud ECS
+- DataBase : Alibaba Cloud ApsaraDB
 
 # Requirements
 - Ruby 2.3.1
