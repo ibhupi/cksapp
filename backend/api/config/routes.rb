@@ -14,6 +14,5 @@ Rails.application.routes.draw do
         put 'like/:id' => 'user_schedules#like'
       end
     end
-    get 'googlemap' => 'googlemaps#direction'
   end
 end
