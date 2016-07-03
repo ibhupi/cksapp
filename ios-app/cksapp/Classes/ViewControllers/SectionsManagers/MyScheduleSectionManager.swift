@@ -64,5 +64,8 @@ class MyScheduleSectionManager: BaseSectionManager {
         completionBlock(items: items)
     }
     
+    override func collectionViewDidSelectItem(indexPath: NSIndexPath) {
+        
+    }
 
 }

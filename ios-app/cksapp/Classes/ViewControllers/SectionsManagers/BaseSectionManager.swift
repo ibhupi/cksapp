@@ -137,8 +137,18 @@ class BaseSectionManager: NSObject {
     }
     
     
+    
     func collectionViewDidSelectItem(indexPath: NSIndexPath) -> Void {
-        
+        let item = self.sections[indexPath.section][indexPath.row]
+        if let event = item as? Event {
+            if (event.userHasSelected) {
+                GameService.sharedInstance.removeFromMySchedule(event)
+            } else {
+                GameService.sharedInstance.addToMySchedule(event)
+            }
+            collectionView?.reloadItemsAtIndexPaths([indexPath])
+        }
     }
+
     
 }

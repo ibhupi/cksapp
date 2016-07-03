@@ -15,7 +15,7 @@ class AddNewGameSectionManager: BaseSectionManager {
         self.scrollingDirection = .Horizontal
         self.minimumInteItemSpacing = 0
         self.minimumSectionItemSpacing = 20
-        self.collectionViewEdgeInset = UIEdgeInsetsMake(0, 20, 0, 0)
+        self.collectionViewEdgeInset = UIEdgeInsetsMake(0, 10, 0, 0)
     }
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {
