@@ -21,7 +21,7 @@ class MainViewSectionManager: BaseSectionManager {
         items.append(FeaturedGameSectionManager(title: LS("FeaturedGames"), collectionView:nil))
         items.append(AddNewGameSectionManager(title: LS("AddNewGames"), collectionView:collectionView))
         items.append(RestaurantSectionManager(title: ("PopularRestaurants"), collectionView:collectionView))
-        items.append(PlaceSectionManager(title: ("PoplularPlaces"), collectionView:collectionView))
+        items.append(PlaceSectionManager(title: ("PopularPlaces"), collectionView:collectionView))
         items.append(LocalEventSectionManager(title: ("PopularEvents"), collectionView:collectionView))
         items.append(ShoppingPlaceSectionManager(title: ("PopularShoppingPlaces"), collectionView:collectionView))
         

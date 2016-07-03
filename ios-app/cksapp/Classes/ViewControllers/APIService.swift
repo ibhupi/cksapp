@@ -82,6 +82,27 @@ class APIService: NSObject {
         }
     }
     
+    private static var featuredGames = [Event]()
+    class func FeaturedGames(completionBlock: CompletionBlockDataModel) {
+        if (featuredGames.count > 0) {
+            completionBlock(items: featuredGames);
+            return
+        }
+        self.jsonArrayFromURL(EventListURLString) { (items) in
+            var events = [Event]()
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    if event.ranking <= 10 {
+                        events.append(event)
+                    }
+                }
+            })
+            featuredGames = events
+            completionBlock(items: events)
+        }
+    }
+
+    
     private static var allLocations = [Location]()
     class func LocationsAll(completionBlock: CompletionBlockDataModel) {
         if (allLocations.count > 0) {
@@ -99,6 +120,87 @@ class APIService: NSObject {
             completionBlock(items: locations)
         }
     }
+    
+    private static var popularRestaurantsAll = [Event]()
+    class func PopularRastaurantsAll(completionBlock: CompletionBlockDataModel) {
+        if (popularRestaurantsAll.count > 0) {
+            completionBlock(items: popularRestaurantsAll);
+            return
+        }
+        self.jsonArrayFromURL(EventListURLString) { (items) in
+            var events = [Event]()
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    if event.eventType == EventType.Restaurant.rawValue {
+                        events.append(event)
+                    }
+                }
+            })
+            popularRestaurantsAll = events
+            completionBlock(items: events)
+        }
+    }
+    
+    private static var popularPlacesAll = [Event]()
+    class func PopularPlacesAll(completionBlock: CompletionBlockDataModel) {
+        if (popularPlacesAll.count > 0) {
+            completionBlock(items: popularPlacesAll);
+            return
+        }
+        self.jsonArrayFromURL(EventListURLString) { (items) in
+            var events = [Event]()
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    if event.eventType == EventType.Popular.rawValue {
+                        events.append(event)
+                    }
+                }
+            })
+            popularPlacesAll = events
+            completionBlock(items: events)
+        }
+    }
+    
+    private static var popularLocalEventsAll = [Event]()
+    class func PopularLocalEventsAll(completionBlock: CompletionBlockDataModel) {
+        if (popularLocalEventsAll.count > 0) {
+            completionBlock(items: popularLocalEventsAll);
+            return
+        }
+        self.jsonArrayFromURL(EventListURLString) { (items) in
+            var events = [Event]()
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    if event.eventType == EventType.Local.rawValue {
+                        events.append(event)
+                    }
+                }
+            })
+            popularLocalEventsAll = events
+            completionBlock(items: events)
+        }
+    }
+    
+    private static var popularShoppingPlacesAll = [Event]()
+    class func PopularShoppingPlacesAll(completionBlock: CompletionBlockDataModel) {
+        if (popularShoppingPlacesAll.count > 0) {
+            completionBlock(items: popularShoppingPlacesAll);
+            return
+        }
+        self.jsonArrayFromURL(EventListURLString) { (items) in
+            var events = [Event]()
+            items?.forEach({ (item) in
+                if let event = Event.initWithDictionary(item) {
+                    if event.eventType == EventType.Shopping.rawValue {
+                        events.append(event)
+                    }
+                }
+            })
+            popularShoppingPlacesAll = events
+            completionBlock(items: events)
+        }
+    }
+    
     
     
     

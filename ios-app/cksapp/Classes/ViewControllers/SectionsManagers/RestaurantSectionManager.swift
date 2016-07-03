@@ -19,7 +19,7 @@ class RestaurantSectionManager: BaseSectionManager {
     }
     
     override func loadSections(offset: Int, completionBlock: CompletionBlockItems) {
-        GameService.sharedInstance.featuredGames { (items) in
+        GameService.sharedInstance.AllPopularRestaurants { (items) in
             completionBlock(items: [items ?? [AnyObject]()])
         }
     }
