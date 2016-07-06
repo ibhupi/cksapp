@@ -57,6 +57,8 @@
 		245D8AE21D2772190067C04A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE11D2772190067C04A /* DateHelper.swift */; };
 		245D8AE41D2784950067C04A /* GameSelectSectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */; };
 		245D8AE71D2785E20067C04A /* UIVIewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */; };
+		24924C1B1D2BB4B90052AD01 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 24924C191D2BB4B90052AD01 /* events.json */; };
+		24924C1C1D2BB4B90052AD01 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 24924C1A1D2BB4B90052AD01 /* locations.json */; };
 		24C9FF911D27A3A900ED358D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF901D27A3A900ED358D /* MapViewController.swift */; };
 		24C9FF931D27AA4B00ED358D /* MapPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */; };
 		24C9FF951D27C41800ED358D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9FF941D27C41800ED358D /* APIService.swift */; };
@@ -157,6 +159,8 @@
 		245D8AE11D2772190067C04A /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		245D8AE31D2784950067C04A /* GameSelectSectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectSectionManager.swift; sourceTree = "<group>"; };
 		245D8AE61D2785E20067C04A /* UIVIewControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewControllerHelper.swift; sourceTree = "<group>"; };
+		24924C191D2BB4B90052AD01 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		24924C1A1D2BB4B90052AD01 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 		24C9FF901D27A3A900ED358D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		24C9FF921D27AA4B00ED358D /* MapPlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPlacesViewController.swift; sourceTree = "<group>"; };
 		24C9FF941D27C41800ED358D /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = cksapp/Classes/ViewControllers/APIService.swift; sourceTree = SOURCE_ROOT; };
@@ -278,6 +282,8 @@
 				245D8A311D2758CE0067C04A /* Assets.xcassets */,
 				245D8A331D2758CE0067C04A /* LaunchScreen.storyboard */,
 				245D8A361D2758CE0067C04A /* Info.plist */,
+				24924C191D2BB4B90052AD01 /* events.json */,
+				24924C1A1D2BB4B90052AD01 /* locations.json */,
 			);
 			path = cksapp;
 			sourceTree = "<group>";
@@ -591,7 +597,9 @@
 			files = (
 				05FD69351D28830300157A56 /* component in Resources */,
 				245D8ABE1D2764350067C04A /* ContainerCollectionViewCell.xib in Resources */,
+				24924C1C1D2BB4B90052AD01 /* locations.json in Resources */,
 				245D8A351D2758CE0067C04A /* LaunchScreen.storyboard in Resources */,
+				24924C1B1D2BB4B90052AD01 /* events.json in Resources */,
 				245D8A321D2758CE0067C04A /* Assets.xcassets in Resources */,
 				245D8AB61D2763F80067C04A /* ImageTitleCollectionViewCell.xib in Resources */,
 				245D8A301D2758CE0067C04A /* Main.storyboard in Resources */,

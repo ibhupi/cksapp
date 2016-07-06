@@ -14,13 +14,24 @@ private let EventListURLString = "http://114.55.119.118/api/events"
 private let LocationsListURLString = "http://114.55.119.118/api/locations"
 private let UserScheduleURLString = "http://114.55.119.118/api/user_schedules"
 
+private let CachedFileName = [EventListURLString : "events", LocationsListURLString : "locations"]
+
 class APIService: NSObject {
     
     private class func dataFromURL(urlString: String, completionBlock: CompletionBlockData) {
+        
+        if let localJsonName = CachedFileName[urlString] {
+            if let data = self.cacheJSONData(localJsonName) {
+                completionBlock(data: data)
+                return
+            }
+        }
         guard let url = NSURL(string: urlString) else {
             completionBlock(data: nil)
             return
         }
+        
+        
         let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data: NSData?, response: NSURLResponse?, error: NSError?) in
             dispatch_async(dispatch_get_main_queue(), {
                 completionBlock(data: data)
@@ -264,6 +275,25 @@ class APIService: NSObject {
         }
         task.resume()
     }
+    
+    
+    
+    
+    
+    
+    
+    private class func cacheJSONData(filename: String) -> NSData? {
+        
+        if let path = NSBundle.mainBundle().pathForResource(filename, ofType: "json")
+        {
+            let data = NSData.init(contentsOfFile: path)
+            return data
+        }
+        return nil
+    }
+    
+    
+
     
     
     
